@@ -20,7 +20,7 @@
   display: flex;
   margin: spacing(5);
   @include breakpoints-down(xs) {
-    margin: spacing(2, 4);
+    margin: spacing(4, 4);
   }
   figure {
     @include margin-right($spacing5);
@@ -61,12 +61,12 @@
     }
   }
   h4 {
-    font-size: 36px;
+    font-size: 28px;
     @include breakpoints-down(sm) {
-      margin-top: $spacing3
+      // margin-top: $spacing3
     }
     @include breakpoints-down(xs) {
-      font-size: 24px;
+      font-size: 22px;
     }
   }
   h6 {

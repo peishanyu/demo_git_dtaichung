@@ -1,14 +1,14 @@
 .use-text {
   &-title {
     font-weight: $font-bold;
-    font-size: 48px;
+    font-size: 42px;
     line-height: 72px;
     @include breakpoints-down(md) {
-      font-size: 38px;
+      font-size: 32px;
       line-height: 56px;
     }
     @include breakpoints-down(xs) {
-      font-size: 28px;
+      font-size: 24px;
       line-height: 42px;
     }
   }
@@ -27,10 +27,10 @@
   }
   &-subtitle {
     font-weight: $font-medium;
-    font-size: 28px;
+    font-size: 26px;
     line-height: 42px;
     @include breakpoints-down(md) {
-      font-size: 24px;
+      font-size: 22px;
       line-height: 36px;
     }
     @include breakpoints-down(xs) {

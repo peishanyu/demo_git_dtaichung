@@ -80,8 +80,7 @@ $flag: '../images/flag-logo.png';
         display: none
       }
       img {
-        height: 64px;
-        width: 64px;
+        height: 90px;
         margin: 0;
       }
     }
@@ -127,7 +126,14 @@ $flag: '../images/flag-logo.png';
 
 .header-content {
   display: flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include breakpoints-down(md) {
+    justify-content: space-around;
+  }
+
   & nav {
     transition: all 0.3s ease;
     align-items: center;
@@ -172,11 +178,10 @@ $flag: '../images/flag-logo.png';
       margin: 0 auto $spacing1;
       display: block;
       transition: all 0.3s ease-out;
-      width: 80px;
-      height: 80px;
+      // width: 80px;
+      height: 120px;
       @include breakpoints-down(xs) {
-        height: 64px;
-        width: 64px;
+        height: 90px;
       }
     }
     a span{
@@ -279,8 +284,9 @@ $flag: '../images/flag-logo.png';
     @include use-theme(background-color, $palette-primary-main, $palette-primary-dark);
     transform: rotate(-10deg);
     position: absolute;
-    @include right(-140px);
-    top: -190px;
+    @include right(-160px);
+    top: -220px;
+    background-color: #5f6cc0 !important;
   }
   a {
     color: $palette-common-white;
@@ -386,7 +392,7 @@ $flag: '../images/flag-logo.png';
 .mobile-nav {
   @include palette-background-paper;
   z-index: 1100;
-  min-width: 300px;
+  min-width: 400px;
   @include breakpoints-down(xs) {
     width: 100% !important
   }

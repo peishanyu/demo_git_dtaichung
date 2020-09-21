@@ -2,7 +2,7 @@
   .link {
     margin: spacing(1, 1.5);
   }
-  margin-top: $spacing15;
+  margin-top: $spacing8;
   padding-top: $spacing5;
   padding-bottom: $spacing5;
   ul {
@@ -65,13 +65,13 @@
   .logo {
     display: flex;
     align-items: center;
-    margin-bottom: $spacing3;
+    margin-top: $spacing3;
     @include breakpoints-down(sm) {
       justify-content: center;
       padding: spacing(0, 3)
     }
     img {
-      width: 48px;
+      height:80px;
       @include margin-right($spacing1)
     }
     h6 {

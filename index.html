@@ -14,7 +14,7 @@
   <meta property="og:site_name" content="">
   <meta property="og:locale" content="">
   <meta property="og:type" content="website">
-  <title>Education - Home Page </title><!-- Styles-->
+  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title><!-- Styles-->
   <!-- Put the 3rd/plugins css here-->
   <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
   <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
@@ -31,112 +31,51 @@
   <div id="preloader" style="position: fixed; z-index: 10000; background: #fafafa; width: 100%; height: 100%"><img style="opacity: 0.5; position: fixed; top: calc(50% - 50px); left: calc(50% - 50px)" src="./assets/images/loading.gif" alt="loading"></div>
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
-    <div class="m-content smart smart-var" id="main-wrap">
+    <div class="m-content smart ocean-blue-var" id="main-wrap">
       <div>
         <div class="main-wrap">
           <div class="sidenav mobile-nav" id="slide-menu">
             <div class="menu">
               <ul class="collection">
-                <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="">main feature</a></li>
-                <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="">popular course</a></li>
-                <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="">explore</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="">blog</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">contact</a></li>
+                <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="">信貸比較</a></li>
+                <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="">常見問題</a></li>
+                <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="">關於我們</a></li>
+                <!-- <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="">blog</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">contact</a></li> -->
               </ul>
               <hr class="divider-sidebar">
               <ul class="collection">
-                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">login</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">register</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">特選方案</a></li>
               </ul>
             </div>
           </div><!-- ##### HEADER #####-->
           <header class="app-bar header" id="header">
             <div class="container">
               <div class="header-content">
+                <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button">
+                  <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
+                </button>
                 <nav class="nav-logo">
-                  <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button">
-                    <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
-                  </button>
                   <div class="logo scrollnav">
-                    <a href="#home"><img src="./assets/images/education-logo.png" alt="logo" /> <span>Education</span></a>
+                    <a href="#home"><img src="./assets/images/mrd-logo.svg" alt="logo" />
+                    </a>
                   </div>
                 </nav>
                 <nav class="nav-menu">
                   <div class="scrollactive-nav show-lg-up scrollnav">
                     <ul>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">main feature</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">popular course</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">explore</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">blog</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""> <span class="text">contact</span></a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">信貸比較</span></a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">常見問題</span></a></li>
+                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">關於我們</span></a></li>
                     </ul>
                   </div>
                 </nav>
-                <nav class="nav-menu nav-auth">
+                <nav class="nav-menu nav-auth hidden-xs-down">
                   <div class="hidden-xs-down">
                     <div class="deco"></div>
-                    <a class="btn-flat text-btn waves-effect" href="">login</a>
-                    <a class="btn white light button waves-effect" href="">register</a>
-                  </div>
-                  <div class="menu-setting">
-                    <div class="setting">
-                      <button class="btn btn-icon waves-effect btn-small m-2 dropdown-trigger" data-target="dropdown_config" type="button" data-align="left">
-                        <i class="icon material-icons" id="setting_icon">settings</i>
-                      </button>
-                      <div class="dropdown-content" id="dropdown_config">
-                        <ul class="collection with-header">
-                          <li class="collection-header">theme mode</li>
-                          <li class="collection-item no-hover pl-4">
-                            <div class="flex-menu">
-                              <div class="switch">
-                                <label>light<input id="theme_switcher" type="checkbox"><span class="lever"></span>dark</label>
-                              </div>
-                            </div>
-                          </li>
-                        </ul>
-                        <div class="dropdown-divider"></div>
-                        <ul class="collection with-header lang-menu" id="lang_menu">
-                          <li class="collection-header">language</li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="ar" href="#">
-                              <div class="flag circle"><i class="ar"></i></div>
-                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿العربيّة</span>
-                            </a>
-                          </li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="de" href="#">
-                              <div class="flag circle"><i class="de"></i></div>
-                              <span class="content lang-opt text-truncate">Deutsch</span>
-                            </a>
-                          </li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="en" href="#">
-                              <div class="flag circle"><i class="en"></i></div>
-                              <span class="content lang-opt text-truncate">English</span>
-                              <div class="secondary-content"><i class="material-icons">check</i></div>
-                            </a>
-                          </li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="id" href="#">
-                              <div class="flag circle"><i class="id"></i></div>
-                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Bahasa Indonesia</span>
-                            </a>
-                          </li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="pt" href="#">
-                              <div class="flag circle"><i class="pt"></i></div>
-                              <span class="content lang-opt text-truncate">󠁥󠁮󠁧󠁿Português</span>
-                            </a>
-                          </li>
-                          <li class="collection-item lang-list waves-effect avatar">
-                            <a data-lang="zh" href="#">
-                              <div class="flag circle"><i class="zh"></i></div>
-                              <span class="content lang-opt text-truncate">简体中文</span>
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                    <a class="btn-flat text-btn waves-effect" href="">馬上體驗</a>
+                    <a class="btn white light button waves-effect" href="">特選方案</a>
                   </div>
                 </nav>
               </div>
@@ -152,20 +91,12 @@
                     <div class="col-lg-6 col-md-7">
                       <div class="banner-text">
                         <div class="title">
-                          <h3 class="use-text-title">Upgrade Yourself</h3>
+                          <h3 class="use-text-title">貸先生，您的專屬私人貸款顧問</h3>
                         </div>
-                        <h5 class="subtitle">Anywhere, anytime. Start learning today! And Get an Exceptional Education Experience.</h5>
-                        <div class="card search">
-                          <div class="input-field primary search">
-                            <input id="search" type="text" name="search" />
-                            <label for="search">Search course...</label>
-                          </div>
-                          <div class="action">
-                            <button class="waves-effect btn-icon primary button">
-                              <i class="material-icons icon">search</i>
-                            </button>
-                          </div>
-                        </div>
+                        <h5 class="subtitle">
+                          專為借款人打造的線上借款平台，運用智能AI技術線上試算、自動審查，快速通過撥款！讓貸先生助您一臂之力，解決您的資金問題！
+                        </h5>
+
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-5 pa-6 show-sm-up deco-grid">
@@ -178,7 +109,7 @@
                               <div data-depth="0.2"><span class="icon-four"></span></div>
                             </div>
                           </div>
-                          <img src="./assets/images/education/banner-artwork.png" alt="artwork" />
+                          <img src="./assets/images/mrd/banner-artwork.png" alt="artwork" />
                           <div class="parallax-scene front">
                             <div id="scene2">
                               <div data-depth="0.1"><span class="icon-two"></span></div>
@@ -197,53 +128,36 @@
             <!-- ##### FEATURE #####-->
             <section class="space-top" id="feature">
               <div class="root">
-                <div class="container max-md">
+                <div class="container">
                   <div class="title-main align-center">
-                    <h4 class="primary"><span>Main Feature</span></h4>
-                    <p class="desc use-text-subtitle2">The world's largest selection of courses</p>
+                    <h4 class="primary"><span>服務特色</span></h4>
+                    <p class="desc use-text-subtitle2">貸先生承諾  竭盡所能為您服務</p>
                   </div>
                   <div class="row spacing8 grid">
-                    <div class="col-sm-6 px-6">
+                    <div class="col-sm-4 px-4">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/education/hd-video.svg" alt="hd-video"></figure>
+                        <figure><img src="./assets/images/mrd/hd-video.svg" alt="hd-video"></figure>
                         <div class="text">
-                          <h4 class="use-text-title">
-
-                            +<span class="numscroller" data-min="0" data-max="100" data-delay="5" data-increment="4">&nbsp;</span>K
-
-                          </h4>
-                          <h6 class="use-text-subtitle2">HD Videos</h6>
+                          <h4 class="use-text-title">特色1</h4>
+                          <h6 class="use-text-subtitle2">敘述文字</h6>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 px-6">
+                    <div class="col-sm-4 px-4">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/education/presenter.svg" alt="presenter"></figure>
+                        <figure><img src="./assets/images/mrd/presenter.svg" alt="presenter"></figure>
                         <div class="text">
-                          <h4 class="use-text-title">
-                            +<span class="numscroller" data-min="0" data-max="200" data-delay="5" data-increment="10">&nbsp;</span>
-                          </h4>
-                          <h6 class="use-text-subtitle2">Professional Mentors</h6>
+                          <h4 class="use-text-title">特色2</h4>
+                          <h6 class="use-text-subtitle2">敘述文字</h6>
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-6 px-6">
+                    <div class="col-sm-4 px-4">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/education/money.svg" alt="money"></figure>
+                        <figure><img src="./assets/images/mrd/money.svg" alt="money"></figure>
                         <div class="text">
-                          <h4 class="use-text-title">
-                            $<span class="numscroller" data-min="0" data-max="500" data-delay="5" data-increment="20">&nbsp;</span>
-                          </h4>
-                          <h6 class="use-text-subtitle2">Saves per Month</h6>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6 px-6">
-                      <div class="counter-item">
-                        <figure><img src="./assets/images/education/unlimited.svg" alt="unlimited"></figure>
-                        <div class="text">
-                          <h4 class="use-text-title">Free</h4>
-                          <h6 class="use-text-subtitle2">Life Time Access</h6>
+                          <h4 class="use-text-title">特色3</h4>
+                          <h6 class="use-text-subtitle2">敘述文字</h6>
                         </div>
                       </div>
                     </div>
@@ -257,79 +171,70 @@
             <!-- ##### FOOTER #####-->
             <footer class="footer">
               <div class="container">
+                <hr>
                 <div class="row">
                   <div class="col-md-3 py-4 px-0">
                     <div class="logo">
-                      <img src="./assets/images/education-logo.png" alt="logo" />
-                      <h6 class="title">Education</h6>
+                      <img src="./assets/images/mrd-logo.png" alt="logo" />
                     </div>
-                    <p class="footer-desc pb-2"> Nam posuere accumsan porta. Integer sed ante tincidunt tincidunt sit amet sed libero.</p>
-                    <p class="body-2 show-md-up">&copy; Alexstrap Education 2020</p>
                   </div>
                   <div class="col-md-6 pa-4">
                     <ul class="show-sm-down collapsible">
                       <li class="accordion-content">
                         <div class="collapsible-header">
-                          <h6 class="mb-4">Company</h6><i class="material-icons right arrow">expand_more</i>
+                          <h6 class="mb-4">mrD.CASH 貸先生</h6><i class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                           <ul>
-                            <li><a href="#team">Team</a></li>
-                            <li><a href="#history">History</a></li>
-                            <li><a href="#contact-us">Contact us</a></li>
-                            <li><a href="#locations">Locations</a></li>
+                            <li><a href="">關於我們</a></li>
+                            <li><a href="">聯絡我們</a></li>
                           </ul>
                         </div>
                       </li>
                       <li class="accordion-content">
                         <div class="collapsible-header">
-                          <h6 class="mb-4">Resources</h6><i class="material-icons right arrow">expand_more</i>
+                          <h6 class="mb-4">資訊</h6><i class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                           <ul>
-                            <li><a href="#resource">Resource</a></li>
-                            <li><a href="#resource-name">Resource name</a></li>
-                            <li><a href="#another-resource">Another resource</a></li>
-                            <li><a href="#final-resource">Final resource</a></li>
+                            <li><a href="">信貸比較</a></li>
+                            <li><a href="">常見問題</a></li>
                           </ul>
                         </div>
                       </li>
                       <li class="accordion-content">
                         <div class="collapsible-header">
-                          <h6 class="mb-4">Legal</h6><i class="material-icons right arrow">expand_more</i>
+                          <h6 class="mb-4">條款</h6><i class="material-icons right arrow">expand_more</i>
                         </div>
                         <div class="collapsible-body">
                           <ul>
-                            <li><a href="#privacy-policy">Privacy policy</a></li>
-                            <li><a href="#terms-of-use">Terms of use</a></li>
+                            <li><a href="#privacy-policy">隱私權政策</a></li>
+                            <li><a href="#terms-of-use">使用者條款</a></li>
                           </ul>
                         </div>
                       </li>
                     </ul>
                     <div class="row show-md-up justify-content-evenly">
+                      
                       <div class="col-sm-3 pa-4 px-md-0 site-map-item">
-                        <h6 class="title-nav mb-4">Company</h6>
+                        <h6 class="title-nav mb-4">mrD.CASH 貸先生</h6>
                         <ul>
-                          <li><a href="#team">Team</a></li>
-                          <li><a href="#history">History</a></li>
-                          <li><a href="#contact-us">Contact us</a></li>
-                          <li><a href="#locations">Locations</a></li>
+                          <li><a href="">關於我們</a></li>
+                          <li><a href="">聯絡我們</a></li>
                         </ul>
                       </div>
                       <div class="col-sm-3 pa-4 px-md-0 site-map-item">
-                        <h6 class="title-nav mb-4">Resources</h6>
+                        <h6 class="title-nav mb-4">資訊</h6>
                         <ul>
-                          <li><a href="#resource">Resource</a></li>
-                          <li><a href="#resource-name">Resource name</a></li>
-                          <li><a href="#another-resource">Another resource</a></li>
-                          <li><a href="#final-resource">Final resource</a></li>
+                          <li><a href="">信貸比較</a></li>
+                          <li><a href="">常見問題</a></li>
                         </ul>
                       </div>
                       <div class="col-sm-3 pa-4 px-md-0 site-map-item">
-                        <h6 class="title-nav mb-4">Legal</h6>
+                        <h6 class="title-nav mb-4">條款</h6>
                         <ul>
-                          <li><a href="#privacy-policy">Privacy policy</a></li>
-                          <li><a href="#terms-of-use">Terms of use</a></li>
+                          <li><a href="#privacy-policy">隱私權政策</a></li>
+                          <li><a href="#terms-of-use">使用者條款</a></li>
                         </ul>
                       </div>
                     </div>
@@ -337,29 +242,18 @@
                   <div class="col-md-3 pa-4">
                     <div class="socmed">
                       <a class="btn btn-icon waves-effect"><span class="ion-social-facebook icon"></span></a>
-                      <a class="btn btn-icon waves-effect"><span class="ion-social-twitter icon"></span></a>
                       <a class="btn btn-icon waves-effect"><span class="ion-social-instagram icon"></span></a>
-                      <a class="btn btn-icon waves-effect"><span class="ion-social-linkedin icon"></span></a>
-                    </div>
-                    <div class="select-lang select-outlined">
-                      <select class="select" id="lang_select">
-                        <option value="ar">󠁥󠁮󠁧󠁿العربيّة</option>
-                        <option value="de">Deutsch</option>
-                        <option value="en" selected>English</option>
-                        <option value="id">󠁥󠁮󠁧󠁿Bahasa Indonesia</option>
-                        <option value="pt">󠁥󠁮󠁧󠁿Português</option>
-                        <option value="zh">简体中文</option>
-                      </select>
+                      <a class="btn btn-icon waves-effect"><span class="ion-social-line icon"></span></a>
                     </div>
                   </div>
                 </div>
-                <p class="body-2 text-center show-sm-down">&copy; Alexstrap Education 2020</p>
+                
               </div>
             </footer><!-- ##### END FOOTER #####-->
           </main>
           
           <!-- ##### PAGE NAVE #####-->
-          <div class="hidden-md-down">
+          <div class="">
             <div class="page-nav" id="page_nav">
               <div class="scrollnav">
                 <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
@@ -375,8 +269,8 @@
             <div class="alert full alert-dismissible fade show notification" role="alert">
               <div class="wrapper">
                 <div class="content">
-                  <div class="action">Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula</div>
-                  <button class="btn secondary waves-effect" type="button" data-dismiss="alert" aria-label="Close">Accept</button>
+                  <div class="action">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies。</div>
+                  <button class="btn secondary waves-effect" type="button" data-dismiss="alert" aria-label="Close">我知道了</button>
                 </div>
               </div>
             </div>

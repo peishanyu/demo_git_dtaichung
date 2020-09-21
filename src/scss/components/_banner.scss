@@ -71,14 +71,14 @@ $icon-four: '../images/education/parallax-four.png';
       height: 20px;
       @include use-theme(background, $palette-secondary-light, $palette-secondary-dark)
       @include use-theme(opacity, 1, 0.7);
-      width: 90%;
+      width: 100%;
       position: absolute;
       bottom: 10px;
       @include left(0);
       z-index: 0;
       @include breakpoints-down(xs) {
         height: 10px;
-        @include left(5%);
+        // @include left(5%);
       }
     }
     @include breakpoints-down(md) {
@@ -91,7 +91,7 @@ $icon-four: '../images/education/parallax-four.png';
 
   .subtitle {
     margin-bottom: $spacing3;
-    font-size: 24px;
+    font-size: 22px;
     @include breakpoints-up(lg) {
       @include padding-right($spacing8)
     }
@@ -99,7 +99,7 @@ $icon-four: '../images/education/parallax-four.png';
       margin-bottom: $spacing5
     }
     @include breakpoints-down(xs) {
-      font-size: 20px;
+      font-size: 18px;
     }
   }
   
