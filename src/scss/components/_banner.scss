@@ -99,7 +99,7 @@ $icon-four: '../images/mrd/parallax-four.png';
       margin-bottom: $spacing5
     }
     @include breakpoints-down(xs) {
-      font-size: 18px;
+      font-size: 16px;
     }
   }
   
@@ -115,7 +115,7 @@ $icon-four: '../images/mrd/parallax-four.png';
       border-radius: 40px;
       transform: rotate(-10deg);
       width: 120%;
-      overflow: hidden;
+      // overflow: hidden;
       height: 1024px;
       @include breakpoints-down(sm) {
         height: 1120px;
