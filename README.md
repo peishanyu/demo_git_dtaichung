@@ -1,4 +1,4 @@
-# `education-theme`
+# `mrd-theme`
 
 > TODO: description
 
