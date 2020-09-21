@@ -1,0 +1,375 @@
+/*
+** theme color var
+*/
+@import './color-var';
+
+* {
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+html {
+  @media only screen and (min-width: 992px) {
+    font-size: 16px
+  }
+  @media only screen and (min-width: 0) {
+    font-size: 16px
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  line-height: 1.5
+}
+
+.m-application {
+  overflow: hidden;
+  line-height: 1.5;
+  [type=checkbox].filled-in + span:not(.lever) {
+    &:after, &:before {
+      top: 4px;
+    }
+  }
+  .carousel {
+    height: auto;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  figure {
+    margin: 0;
+  }
+  .modal {
+    @include palette-background-default;
+    z-index: 1500 !important;
+    @include breakpoints-down(xs) {
+      width: 95%;
+      min-height: 85%
+    }
+  }
+  .modal-content {
+    border: none;
+    background: none;
+    h4 {
+      font-size: 1.25rem;
+      font-weight: $font-bold;
+      margin-bottom: $spacing2;
+    }
+    .modal-close {
+      position: absolute;
+      top: $spacing1;
+      @include right($spacing1)
+    }
+  }
+  .btn{
+    &:not(.btn-flat):not(.btn-icon) {
+      &:hover {
+        color: #FFF;
+      }
+      &:focus {
+        box-shadow: none
+      }
+      &:active {
+        box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+  .btn-floating {
+    @include shadow5;
+  }
+  textarea.materialize-textarea {
+    height: auto;
+  }
+  nav {
+    box-shadow: none;
+    background: none;
+    width: auto;
+    color: inherit;
+    i {
+      height: auto;
+      line-height: normal;
+    }
+    ul a:hover {
+      background: none
+    }
+  }
+  &--is-rtl {
+    text-align: right
+  }
+  .m-content {
+    font-family: 'Roboto', sans-serif;
+    padding: 0 !important;
+  }
+  .overlay {
+    z-index: 90 !important
+  }
+  .m-application--wrap a {
+    color: $palette-primary-main
+  }
+  .btn.btn-large {
+    font-size: 0.9375rem;
+  }
+  .btn {
+    font-weight: $font-bold;
+  }
+  .slick-slide {
+    &:focus {
+      outline: none;
+    }
+  }
+  label {
+    font-size: 1rem;
+    color: var(--con-2);
+  }
+  .row {
+    flex-direction: row;
+    margin-bottom: 0;
+    &:after {
+      display: none
+    }
+    &.spacing2 {
+      margin-left: -8px;
+      margin-right: -8px;
+    }
+    &.spacing4 {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    &.spacing6 {
+      margin-left: -24px;
+      margin-right: -24px;
+    }
+    &.spacing8 {
+      margin-left: -32px;
+      margin-right: -32px;
+    }
+    &.row-reverse {
+      flex-direction: row-reverse
+    }
+    &.column {
+      flex-direction: column
+    }
+    &.column-reverse {
+      flex-direction: column-reverse
+    }
+  }
+  :focus {
+    outline: none;
+  }
+  .card {
+    border: none;
+    border-radius: 6px;
+    overflow: hidden;
+    &-content {
+      font-size: 0.875rem;
+    }
+  }
+  .accordion-content.active {
+    .collapsible-header > .arrow {
+      transform: rotate(180deg);
+    }
+  }
+  .collapsible-header {
+    > i {
+      line-height: 32px;
+      transition: all 0.3s ease;
+      transform-origin: center;
+      height: 28px;
+      width: 28px;
+    }
+    h6 {
+      margin: 0;
+      flex: 1;
+    }
+  }
+  .collapsible-body {
+    padding: 0 1rem;
+  }
+}
+
+.m-application.theme--dark {
+  .card {
+    box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)
+  }
+}
+
+.m-application.theme--light {
+  .card {
+    box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+  }
+}
+
+.m-content {
+  -webkit-box-flex: 1;
+  flex: 1 1 auto;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Content Overider */
+#main-wrap .container {
+  padding: 0 16px;
+  max-width: 1280px;
+  width: auto;
+  @media (min-width: 600px) {
+    padding: 0 24px
+  }
+  @media (min-width: 960px) {
+    padding: 0 32px
+  }
+  &.fixed-width {
+    @media (min-width: 600px) {
+      max-width: 600px;
+    }
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  &.fixed-width-md-up {
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  &.fixed-width-lg-up {
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  &.max-lg {
+    max-width: 1280px
+  }
+  &.max-md {
+    max-width: 960px
+  }
+  &.max-sm {
+    max-width: 600px
+  }
+  &.max-xs {
+    max-width: 444px
+  }
+}
+
+.card .card-action a:not(.btn):not(.btn-small):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: $palette-primary-main !important;
+  padding: 0;
+}
+
+select.select {
+  display: none;
+}
+
+.dropdown-content li > a, .dropdown-content li > span {
+  @include palette-text-primary
+}
+
+/* Theme overider */
+.smart {
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+  .input-field {
+    border-radius: 8px;
+    > label {
+      padding: 4px $spacing2;
+      &:not(.label-icon).active {
+        transform: translateY(0px) scale(0.8);
+      }
+    }
+    input, textarea {
+      border: none !important;
+      box-shadow: none !important;
+      padding: spacing(2.5, 1.5, 0);
+      margin-bottom: 0;
+    }
+    input {
+      height: 2rem;
+    }
+    &.light {
+      background: rgba(0,0,0,.08);
+      color: $palette-common-white;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      label {
+        color: $dark-text-secondary
+      }
+      input, textarea {
+        color: $palette-common-white
+      }
+    }
+    &.dark {
+      background: transparent;
+      @include palette-text-primary;
+      border: 1px solid;
+      @include use-theme(border-color, rgba(0,0,0,.2), hsla(0,0%,100%,.25))
+      label {
+        @include palette-text-secondary
+      }
+      input, textarea {
+        @include palette-text-primary
+      }
+    }
+  }
+  .modal {
+    border-radius: 12px
+  }
+  .accordion {
+    .collapsible {
+      box-shadow: none;
+      border: none;
+    }
+    .collapsible-header {
+      border: none
+    }
+  }
+  .tabs {
+    background: transparent;
+    a {
+      @include palette-text-secondary;
+      &.active {
+        @include use-theme(color, $palette-primary-main, $palette-primary-light)
+      }
+    }
+    .indicator {
+      height: 5px;
+      border-radius: 4px 4px 0 0;
+      bottom: 0px;
+      background: $palette-primary-light;
+    }
+  }
+  .btn {
+    letter-spacing: 0.3px;
+    border-radius: 10px;
+    font-weight: $font-bold;
+    line-height: 28px;
+    height: auto;
+    box-shadow: 0 0 6px 0px rgba(0,0,0,0.16);
+    &-outlined {
+      border-width: 2px;
+    }
+  }
+  .btn:not(.btn-small) {
+    padding: 8px 24px;
+    line-height: 28px;
+  }
+}
+

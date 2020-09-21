@@ -1,0 +1,22 @@
+mixin blog-card(category, title, date)
+  - var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+  - var d = new Date(date)
+  .blog-card
+    .text
+      |
+      |
+      a.btn-flat(href="#")
+        span #{category}
+      |
+      |
+      h4
+        |
+        |
+        a.btn-flat.waves-effect(href="#") #{title}
+        |
+        |
+    .date
+      h3 #{month[d.getMonth()]}
+      h2 #{d.getDate() < 10 ? '0' + d.getDate() : d.getDate()}
+      h4 #{d.getFullYear()}
+      

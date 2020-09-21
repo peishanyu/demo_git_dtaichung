@@ -1,0 +1,54 @@
+- var cover = imgAPI.education[0]
+.hero-content
+  .container.mq-lg-up(data-class="fixed-width")
+    .row.banner-wrap
+      .col-lg-6.col-md-7
+        .banner-text
+          .title
+            h3.use-text-title #{$t.education_landing.banner_title}
+          h5.subtitle #{$t.education_landing.banner_desc}
+          |
+          |
+          .card.search
+            .input-field.primary.search
+              |
+              |
+              input#search(type="text" name="search")/
+              |
+              |
+              label(for="search") #{$t.education_landing.banner_search}
+              |
+              |
+            .action
+              |
+              |
+              button.waves-effect.btn-icon.primary.button
+                |
+                |
+                i.material-icons.icon search
+                |
+                |
+              |
+              |
+      .col-lg-6.col-md-5.pa-6.show-sm-up.deco-grid
+        .deco-banner
+          .artwork-bg
+            .oval
+            .parallax-scene.back
+              #scene1
+                div(data-depth="0.3")
+                  span.icon-three
+                div(data-depth="0.2")
+                  span.icon-four
+            |
+            |
+            img(src=assets+"/images/education/banner-artwork.png" alt="artwork")/
+            |
+            |
+            .parallax-scene.front
+              #scene2
+                div(data-depth="0.1")
+                  span.icon-two
+                div(data-depth="0.15")
+                  span.icon-one
+          

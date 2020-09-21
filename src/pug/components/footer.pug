@@ -1,0 +1,92 @@
+-
+  var footers = [
+    {
+      title: "Company",
+      description: ["Team", "History", "Contact us", "Locations"],
+      link: ["#team", "#history", "#contact-us", "#locations"]
+    },
+    {
+      title: "Resources",
+      description: [
+        "Resource",
+        "Resource name",
+        "Another resource",
+        "Final resource"
+      ],
+      link: [
+        "#resource",
+        "#resource-name",
+        "#another-resource",
+        "#final-resource"
+      ]
+    },
+    {
+      title: "Legal",
+      description: ["Privacy policy", "Terms of use"],
+      link: ["#privacy-policy", "#terms-of-use"]
+    }
+  ]
+
+footer.footer
+  .container
+    .row
+      .col-md-3.py-4.px-0
+        .logo
+          |
+          |
+          img(src=assets + brand.education.img alt="logo")/
+          |
+          |
+          h6.title #{brand.education.projectName}
+        p.footer-desc.pb-2  Nam posuere accumsan porta. Integer sed ante tincidunt tincidunt sit amet sed libero.
+        p.body-2.show-md-up &copy; #{brand.education.footerText}
+      .col-md-6.pa-4
+        ul.show-sm-down.collapsible
+          each footer in footers
+            li.accordion-content
+              .collapsible-header
+                h6.mb-4 #{ footer.title }
+                i.material-icons.right.arrow expand_more
+              .collapsible-body
+                ul
+                  each item, index in footer.description
+                    li
+                      a(href=footer.link[index]) #{item}
+        .row.show-md-up.justify-content-evenly
+          each footer in footers
+            .col-sm-3.pa-4.px-md-0.site-map-item
+              h6.title-nav.mb-4 #{footer.title}
+              ul
+                each item, index in footer.description
+                  li
+                    a(href=footer.link[index]) #{item}
+      .col-md-3.pa-4
+        .socmed
+          |
+          |
+          a.btn.btn-icon.waves-effect
+            span.ion-social-facebook.icon
+          |
+          |
+          a.btn.btn-icon.waves-effect
+            span.ion-social-twitter.icon
+          |
+          |
+          a.btn.btn-icon.waves-effect
+            span.ion-social-instagram.icon
+          |
+          |
+          a.btn.btn-icon.waves-effect
+            span.ion-social-linkedin.icon
+          |
+          |
+        - var locales = ['ar','de','en','id','pt','zh']
+        .select-lang.select-outlined
+          |
+          |
+          select.select#lang_select
+            each locale in locales
+              option(value=locale selected=locale === doc_lang) #{$t.common[locale]}
+          |
+          |
+    p.body-2.text-center.show-sm-down &copy; #{brand.education.footerText}

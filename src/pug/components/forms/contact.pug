@@ -1,0 +1,90 @@
+.page-wrap
+  .hidden-md-up
+    .logo.logo-header
+      |
+      |
+      a(href=link.education.home)
+        img(src=assets + brand.education.img alt='logo')
+      |
+      |
+  .container.inner-wrap.max-md
+    |
+    |
+    a.waves-effect.btn-icon.backtohome(href=link.education.home)
+      |
+      |
+      span
+        i.ion-ios-home-outline
+        i.ion-ios-arrow-thin-left
+      |
+      |
+    |
+    |
+    .card.form-box.fragment-fadeUp
+      .full-form-wrap
+        h3.use-text-title.title-contact.pb-3.text-center #{$t.common.contact_title2}
+        p.desc.use-text-subtitle2.text-center #{$t.common.contact_subtitle}
+        .form
+          form#contact_form
+            .row.spacing6
+              .col-sm-6.px-6
+                .input-field.light.filled
+                  |
+                  |
+                  input.validate#name(type='text' required)
+                  |
+                  |
+                  label(for='name') #{$t.common.form_name}
+                  |
+                  |
+              .col-sm-6.px-6
+                .input-field.light.filled
+                  |
+                  |
+                  input.validate#email(type='email' required)
+                  |
+                  |
+                  label(for='email') #{$t.common.form_email}
+                  |
+                  |
+              .col-sm-6.px-6
+                .input-field.light.filled
+                  |
+                  |
+                  input#phone(type='tel')
+                  |
+                  |
+                  label(for='phone') #{$t.common.form_phone}
+                  |
+                  |
+              .col-sm-6.px-6
+                .input-field.light.filled
+                  |
+                  |
+                  input#company(type='text')
+                  |
+                  |
+                  label(for='company') #{$t.common.form_company}
+                  |
+                  |
+              .col-sm-12.px-6
+                .input-field.light.filled
+                  |
+                  |
+                  textarea#message.materialize-textarea(rows="6")
+                  |
+                  |
+                  label(for='message') #{$t.common.form_message}
+                  |
+                  |
+            .btn-area
+              .form-control-label.white-label.me-10
+                |
+                |
+                label
+                  input.filled-in.secondary(type='checkbox' required)
+                  span #{$t.common.form_terms} 
+                    a.link(href='#') #{$t.common.form_privacy}
+                |
+                |
+              button.btn.secondary.btn-large.waves-effect(type="submit") #{$t.common.form_send}

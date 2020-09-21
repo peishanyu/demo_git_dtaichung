@@ -1,0 +1,101 @@
+@mixin align {
+  &.align-left {
+    @include text-align(left);
+    @include breakpoints-down(xs) {
+      text-align: center !important;
+      h4 {
+        &:before {
+          width: 80%;
+          @include left(10%);
+        }
+      }
+    }
+    h4 {
+      &:before {
+        @include left(-4px)
+      }
+    }
+  }
+
+  &.align-right {
+    @include text-align(right);
+    @include breakpoints-down(xs) {
+      text-align: center !important;
+      h4 {
+        &:before {
+          width: 80%;
+          @include left(10%);
+        }
+      }
+    }
+    h4 {
+      &:before {
+        @include right(-4px)
+      }
+    }
+  }
+
+  &.align-center {
+    text-align: center;
+    h4 {
+      &:before {
+        width: 80%;
+        @include left(10%);
+      }
+    }
+  }
+}
+
+.title-main {
+  @include align;
+  margin-bottom: $spacing3;
+  h4 {
+    text-transform: capitalize;
+    @include palette-text-primary;
+    margin-bottom: $spacing1;
+    position: relative;
+    font-size: 42px;
+    font-weight: $font-bold;
+    display: inline-block;
+    @include breakpoints-down(xs) {
+      font-size: 28px;
+    }
+    span {
+      position: relative;
+    }
+    &.primary {
+      &:before {
+        @include use-theme(background-color, $palette-primary-light, $palette-primary-dark);
+      }
+    }
+    &.secondary {
+      &:before {
+        @include use-theme(background-color, $palette-secondary-light, $palette-secondary-dark);
+      }
+    }
+    &:before {
+      content: '';
+      height: 15px;
+      width: 90%;
+      position: absolute;
+      bottom: 10px;
+      @include left(0);
+      z-index: 0;
+      @include breakpoints-down(xs) {
+        height: 8px;
+      }
+    }
+  }
+  &.dark {
+    h4 {
+      color: $palette-common-white;
+      &:before {
+        background-color: rgba(255, 255, 255, 0.5) !important
+      }
+    }
+    .desc {
+      position: relative;
+      color: $palette-common-white
+    }
+  }
+}

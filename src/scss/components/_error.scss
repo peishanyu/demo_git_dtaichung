@@ -1,0 +1,69 @@
+.error-wrap {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  margin-top: $spacing10;
+  align-items: center;
+  padding: spacing(20, 0, 10);
+  @include breakpoints-down(xs) {
+    padding-top: $spacing5
+  }
+  > section {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+    justify-content: center
+  }
+
+  .deco {
+    position: relative;
+    @include breakpoints-down(md) {
+      height: 280px;
+      margin-top: $spacing8
+    }
+    h3 {
+      font-size: 106px;
+      text-transform: capitalize;
+      font-weight: 700;
+      padding-top: 50px;
+      @include padding-left(20px);
+      color: $light-text-secondary;
+      position: relative;
+      z-index: 1
+    }
+    &:before {
+      content: "";
+      width: 210px;
+      height: 210px;
+      background: $palette-secondary-light;
+      border-radius: 24px;
+      transform: rotate(45deg);
+      position: absolute;
+      top: $spacing1 * -1;
+      @include left(0)
+    }
+  }
+
+  .text {
+    @include breakpoints-up(md) {
+      @include border-left(1px solid);
+      @include palette-divider;
+      @include padding-left($spacing5);
+    }
+    @include breakpoints-down(sm) {
+      text-align: center;
+    }
+    h4 {
+      font-weight: $font-bold;
+      margin-bottom: $spacing3  
+    }
+  }
+
+  .button {
+    margin-top: $spacing4;
+    width: 205px;
+  }
+}

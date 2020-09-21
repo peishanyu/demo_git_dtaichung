@@ -1,0 +1,51 @@
+block variables
+  
+.page-wrap
+  .hidden-md-up
+    .logo.logo-header
+      |
+      |
+      a(href=link.education.home)
+        |
+        |
+        img(src=assets+"/images/education-logo.svg" alt="logo")
+        |
+        |
+      |
+      |
+  .container.max-lg.inner-wrap
+    .card.form-box.fragment-fadeUp
+      .hidden-sm-down
+        |
+        |
+        a.waves-effect.btn-icon.backtohome(href=link.education.home)
+          |
+          |
+          span
+            i.ion-ios-home-outline
+            i.ion-ios-arrow-thin-left
+          |
+          |
+        |
+        |
+      .auth-frame
+        .row
+          .col-md-5
+            .hidden-sm-down
+              .greeting
+                .deco
+                  .primary-light
+                  .secondary-main
+                  .secondary-light
+                .logo
+                  |
+                  |
+                  img(src=assets+"/images/education-logo.svg" alt="logo")/
+                  |
+                  |
+                  p.use-text-subtitle2 #{brand.education.projectName}
+                h4.use-text-title2 #{title}
+                h5.use-text-subtitle2 #{subtitle}
+          .col-md-7
+            .form-wrap
+              block auth_content

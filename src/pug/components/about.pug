@@ -1,0 +1,35 @@
+include title.pug
+
+.root
+  .container.fixed-width
+    .row
+      .col-md-5.illu-wrap
+        .hidden-sm-down
+          .illustration.one
+          figure.illustration.two
+            |
+            |
+            img(src=imgAPI.education[11] alt="about")/
+            |
+            |
+          figure.illustration.three
+            |
+            |
+            img(src=imgAPI.education[12] alt="about")/
+            |
+            |
+          figure.illustration.four
+            |
+            |
+            img(src=imgAPI.education[13] alt="about")/
+            |
+            |
+          .illustration.five
+      .col-md-7
+        .wow.fadeInRight(data-wow-offset='-100' data-wow-delay="0.2s" data-wow-duration='0.6s')
+          div
+            .title-about
+              h3
+                span #{$t.education_landing.about_title}
+            p.use-text-subtitle2 #{$t.education_landing.about_desc}
+            a.btn.white.waves-effect(href=link.education.login) #{$t.education_landing.about_join}

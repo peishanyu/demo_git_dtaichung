@@ -1,0 +1,55 @@
+extends ../layouts/app.pug
+
+block variables
+  - var pageTitle = " Home Page"
+block content
+  div
+    .main-wrap
+      include ../components/header/header.pug
+      // ##### HEADER #####
+      +header(false)
+      // ##### END HEADER #####
+      main.container-wrap
+        // ##### BANNER #####
+        section#home
+          include ../components/banner.pug
+        // ##### END BANNER #####
+        // ##### FEATURE #####
+        section#feature.space-top
+          include ../components/feature.pug
+        // ##### END FEATURE #####
+        // ##### POPULAR COURSE #####
+        section#popular.space-top-short
+          include ../components/popular-course.pug
+        // ##### END POPULAR COURSE #####
+        // ##### EXPLORE #####
+        section#explore
+          include ../components/explore.pug
+        // ##### END EXPLORE #####
+        // ##### ABOUT #####
+        #about
+          include ../components/about.pug
+        // ##### END ABOUT #####
+        // ##### TESTIMONIALS #####
+        section#testimonials.space-top
+          include ../components/testimonials.pug
+        // ##### END TESTIMONIALS #####
+        // ##### BLOG #####
+        section#blog.space-top-short
+          include ../components/blog.pug
+        // ##### END BLOG #####
+        // ##### SUBSCRIBE #####
+        section#subscribe.space-top-short
+          include ../components/subscribe-form.pug
+        // ##### END SUBSCRIBE #####
+        // ##### FOOTER #####
+        include ../components/footer.pug
+        // ##### END FOOTER #####
+      // ##### PAGE NAVE #####
+      .hidden-md-down
+        include ../components/page-nav.pug
+      // ##### END PAGE NAVE #####
+      // ##### NOTIFICATION #####
+      .hidden-md-down
+        include ../components/notification.pug
+      // ##### END NOTIFICATION #####

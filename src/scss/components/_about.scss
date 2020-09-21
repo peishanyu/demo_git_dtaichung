@@ -1,0 +1,105 @@
+$pattern: '../images/education/bg-pattern.png';
+#about {
+  .root {
+    background: url($pattern) repeat $palette-primary-dark;
+    background-size: 8%;
+    position: relative;
+    color: $palette-common-white;
+    padding: spacing(12, 0);
+    @include breakpoints-down(xs) {
+      text-align: center;
+      padding: spacing(6, 0);
+    }
+  }
+  .title-about {
+    margin-bottom: $spacing3;
+    h3 {
+      margin-bottom: $spacing1;
+      position: relative;
+      font-weight: $font-bold;
+      font-size: 42px;
+      display: inline-block;
+      line-height: normal;
+      @include breakpoints-down(xs) {
+        font-size: 28px;
+      }
+      span {
+        position: relative;
+      }
+      &:before {
+        content: '';
+        height: 15px;
+        background-color: $palette-secondary-main;
+        width: 90%;
+        position: absolute;
+        bottom: 4px;
+        @include left(0);
+        z-index: 0;
+        @include breakpoints-down(xs) {
+          height: 8px;
+        }
+      }
+    }
+  }
+  p {
+    margin-bottom: $spacing5
+  }
+  .btn.white {
+    width: 180px;
+    font-size: 18px;
+    color: $palette-primary-dark !important;
+  }
+  .illu-wrap {
+    position: static;
+  }
+  .illustration {
+    box-shadow: 0 0px 18px 0 rgba(0, 0, 0, 0.17);
+    position: absolute;
+    border: 15px solid $palette-primary-main;
+    background: $palette-primary-main;
+    border-radius: 25px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    img {
+      height: 105%;
+      [dir="ltr"] & {
+        transform: translateX(-20%)rotate(-45deg) scale(1.3);
+      }
+      [dir="rtl"] & {
+        transform: translateX(20%)rotate(-45deg) scale(1.3);
+      }
+    }
+    &.one {
+      border-radius: 15px;
+      width: 60px;
+      height: 60px;
+      top: -10px;
+      @include left(100px);
+    }
+    &.two {
+      width: 180px;
+      height: 180px;
+      top: -10px;
+      @include left(300px);
+    }
+    &.three {
+      width: 160px;
+      height: 160px;
+      top: 130px;
+      @include left(50px);
+    }
+    &.four {
+      width: 210px;
+      height: 210px;
+      bottom: -30px;
+      @include left(250px);
+    }
+    &.five {
+      border-radius: 15px;
+      width: 60px;
+      height: 60px;
+      bottom: -30px;
+      @include right(10px);
+    }
+  }
+}

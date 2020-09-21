@@ -1,0 +1,70 @@
+include title.pug
+include cards/category.pug
+
+-
+  var categoryData = [
+    {
+      img: imgAPI.education[0],
+      title: "Photography",
+      desc: "Nulla lobortis nunc vitae nisi semper semper.",
+    },
+    {
+      img: imgAPI.education[4],
+      title: "Artificial Intelligence",
+      desc: "Nulla lobortis nunc vitae nisi semper semper.",
+    },
+    {
+      img: imgAPI.education[7],
+      title: "Architect",
+      desc: "Nulla lobortis nunc vitae nisi semper semper.",
+    },
+    {
+      img: imgAPI.education[2],
+      title: "Geography",
+      desc: "Nulla lobortis nunc vitae nisi semper semper.",
+    },
+    {
+      img: imgAPI.education[6],
+      title: "Art",
+      desc: "Nulla lobortis nunc vitae nisi semper semper.",
+    }
+  ]
+
+.root
+  .parallax-wrap
+    include parallax/dot.pug
+  .container.fixed-width-md-up
+    .px-6
+      +title-main("left", $t.education_landing.explore_title, $t.education_landing.explore_desc, "primary")
+    .massonry
+      .row
+        each item, index in categoryData
+          .col-lg-4.col-sm-6.col-6.pa-md-6.pa-2
+            .wow.fadeInUpShort(data-wow-delay=(index * 0.2) + "s" data-wow-duration="0.4s")
+              +category-card(item.img, item.title, item.desc)
+        .col-lg-4.col-sm-6.col-6.pa-md-6.pa-2
+          .wow.fadeInUpShort(data-wow-delay=(categoryData.length * 0.2) + "s" data-wow-duration="0.4s")
+            .card-wrap
+              span.fold
+              a.waves-effect.waves-light.all-category-card(href="#")
+                |
+                |
+                span.figure
+                  img(
+                    src=imgAPI.education[10]
+                    alt='img'
+                  )/
+                |
+                |
+                span.property
+                  span.title-category ALL COURSE
+                  |
+                  |
+                  i.icons.material-icons arrow_forward
+                  |
+                  |
+                |
+                |
+              |
+              |
+

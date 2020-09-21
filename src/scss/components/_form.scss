@@ -1,0 +1,424 @@
+$pattern: '../images/education/bg-pattern.png';
+$plane: '../images/education/plane.png';
+
+.form-page {
+  .page-wrap {
+    text-align: center;
+    min-height: 100%;
+    position: relative;
+    @include use-theme(background-color, $palette-secondary-light, $dark-background-default);
+    background-image: url($pattern);
+    background-repeat: repeat;
+    width: 100%;
+    align-items: center;
+    padding: spacing(11, 5);
+    background-size: 15%;
+    @include breakpoints-up(md) {
+      background-size: 8%;
+    }
+    @include breakpoints-down(sm) {
+      padding: spacing(4, 0)
+    }
+    .title-contact {
+      font-weight: $font-bold;
+      @include breakpoints-down(xs) {
+        font-size: 32px
+      }
+    }
+    a {
+      @include use-theme(color, $palette-secondary-dark, $palette-secondary-light);
+      text-transform: none;
+      font-size: 16px;
+      text-decoration: none;
+      font-weight: $font-regular;
+    }
+  }
+
+  .inner-wrap {
+    position: relative;
+    @include text-align(left);
+    &:before {
+      @include breakpoints-up(md) {
+        content: "";
+        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
+        width: 100%;
+        height: 100%;
+        background: $palette-primary-main;
+        transform: scale(0.95) rotate(-10deg);
+        position: absolute;
+        border-radius: 40px;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .full-form-wrap {
+    padding: $spacing9 0;
+    color: $palette-common-white;
+  }
+
+  .card.form-box {
+    border-radius: 40px;
+    box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
+    background: url($plane) no-repeat 90% bottom $palette-primary-dark;
+    @include breakpoints-up(md) {
+      overflow: visible;
+    }
+  }
+
+  .desc {
+    font-size: 20px;
+    text-align: center;
+    padding: spacing(0, 10);
+    @include breakpoints-down(sm) {
+      padding: spacing(0, 5)
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(0, 2);
+      font-size: 16px;
+    }
+  }
+
+  .form {
+    @include text-align(left);
+    position: relative;
+    margin-top: $spacing3;
+    padding: spacing(0, 15, 10);
+    @include breakpoints-down(sm) {
+      padding: spacing(0, 6, 10)
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(0, 2, 10);
+    }
+  }
+
+  .form-helper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @include breakpoints-down(xs) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .btn-area {
+    @include breakpoints-up(sm) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    @include breakpoints-down(xs) {
+      text-align: center;
+      button {
+        width: 100%
+      }
+    }
+    span {
+      @include breakpoints-down(xs) {
+        font-size: 14px
+      }
+      a.link {
+        display: block;
+        text-decoration: none !important;
+      }
+    }
+    .flex {
+      flex: 1
+    }
+  }
+  
+  .white-label {
+    label {
+      color: $palette-common-white;
+    }
+  }
+
+  .right-icon {
+    @include margin-left($spacing1)
+  }
+
+  .check {
+    svg {
+      fill: $palette-secondary-main
+    }
+  }
+
+  .auth-frame {
+    display: block;
+    position: relative;
+    .row > div {
+      padding: 0
+    }
+  }
+
+  .greeting {
+    padding: spacing(30, 6);
+    height: 100%;
+    text-align: center;
+    color: $palette-common-white;
+    h6 {
+      font-weight: $font-regular
+    }
+  }
+  
+  .deco {
+    @include breakpoints-down(md) {
+      display: none;
+    }
+    > * {
+      z-index: 4;
+      box-shadow: 0 0px 18px 0 rgba(0, 0, 0, 0.17);
+      position: absolute;
+      transform: rotate(45deg);
+    }
+    .primary-light {
+      border-radius: 15px;
+      width: 70px;
+      height: 70px;
+      @include left(-20px);
+      top: 50%;
+      border: 10px solid;
+      border-color: $palette-primary-light
+    }
+    .secondary-main {
+      border-radius: 10px;
+      width: 50px;
+      height: 50px;
+      @include right(-10px);
+      top: -20px;
+      border: 10px solid;
+      border-color: $palette-secondary-main
+    }
+    .secondary-light {
+      width: 100px;
+      height: 100px;
+      @include right(60px);
+      border-radius: 25px;
+      bottom: -20px;
+      border: 12px solid;
+      border-color: $palette-secondary-light
+    }
+  }
+
+  .logo {
+    text-align: center;
+    margin-bottom: $spacing2;
+    &.logo-header {
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      z-index: 10
+    }
+    img {
+      width: 90px;
+    }
+    p, span {
+      display: block;
+      font-size: 18px;
+      padding-bottom: 4px;
+      margin-bottom: 0;
+      @include margin-left($spacing1);
+      color: $palette-common-white;
+      font-weight: $font-bold
+    }
+  }
+
+  .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    a {
+      margin-top: $spacing2;
+      box-shadow: none;
+      i {
+        [dir="rtl"] &{
+          transform: scale(-1)
+        }
+      }
+    }
+    @include breakpoints-up(md) {
+      margin-bottom: $spacing5;
+    }
+    @include breakpoints-down(sm) {
+      margin-top: $spacing2;
+      justify-content: center;
+      a {
+        display: none
+      }
+    }
+  }
+
+  .form-wrap {
+    @include palette-background-paper;
+    position: relative;
+    padding: $spacing2;
+    padding-bottom: $spacing10;
+    min-height: 760px;
+    overflow: hidden;
+    [dir="ltr"] & {
+      border-radius: 0 40px 40px 0;
+    }
+    [dir="rtl"] & {
+      border-radius: 40px 0 0 40px;
+    }
+    .frm-deco {
+      @include left(58.333333%);
+      transform: translateX(-72%);
+      bottom: -105px
+    }
+    @include breakpoints-up(sm) {
+      padding: $spacing5
+    }
+    @include breakpoints-up(lg) {
+      padding: $spacing8
+    }
+  }
+
+  .socmed-side-login {
+    display: flex;
+    justify-content: space-around;
+    @include breakpoints-down(md) {
+      justify-content: center
+    }
+    @include breakpoints-down(xs) {
+      display: block
+    }
+    > button {
+      color: $palette-common-white;
+      padding: $spacing1;
+      line-height: 18px;
+      width: 160px;
+      @include breakpoints-down(md) {
+        margin: 0 4px;
+      }
+      @include breakpoints-down(xs) {
+        margin: 0 0 $spacing2;
+        width: 100%
+      }
+    }
+    i {
+      font-size: 16px;
+      color: $palette-common-white;
+      @include margin-right($spacing1)
+    }
+  }
+
+  .blue-btn {
+    background: #28aae1 !important;
+    &:hover {
+      background: darken(#28aae1, 20%) !important
+    }
+  }
+  .navi-btn {
+    background: #3b579d !important;
+    &:hover {
+      background: darken(#3b579d, 20%) !important
+    }
+  }
+  .red-btn {
+    background: #dd493c !important;
+    &:hover {
+      background: darken(#dd493c, 20%) !important
+    }
+  }
+  .separator {
+    margin: 40px auto;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+    p {
+      @include breakpoints-down(xs) {
+        font-size: 12px
+      }
+    }
+    &:before, &:after {
+      content: "";
+      border-top: 1px solid;
+      @include use-theme(border-top-color, $light-text-hint, $dark-text-hint);
+      top: 50%;
+      position: absolute;
+      width: 20%
+    }
+    &:before {
+      left: 0
+    }
+    &:after {
+      right: 0
+    }
+  }
+
+  .form-control-label {
+    flex: 1;
+    label {
+      margin-top: 6px;
+    }
+    a {
+      position: relative;
+      top: -3px;
+      @include left(3px);
+    }
+    > div {
+      display: inline-block;
+      margin-top: 0
+    }
+  }
+
+  .backtohome {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 4;
+    border-radius: 50%;
+    @include margin-left(20px);
+    @include breakpoints-down(sm) {
+      @include left(calc(50% - 40px));
+      top: 40px;
+      margin: 0
+    }
+    @include breakpoints-down('sm') {
+      display: none
+    }
+    i {
+      font-size: 32px;
+      line-height: 80px !important;
+      color: $palette-common-white;
+    }
+    > span i:first-child {
+      opacity: 1;
+      transition: opacity 0.3s ease
+    }
+    > span i:last-child {
+      position: absolute;
+      @include right(0);
+      opacity: 0;
+      transition: all 0.3s ease
+    }
+    &:hover {
+      background: rgba(0, 0, 0, 0.05);
+      > span i:first-child {
+        opacity: 0;
+      }
+      > span i:last-child {
+        @include right(30px);
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.toast {
+  @include padding-right($spacing1);
+  border-radius: 4px;
+  width: auto;
+  .toast-action {
+    @include margin-right(0)
+  }
+  i.material-icons {
+    color: #FFF
+  }
+}

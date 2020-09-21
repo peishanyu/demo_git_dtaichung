@@ -1,0 +1,14 @@
+#slide-menu.sidenav.mobile-nav
+  .menu
+    ul.collection
+      each item, index in menu.education
+        li.collection-item(style="animation-duration: "+(Number(index + 1)) * 0.25 + 's')
+          a.sidenav-close.waves-effect.menu-list(href='#' + item.name) #{$t.education_landing['header_'+item.name]}
+      li.collection-item(style="animation-duration: "+menu.education.length * 0.25 + 's')
+          a.waves-effect.menu-list(href=link.education.contact) #{$t.education_landing.header_contact}
+    hr.divider-sidebar
+    ul.collection
+      li.collection-item(style="animation-duration: "+menu.education.length * 0.25 + 's')
+        a.waves-effect.menu-list(href=link.education.login) #{$t.education_landing.header_login}
+      li.collection-item(style="animation-duration: "+menu.education.length * 0.25 + 's')
+        a.waves-effect.menu-list(href=link.education.register) #{$t.education_landing.header_register}

@@ -1,0 +1,130 @@
+#popular {
+  .root {
+    position: relative;
+    padding: spacing(10, 0);
+    @include breakpoints-down(sm) {
+      @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(5, 0);
+    }
+    &:before {
+      content: "";
+      @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+      width: 80%;
+      height: 100%;
+      border-top-right-radius: 100px;
+      position: absolute;
+      top: 0;
+      @include left(0);
+      @include breakpoints-down(sm) {
+        display: none
+      }
+    }
+  }
+  .parallax-wrap {
+    position: absolute;
+    @include left(20px);
+    height: 500px;
+    overflow: visible;
+    width: 500px;
+    z-index: 0;
+  }
+
+  .props {
+    > div {
+      width: 440px;
+      height: 2px;
+      @include breakpoints-down(md) {
+        width: 400px
+      }
+    }
+    &:focus {
+      outline: none
+    }
+  }
+
+  .floating-title {
+    @include text-align(left);
+    @include left(3.4%);
+    top: 160px;
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 2);
+      width: 300px;
+    }
+    @include breakpoints-up(md) {
+      position: absolute;
+      top: $spacing15;
+      width: 370px;
+    }
+    @include breakpoints-down(sm) {
+      width: 100%;
+    }
+    @include breakpoints-down(md) {
+      @include left($spacing10);
+    }
+  }
+
+  .carousel {
+    position: relative;
+    z-index: 1;
+    @include breakpoints-up(md) {
+      margin-bottom: -20px;
+    }
+  }
+  .item {
+    padding: spacing(0, 1);
+    margin-bottom: $spacing5;
+    &:focus {
+      outline: none
+    }
+    > * {
+      margin: 0 auto
+    }
+  }
+  .link {
+    padding: 0;
+    span {
+      text-transform: none;
+      font-weight: $font-regular;
+    }
+  }
+  .nav {
+    position: absolute;
+    top: 50%;
+    margin-top: -45px;
+    width: 36px;
+    z-index: 3;
+    height: 36px;
+    padding: 0;
+    min-width: 0;
+    @include use-theme(background, $palette-common-white, $dark-background-paper);
+    @include shadow3;
+    [dir="rtl"] & {
+      transform: scale(-1.6)
+    }
+    [dir="ltr"] & {
+      transform: scale(1.6)
+    }
+    border: none;
+    box-shadow: none;
+    &:hover {
+      @include palette-background-paper;
+    }
+    i {
+      font-size: 24px;
+      @include palette-text-primary;
+      line-height: 36px;
+    }
+    @include breakpoints-down(sm) {
+      display: none;
+    }
+  }
+
+  .prev {
+    @include left(0)
+  }
+  .next {
+    @include right(0)
+  }
+} 

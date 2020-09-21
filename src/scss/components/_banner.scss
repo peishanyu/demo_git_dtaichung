@@ -1,0 +1,266 @@
+$icon-one: '../images/education/parallax-one.png';
+$icon-two: '../images/education/parallax-two.png';
+$icon-three: '../images/education/parallax-three.png';
+$icon-four: '../images/education/parallax-four.png';
+
+#home {
+  .container.fixed {
+    @media (min-width: 960px) {
+      max-width: 960px;
+    }
+    @media (min-width: 1280px) {
+      max-width: 1280px;
+    }
+  }
+  .hero-content {
+    @include breakpoints-down(xs) {
+      background-size: 50%;
+      .theme--light & {
+        @include bg-color-lighten($palette-primary-light, 0.7)
+      }
+      .theme--dark & {
+        @include bg-color-darken($palette-primary-dark, 0.7)
+      }
+    }
+    position: relative;
+    > .container {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+      margin: 0 auto;
+    }
+    @include breakpoints-up(lg) {
+      @include padding-left($spacing6);
+      margin-bottom: 0;
+    }
+  }
+  
+  .banner-wrap {
+    position: relative;
+  }
+
+  .banner-text {
+    position: relative;
+    z-index: 21;
+    margin-top: $spacing12;
+    padding: spacing(6, 0);
+    @include breakpoints-up(md) {
+      @include palette-text-primary;
+    }
+    @include breakpoints-down(md) {
+      padding: $spacing4;
+    }
+    @include breakpoints-down(sm) {
+      padding: spacing(1, 0, 4);
+      max-width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+  }
+
+  .title {
+    margin-top: $spacing12;
+    margin-bottom: $spacing3;
+    position: relative;
+    display: inline-block;
+    h3 {
+      position: relative;
+    }
+    &:before {
+      content: '';
+      height: 20px;
+      @include use-theme(background, $palette-secondary-light, $palette-secondary-dark)
+      @include use-theme(opacity, 1, 0.7);
+      width: 90%;
+      position: absolute;
+      bottom: 10px;
+      @include left(0);
+      z-index: 0;
+      @include breakpoints-down(xs) {
+        height: 10px;
+        @include left(5%);
+      }
+    }
+    @include breakpoints-down(md) {
+      margin-top: $spacing15;
+    }
+    @include breakpoints-down(xs) {
+      margin-top: $spacing5;
+    }
+  }
+
+  .subtitle {
+    margin-bottom: $spacing3;
+    font-size: 24px;
+    @include breakpoints-up(lg) {
+      @include padding-right($spacing8)
+    }
+    @include breakpoints-up(md) {
+      margin-bottom: $spacing5
+    }
+    @include breakpoints-down(xs) {
+      font-size: 20px;
+    }
+  }
+  
+  .deco-grid {
+    position: static
+  }
+
+  .deco-banner {
+    .artwork-bg {
+      position: absolute !important;
+      top: -420px;
+      @include left(-100px);
+      border-radius: 40px;
+      transform: rotate(-10deg);
+      width: 120%;
+      overflow: hidden;
+      height: 1024px;
+      @include breakpoints-down(sm) {
+        height: 1120px;
+      }
+      .theme--light & {
+        @include bg-color-lighten($palette-primary-light, 0.7)
+      }
+      .theme--dark & {
+        @include bg-color-darken($palette-primary-dark, 0.7)
+      }
+      .oval {
+        @include use-theme(background, $palette-secondary-light, $palette-secondary-dark)
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        position: absolute;
+        @include right(27%);
+        bottom: 60px;
+      }
+      img {
+        z-index: 5;
+        position: absolute;
+        bottom: -60px;
+        width: 400px;
+        transform: rotate(10deg);
+        @include right(20%);
+        @include breakpoints-down(md) {
+          @include right(15%);
+        }
+      }
+    }
+  }
+  
+  .parallax-scene {
+    position: absolute;
+    bottom: 0;
+    @include right(0);
+    transform: rotate(10deg);
+    transform-origin: top;
+    width: 1200px;
+    &.back {
+      z-index: 4;
+    }
+    &.front {
+      z-index: 6;
+    }
+    span {
+      display: block;
+      position: relative;
+    }
+    @include breakpoints-down(md) {
+      display: none
+    }
+  }
+  
+  .icon-one {
+    top: 190px;
+    width: 510px;
+    @include left(110%);
+    height: 600px;
+    background: url($icon-one) no-repeat
+  }
+
+  .icon-two {
+    width: 450px;
+    height: 560px;
+    @include left(40%);
+    top: 230px;
+    background: url($icon-two) no-repeat
+  }
+
+  .icon-three {
+    width: 400px;
+    height: 560px;
+    @include left(45%);
+    top: 180px;
+    background: url($icon-three) no-repeat
+  }
+  
+  .icon-four {
+    width: 400px;
+    height: 560px;
+    @include left(120%);
+    top: 200px;
+    background: url($icon-four) no-repeat
+  }
+  
+  .search {
+    position: relative;
+    margin-top: $spacing3;
+    font-size: 18px;
+    overflow: visible;
+    .input-field.filled {
+      background: none !important;
+      min-height: 0;
+      padding: 0 !important;
+    }
+    @include breakpoints-down(xs) {
+      margin-top: $spacing4
+    }
+    @include breakpoints-up(xs) {
+      margin-top: $spacing4
+    }
+    .input-field.filled label.active, .input-field.full-width .label.active {
+      transform: translateY(-24px) scale(0.75);
+      transform-origin: top left;
+    }
+    .input-field {
+      margin: 0;
+      input {
+        box-sizing: border-box;
+        margin: 0;
+        height: 75px;
+        padding: $spacing2;
+        max-height: none;
+        border: none;
+        @include breakpoints-up(md) {
+          padding: spacing(4, 10, 3, 3)
+        }
+      }
+    }
+    label {
+      top: 4px;
+      font-size: 20px;
+      @include left($spacing1 !important);
+    }
+  }
+  
+  .action {
+    position: absolute;
+    @include right(0);
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: $spacing2;
+    .button {
+      width: 48px;
+      height: 48px;
+      align-items: center;
+      color: $palette-primary-main;
+      i {
+        line-height: 48px;
+        font-size: 42px
+      }
+    }
+  }
+}

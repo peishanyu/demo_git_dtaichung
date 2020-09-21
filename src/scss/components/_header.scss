@@ -1,0 +1,434 @@
+$flag: '../images/flag-logo.png';
+
+@mixin flag-icon{
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  @include margin-right(5px);
+  top: 1px;
+  background: url($flag) no-repeat transparent;
+  background-size: 16px auto;
+  &.ar {
+    background-position: 0 3px;
+  }
+  &.zh {
+    background-position: 0 -12px
+  }
+  &.en {
+    background-position: 0 -28px
+  }
+  &.de {
+    background-position: 0 -44px
+  }
+  &.id {
+    background-position: 0 -62px
+  }
+  &.pt {
+    background-position: 0 -79px
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+  to {
+    opacity: 1;
+    transform: none
+  }
+}
+
+.popover {
+  @include palette-background-paper;
+  width: 200px;
+}
+
+.switch-toggle {
+  margin-top: 0;
+}
+
+.header {
+  @include palette-text-primary;
+  box-shadow: none;
+  transition: all 0.3s ease;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  left: 0;
+  .container {
+    #main-wrap & {
+      padding: 0;
+      @include breakpoints-up(md) {
+        padding: 0 $spacing3
+      }
+    }
+  }
+  &.fixed {
+    position: fixed;
+    top: 0;
+    @include shadow4;
+    @include palette-background-paper;
+    .vertical-divider {
+      min-height: $spacing3;
+    }
+    .logo {
+      a span{
+        display: none
+      }
+      img {
+        height: 64px;
+        width: 64px;
+        margin: 0;
+      }
+    }
+    nav {
+      padding: spacing(0.5, 0);
+      ul li a {
+        @include palette-text-primary
+      }
+    }
+    .nav-auth {
+      a {
+        @include use-theme(color, $palette-primary-dark, $palette-primary-main)
+      }
+      .deco {
+        display: none;
+      }
+    }
+    .icon {
+      @include palette-text-secondary
+    }
+    .bar {
+      @include breakpoints-down(sm) {
+        @include palette-background-text-secondary;
+        &:after, &:before {
+          @include palette-background-text-secondary;
+        }
+      }
+    }
+  }
+  &.open-drawer {
+    box-shadow: none !important;
+    z-index: 1110;
+    .logo {
+      a {
+        @include palette-text-primary
+      }
+    }
+    .sidenav-close {
+      display: block;
+    }
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+  & nav {
+    transition: all 0.3s ease;
+    align-items: center;
+    padding: $spacing1;
+    display: flex;
+    height: auto;
+    @include breakpoints-down(md) {
+      justify-content: flex-end
+    }
+    & > * {
+      margin: 0 $spacing1
+    }
+    .menu-setting {
+      margin: 0;
+      a {
+        padding: spacing(0.5, 1);
+        display: block;
+      }
+    }
+  }
+  .collection-header {
+    text-transform: capitalize;
+    font-size: 0.875rem;
+    @include palette-text-secondary;
+  }
+  .collection, .collection-item, .collection-header {
+    border: none !important;
+  }
+  .logo {
+    text-align: center;
+    a {
+      text-decoration: none;
+      display: block;
+      font-size: 16px;
+      @include palette-text-primary;
+      text-transform: uppercase;
+      transition: color 0.5s ease-out;
+      font-weight: $font-regular;
+      line-height: normal;
+    }
+    img {
+      margin: 0 auto $spacing1;
+      display: block;
+      transition: all 0.3s ease-out;
+      width: 80px;
+      height: 80px;
+      @include breakpoints-down(xs) {
+        height: 64px;
+        width: 64px;
+      }
+    }
+    a span{
+      @include breakpoints-down(sm) {
+        display: none
+      }
+    }
+  }
+}
+
+.nav-logo {
+  &.invert {
+    .logo a{
+      @include palette-text-primary
+    }
+  }
+}
+
+.nav-menu {
+  &.invert {
+    ul li a.btn {
+      transition: all 0.3s ease-out;
+      @include palette-text-primary;
+    }
+    .icon.material-icons {
+      @include palette-text-primary;
+    }
+  }
+  .scrollactive-nav {
+    list-style: none;
+    display: flex;
+    @include padding-left($spacing1);
+    li {
+      @include breakpoints-up(lg) {
+        margin: spacing(0, 1)
+      }
+      list-style: none;
+      position: relative;
+      &.current {
+        position: relative;
+        .btn {
+          @include use-theme(color, $palette-primary-dark, $palette-primary-light)
+          &:after {
+            width: 60%;
+            @include left(6px);
+          }
+        }
+      }
+    }
+    .btn  {
+      border-radius: 0;
+      font-size: 18px;
+      font-weight: $font-medium;
+      background: none !important;
+      box-shadow: none;
+      position: relative;
+      padding: 6px 4px;
+      margin: spacing(0, 1);
+      min-width: 0;
+      text-transform: capitalize;
+      .text {
+        position: relative;
+        z-index: 1;
+      }
+      &:after {
+        content: '';
+        height: 8px;
+        @include use-theme(background, $palette-primary-light, $palette-primary-dark);
+        width: 0%;
+        position: absolute;
+        bottom: 10px;
+        z-index: 0;
+        @include left(50%);
+        transition: all 0.2s cubic-bezier(0.42, 0.16, 0.21, 0.93);
+      }
+      &:hover {
+        transition: all 0.3s ease-out;
+        @include palette-text-primary;
+        &:before {
+          opacity: 0
+        }
+        &:after {
+          width: 80%;
+          @include left(4px);
+          @include use-theme(border-bottom-color, $palette-primary-main, $palette-primary-light);
+        }
+      }
+    }
+  }
+}
+
+.nav-auth {
+  position: relative;
+  flex: 1;
+  justify-content: flex-end;
+  .deco {
+    width: 500px;
+    height: 300px;
+    border-radius: 40px;
+    @include use-theme(background-color, $palette-primary-main, $palette-primary-dark);
+    transform: rotate(-10deg);
+    position: absolute;
+    @include right(-140px);
+    top: -190px;
+  }
+  a {
+    color: $palette-common-white;
+    margin: spacing(0, 1.5);
+    font-size: 16px;
+    &.white {
+      border: 1px solid $palette-primary-main;
+      padding-top: 4px !important;
+      padding-bottom: 4px !important;
+      color: $palette-primary-dark !important
+    }
+  }
+}
+
+.lang-menu {
+  .flag {
+    margin: 0;
+    & i {
+      margin-left: $spacing2;
+      @include flag-icon;
+    }
+  }
+}
+
+.collection .collection-item.avatar :not(.circle-clipper) > .circle.flag {
+  width: auto;
+  height: auto;
+  overflow: visible;
+}
+
+.lang-opt {
+  display: block;
+  padding: 0 !important;
+  @include palette-text-primary;
+}
+
+.lang-list {
+  min-height: 0 !important;
+}
+
+.setting {
+  position: relative;
+  margin-top: 4px;
+  .icon {
+    font-size: 32px;
+    transition: all 0.3s ease;
+    @include breakpoints-up(sm) {
+      color: $palette-common-white;
+    }
+  }
+  .active {
+    transform: rotate(30deg)
+  }
+  .menu-list {
+    text-transform: capitalize
+  }
+  .dropdown-content {
+    width: 200px !important;
+    border-radius: 12px;
+    [dir="ltr"] & {
+      right: $spacing1 !important;
+      left: auto !important
+    }
+    [dir="rtl"] & {
+      left: $spacing1 !important;
+      right: auto !important
+    }
+  }
+}
+
+.mode-menu, .lang-menu {
+  text-transform: capitalize
+}
+
+.flex-menu {
+  display: flex;
+  justify-content: flex-start;
+  label {
+    text-transform: capitalize;
+  }
+}
+
+.mobile-menu {
+  margin: spacing(0, 1);
+  height: 36px;
+  line-height: 52px;
+  .bar {
+    @include palette-background-text-secondary;
+    &:after, &:before {
+      @include palette-background-text-secondary;
+    }
+  }
+  &.active {
+    .bar {
+      @include palette-background-text-secondary;
+      &:after, &:before {
+        @include palette-background-text-secondary;
+      }
+    }
+  }
+}
+
+.mobile-nav {
+  @include palette-background-paper;
+  z-index: 1100;
+  min-width: 300px;
+  @include breakpoints-down(xs) {
+    width: 100% !important
+  }
+  .menu {
+    padding: spacing(4, 2);
+    overflow: auto;
+    top: spacing(10);
+    width: 100%;
+    position: absolute;
+    height: calc(100% - 120px);
+    ul.collection {
+      border: none;
+      margin: 0;
+      li.collection-item {
+        border: none;
+        background: none;
+        padding: 0;
+        padding: spacing(0, 2);
+        overflow: auto;
+        top: spacing(15);
+        margin: spacing(2, 3);
+        a {
+          text-transform: capitalize;
+          font-size: 24px;
+          margin-top: 4px;
+          margin-bottom: 4px;
+          font-weight: $font-regular;
+          padding: spacing(1, 2);
+          height: auto;
+          line-height: normal;
+        }
+      }
+    }
+  }
+  &.menu-open {
+    ul li {
+      animation-name: slideRight;
+      animation-timing-function: ease;
+    }
+  }
+  .divider-sidebar {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+

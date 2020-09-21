@@ -1,0 +1,5 @@
+mixin title-main(align="left", head, desc="", color, dark=false)
+  .title-main(class="align-" + align + (dark ? ' dark' : ""))
+    h4(class=color)
+      span #{head}
+    p.desc.use-text-subtitle2 #{desc}

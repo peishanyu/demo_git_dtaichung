@@ -1,0 +1,128 @@
+.footer {
+  .link {
+    margin: spacing(1, 1.5);
+  }
+  margin-top: $spacing15;
+  padding-top: $spacing5;
+  padding-bottom: $spacing5;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      line-height: 32px;
+      a {
+        @include palette-text-secondary;
+        text-decoration: none;
+        font-size: 14px
+      }
+    }
+  }
+  .title-nav {
+    .theme--dark & {
+      color: $palette-primary-light
+    }
+    .theme--light & {
+      color: $palette-primary-dark
+    }
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: $spacing3;
+    font-weight: $font-bold
+  }
+  .body-2 {
+    @include palette-text-secondary
+  }
+  &-desc{
+    display: block;
+    font-size: 14px;
+    margin-bottom: $spacing2;
+    @include breakpoints-down(sm) {
+      text-align: center
+    }
+  }
+  .collapsible {
+    border: none;
+    box-shadow: none;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .collapsible-header {
+    background: none;
+    box-shadow: none;
+    border: none;
+    h6 {
+      font-size: 14px;
+    }
+    i {
+      margin-right: 0
+    }
+  }
+  .collapsible-body {
+    border: none;
+    margin-bottom: $spacing3
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: $spacing3;
+    @include breakpoints-down(sm) {
+      justify-content: center;
+      padding: spacing(0, 3)
+    }
+    img {
+      width: 48px;
+      @include margin-right($spacing1)
+    }
+    h6 {
+      @include palette-text-disabled
+    }
+  }
+
+  .socmed {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $spacing4;
+    a.btn {
+      padding: 0;
+      margin: $spacing1;
+      @include use-theme(background, rgba(0, 0, 0, 0.08) !important, $dark-divider !important);
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      span {
+        @include use-theme(color, $palette-primary-dark, $palette-primary-main)
+      }
+    }
+    .icon {
+      font-size: 24px
+    }
+  }
+  .select-lang {
+    margin: 0 auto;
+    width: 200px;
+    display: inherit;
+    margin-top: $spacing2;
+    input {
+      box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+      .theme--dark & {
+        color: $palette-primary-light;
+        border-color: $palette-primary-light
+      }
+      .theme--light & {
+        color: $palette-primary-dark;
+        border-color: $palette-primary-main
+      }
+    }
+  }
+  .site-map-item {
+    @include breakpoints-down('md') {
+      padding-bottom: 0 !important;
+      padding-top: 0 !important
+    }
+  }
+  .accordion-icon {
+    padding: 0
+  }
+}

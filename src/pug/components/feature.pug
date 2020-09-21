@@ -1,0 +1,65 @@
+include title.pug
+.root
+  .container.max-md
+    +title-main("center", $t.education_landing.feature_title, $t.education_landing.feature_desc, "primary")
+    .row.spacing8.grid
+      .col-sm-6.px-6
+        .counter-item
+          figure
+            img(src=assets+"/images/education/hd-video.svg" alt="hd-video")
+          .text
+            h4.use-text-title
+              |
+              |
+              | +
+              span.numscroller(
+                data-min="0"
+                data-max="100"
+                data-delay="5"
+                data-increment="4"
+              ) &nbsp;
+              | K
+              |
+              |
+            h6.use-text-subtitle2 #{$t.education_landing.counter_videos}
+      .col-sm-6.px-6
+        .counter-item
+          figure
+            img(src=assets+"/images/education/presenter.svg" alt="presenter")
+          .text
+            h4.use-text-title
+              |
+              | +
+              span.numscroller(
+                data-min="0"
+                data-max="200"
+                data-delay="5"
+                data-increment="10"
+              ) &nbsp;
+              |
+              |
+            h6.use-text-subtitle2 #{$t.education_landing.counter_mentors}
+      .col-sm-6.px-6
+        .counter-item
+          figure
+            img(src=assets+"/images/education/money.svg" alt="money")
+          .text
+            h4.use-text-title
+              |
+              | $
+              span.numscroller(
+                data-min="0"
+                data-max="500"
+                data-delay="5"
+                data-increment="20"
+              ) &nbsp;
+              |
+              |
+            h6.use-text-subtitle2 #{$t.education_landing.counter_save}
+      .col-sm-6.px-6
+        .counter-item
+          figure
+            img(src=assets+"/images/education/unlimited.svg" alt="unlimited")
+          .text
+            h4.use-text-title Free
+            h6.use-text-subtitle2 #{$t.education_landing.counter_free}

@@ -1,0 +1,23 @@
+.root
+  .parallax-form-wrap
+    div.parallax(data-enllax-ratio="0.2")
+  .container.fixed-width
+    .card.form
+      h4.use-text-title2 #{$t.education_landing.subscribe_title}
+      p.use-text-subtitle2 #{$t.education_landing.subscribe_subtitle}
+      form
+        .field
+          .input-field.field.dark
+            |
+            |
+            input(type="email" name="email" id="email")
+            |
+            |
+            label(for='email') #{$t.education_landing.subscribe_input}
+            |
+            |
+        |
+        |
+        button.btn.btn-large.primary.button.waves-effect #{$t.education_landing.subscribe_subscribe}
+        |
+        |

@@ -1,0 +1,12 @@
+.page-fadeUp-transition-enter {
+  opacity: 0;
+}
+
+.page-fadeUp-transition-enter-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+
+.page-fadeUp-transition-exit {
+  opacity: 1;
+}

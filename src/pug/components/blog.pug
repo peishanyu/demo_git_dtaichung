@@ -1,0 +1,117 @@
+include title.pug
+include cards/blog.pug
+
+-
+  var blogData = [
+    {
+      title: "Vestibulum vitae tristique urna. Mauris non cursus quam",
+      category: "Science - Math",
+      date: "Feb 08 2021"
+    },
+    {
+      title: "Vestibulum vitae tristique urna. Mauris non cursus quam",
+      category: "Science - Math",
+      date: "Feb 08 2021"
+    },
+    {
+      title: "Vestibulum vitae tristique urna. Mauris non cursus quam",
+      category: "Science - Math",
+      date: "Feb 08 2021"
+    }
+  ]
+.root
+  if youtube.use
+    #video_modal.modal.video-popup
+      .modal-content
+        .headline
+          |
+          |
+          h4 #{$t.education_landing.blog_video}
+          |
+          |
+        |
+        |
+        button.btn-icon.modal-close.waves-effect
+          i.material-icons close
+        .text-center
+          #video_iframe
+  .hidden-sm-down
+    .deco
+  .container.fixed-width
+    .px-md-12.pa-2
+      +title-main("left", $t.education_landing.blog_title, $t.education_landing.blog_desc, "secondary")
+    .row.flex-sm-row-reverse
+      .col-md-6.pa-md-8.pa-0
+        .video-wrap
+          .video-carousel
+            .carousel
+              .slick-carousel#blog_carousel
+                .card.item
+                  |
+                  |
+                  img(src=imgAPI.education[14] alt='cover')/
+                  |
+                  |
+                  button.btn.play-btn.waves-effect.modal-trigger(data-video="6p0VM-yUpGk" data-target="video_modal")
+                    |
+                    |
+                    i.material-icons play_arrow
+                    |
+                    |
+                  |
+                  |
+                .card.item
+                  |
+                  |
+                  img(src=imgAPI.education[15] alt='cover')/
+                  |
+                  |
+                  button.btn.play-btn.waves-effect.modal-trigger(data-video="HBeJA3q19mk" data-target="video_modal")
+                    |
+                    |
+                    i.material-icons play_arrow
+                    |
+                    |
+                  |
+                  |
+                .card.item
+                  |
+                  |
+                  img(src=imgAPI.education[16] alt='cover')/
+                  |
+                  |
+                  button.btn.play-btn.waves-effect.modal-trigger(data-video="6p0VM-yUpGk" data-target="video_modal")
+                    |
+                    |
+                    i.material-icons play_arrow
+                    |
+                    |
+                  |
+                  |
+                .card.item
+                  |
+                  |
+                  img(src=imgAPI.education[17] alt='cover')/
+                  |
+                  |
+                  button.btn.play-btn.waves-effect.modal-trigger(data-video="HBeJA3q19mk" data-target="video_modal")
+                    |
+                    |
+                    i.material-icons play_arrow
+                    |
+                    |
+                  |
+                  |
+      .col-md-6.pa-md-8.pa-2
+        .blog-list
+          each item, index in blogData
+            .wow.fadeInLeftShort(data-wow-offset='-200' data-wow-delay=(index * 0.2) + 's' data-wow-duration='0.6s')
+              +blog-card(item.category, item.title, item.date)
+          |
+          |
+          a.more.secondary.btn-flat.waves-effect
+            | more
+            i.material-icons arrow_forward
+          |
+          |
+      

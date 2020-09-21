@@ -1,0 +1,174 @@
+#blog {
+  .root {
+    position: static;
+  }
+  .blog-list {
+    margin-top: $spacing5;
+    @include breakpoints-down(md) {
+      padding: spacing(5, 0, 0)
+    }
+    @include breakpoints-down(sm) {
+      margin-top: $spacing6
+    }
+  }
+  .deco {
+    position: absolute;
+    width: 80%;
+    height: $spacing8 * 10;
+    @include left(0);
+    top: $spacing3 * 10;
+    border: 2px solid $palette-secondary-main;
+    border-left: none;
+    border-radius: 0 100px 100px 0;
+    [dir="rtl"] & {
+      transform: scale(-1)
+    }
+  }
+  .video-wrap {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    @include breakpoints-down(xs) {
+      max-width: 320px;
+      margin: 0 auto;
+    }
+  }
+  .video-carousel {
+    border-radius: 30px;
+    overflow: hidden;
+    @include shadow15;
+    @include palette-background-text-primary;
+    height: 420px;
+    position: relative;
+    z-index: 5;
+    @include breakpoints-up(lg) {
+      margin: 0 $spacing4;
+    }
+    @include breakpoints-down(sm) {
+      height: 360px
+    }
+    @include breakpoints-down(xs) {
+      height: 220px
+    }
+    .card {
+      margin: 0;
+    }
+    .slick-dots {
+      bottom: $spacing4;
+      @include breakpoints-down(xs) {
+        visibility: hidden
+      }
+      li {
+        width: 15px;
+        height: 15px;
+        background: $palette-common-white;
+        border: 1px solid;
+        border-color: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        transition: all 0.5s ease-out;
+        &.slick-active {
+          width: 40px;
+        }
+        &:hover {
+          opacity: 0.5
+        }
+      }
+      li button:before {
+        display: none
+      }
+    }
+    .slick-current {
+      .item {
+        opacity: 1;
+        transition-delay: 0.3s;
+        .play-btn {
+          display: block;
+          z-index: 100;
+        }
+      }
+    }
+  }
+
+  .item {
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.7s ease-out;
+    height: 420px;
+    &.card {
+      background-color: $palette-common-black;
+    }
+    @include breakpoints-down(sm) {
+      height: 360px
+    }
+    @include breakpoints-down(xs) {
+      height: 220px
+    }
+    img {
+      width: 100%;
+      min-height: 100%;
+      display: block;
+    }
+  }
+
+  .play-btn {
+    border-radius: 10px;
+    backdrop-filter: saturate(100%) blur(10px);
+    background: rgba(0, 0, 0, 0.32);
+    opacity: 1;
+    backdrop-filter: saturate(90%) blur(5px);
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    @include left(calc(50% - 40px));
+    top: calc(50% - 40px);
+    padding: 0;
+    line-height: normal;
+    i {
+      color: $palette-common-white;
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+
+  .video-popup {
+    @include palette-background-paper
+    max-width: none;
+    @include breakpoints-up(sm) {
+      width: 690px;
+    }
+    .title {
+      font-weight: $font-medium
+    }
+    iframe {
+      width: 100%
+    }
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 4px;
+    @include right(4px)
+  }
+
+  .headline {
+    .title-main {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2rem;
+      letter-spacing: 0.0125em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  .more {
+    font-size: 18px;
+    padding: 0;
+    i {
+      @include margin-left($spacing1);
+      position: relative;
+      top: 4px;
+    }
+  }
+}

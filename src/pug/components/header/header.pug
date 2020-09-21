@@ -1,0 +1,64 @@
+include mobile-menu.pug
+
+mixin header(invert)
+  header.app-bar.header#header
+    .container
+      .header-content
+        nav.nav-logo(class=invert && "invert")
+          |
+          |
+          button#mobile_menu.mobile-menu.btn-icon.waves-effect.hamburger.hamburger--spin.show-md-down(
+            type="button"
+          )
+            |
+            |
+            span.hamburger-box
+              span.bar.hamburger-inner
+            |
+            |
+          .logo(class= !invert && "scrollnav")
+            |
+            |
+            a(href=invert ? link.education.home : "#home")
+              img(
+                src=assets + brand.education.img
+                alt="logo"
+              )/ 
+              span #{brand.education.projectName}
+            |
+            |
+        nav.nav-menu(class=invert && "invert")
+          .scrollactive-nav.show-lg-up(class= !invert && "scrollnav")
+            ul
+              each item in menu.education
+                |
+                |
+                li
+                  a.btn.btn-flat.anchor-link.waves-effect(
+                    href=invert ? 'index.html#'+item.name : '#'+item.name
+                  )
+                    span.text #{$t.education_landing['header_'+item.name]}
+              |
+              |
+              li
+                a.btn.btn-flat.anchor-link.waves-effect(
+                  href=link.education.contact
+                ) 
+                  span.text #{$t.education_landing.header_contact}
+              |
+              |
+        nav.nav-menu.nav-auth
+          .hidden-xs-down
+            .deco
+            |
+            |
+            a.btn-flat.text-btn.waves-effect(href=link.education.login) #{$t.education_landing.header_login}
+            |
+            |
+            a.btn.white.light.button.waves-effect(href=link.education.register) #{$t.education_landing.header_register}
+            |
+            |
+            include ./settings
+          +settings(invert)
+  |
+  |

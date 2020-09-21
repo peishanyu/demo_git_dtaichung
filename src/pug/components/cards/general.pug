@@ -1,0 +1,26 @@
+mixin general-card(img, title, desc, rating, price)
+  .card.general-card
+    figure
+      |
+      |
+      img(src=img alt='title')/
+      |
+      |
+    .desc
+      h6.title.pb-2 #{title}
+      p.use-text-paragraph #{desc}
+      .property
+        .rating
+          - var n = 1
+          while n <= rating
+            |
+            |
+            i.material-icons.star-icon(title=n++) star
+            |
+            |
+        strong $#{price}
+      |
+      |
+      a.button.btn.btn-outlined.primary.waves-effect(href="#") Explore
+      |
+      |

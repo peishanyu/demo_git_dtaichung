@@ -1,0 +1,100 @@
+$cross-deco-light: '../images/decoration/cross-deco-light.png';
+$cross-deco-dark: '../images/decoration/cross-deco-dark.png';
+
+.parallax-wrap {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  overflow: hidden;
+  left: 0;
+  z-index: 1;
+  @include breakpoints-down(sm) {
+    display: none;
+  }
+
+  .inner-parallax {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    display: block;
+    .figure {
+      height: 800px;
+      width: 100%;
+      display: block;
+      position: absolute;
+    }
+    .figure > div {
+      height: 800px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  .cross-wrap {
+    z-index: 10;
+    top: -100px;
+    @include right(-120px);
+    @include left(auto)
+  }
+
+  .parallax-dot {
+    @include use-theme(fill, $light-text-hint, $dark-text-hint);
+    @include use-theme(opacity, 0.1, 0.2);
+    width: 1015px;
+    height: 1099px;
+    top: 90px;
+    @include left(0);
+    transform: scale(0.5);
+    [dir="rtl"] & {
+      transform-origin: top right;
+    }
+    [dir="ltr"] & {
+      transform-origin: top left;
+    }
+    position: absolute;
+    z-index: 10
+  }
+
+  .parallax-cross {
+    @include use-theme(background-image, url($cross-deco-light), url($cross-deco-dark));
+    background-position: 0 -30px;
+    background-repeat: repeat;
+    width: 445px;
+    height: 1099px;
+    @include right(-150px);
+    transform: scale(0.5);
+    transform-origin: top left;
+    position: absolute
+  }
+
+  .parallax-box {
+    width: 100%;
+    height: 350px;
+    top: -2400px;
+    @include right(0);
+    position: absolute
+  }
+
+  .big-box {
+    width: 300px;
+    height: 250px;
+    background: $palette-secondary-main;
+    opacity: 0.5;
+    top: 2420px;
+    @include left(-80px);
+    position: absolute
+  }
+
+  .small-box {
+    width: 150px;
+    height: 180px;
+    background: $palette-primary-main;
+    opacity: 0.5;
+    top: 2550px;
+    @include right(-50px);
+    position: absolute
+  }
+}

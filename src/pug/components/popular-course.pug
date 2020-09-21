@@ -1,0 +1,83 @@
+include title.pug
+include cards/general.pug
+
+-
+  var courseData = [
+    {
+      img: imgAPI.education[9],
+      title: 'Vivamus sit amet',
+      rating: 5,
+      price: 50,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.education[5],
+      title: 'Vivamus sit amet',
+      rating: 4,
+      price: 10,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.education[3],
+      title: 'Vivamus sit amet',
+      rating: 5,
+      price: 50,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.education[4],
+      title: 'Vivamus sit amet',
+      rating: 3,
+      price: 25,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.education[8],
+      title: 'Vivamus sit amet',
+      rating: 5,
+      price: 50,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    },
+    {
+      img: imgAPI.education[2],
+      title: 'Vivamus sit amet',
+      rating: 5,
+      price: 40,
+      desc: 'Ut sed eros finibus, placerat orci id, dapibus mauris. Vestibulum consequat…'
+    }
+  ]
+
+.root
+  .parallax-wrap
+    include parallax/dot.pug
+  .container
+    .floating-title
+      +title-main("left", $t.education_landing.popular_title, $t.education_landing.popular_desc, "primary", true)
+  .slider-wrap
+    .carousel
+      .slick-carousel#course_carousel(data-length=courseData.length)
+        .props.item-props-first.show-md-up
+          div
+        each item in courseData
+          .item
+            +general-card(item.img, item.title, item.desc, item.rating, item.price)
+        .props.item-props-last.show-md-up
+          div
+      |
+      |
+      button.btn-floating.nav.prev.waves-effect#prev_project
+        |
+        |
+        i.ion-ios-arrow-back
+        |
+        |
+      |
+      |
+      button.btn-floating.nav.next.waves-effect#next_project
+        |
+        |
+        i.ion-ios-arrow-forward
+        |
+        |
+      |
+      |

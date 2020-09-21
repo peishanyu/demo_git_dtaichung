@@ -1,0 +1,63 @@
+#testimonials {
+  .root {
+    position: relative;
+  }
+
+  .carousel {
+    position: relative;
+    @include breakpoints-up(sm) {
+      padding: spacing(0, 8)
+    }
+  }
+
+  .item {
+    padding: spacing(0, 1);
+    @include breakpoints-up(sm) {
+      padding: spacing(7, 1, 0)
+    }
+    &:focus {
+      outline: none
+    }
+  }
+
+  .nav {
+    position: absolute;
+    top: 60%;
+    margin-top: -45px;
+    border-radius: 50%;
+    width: 36px;
+    z-index: 3;
+    height: 36px;
+    padding: 0;
+    min-width: 0;
+    @include use-theme(background, $palette-common-white, $dark-background-paper);
+    @include shadow3;
+    [dir="rtl"] & {
+      transform: scale(-1.6)
+    }
+    [dir="ltr"] & {
+      transform: scale(1.6)
+    }
+    border: none;
+    box-shadow: none;
+    &:hover {
+      @include palette-background-paper;
+    }
+    i {
+      font-size: 24px;
+      @include palette-text-primary;
+      line-height: 36px;
+    }
+    @include breakpoints-down(sm) {
+      display: none;
+    }
+  }
+
+  .prev {
+    @include left(6px);
+  }
+
+  .next {
+    @include right(6px)
+  }
+}

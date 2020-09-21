@@ -1,0 +1,333 @@
+.general-card {
+  position: relative;
+  width: 250px;
+  height: 400px;
+  padding: 3px;
+  figure {
+    margin: 0px;
+    width: 100%;
+    height: 170px;
+    border-radius: 6px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      min-height: 100%
+    }
+  }
+  .desc {
+    padding: $spacing2;
+    p {
+      overflow: hidden;
+      height: 50px;
+    }
+    h6 {
+      font-family: "Lato", sans-serif !important;
+      font-weight: $font-bold
+    }
+  }
+  .property {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing2;
+    .rating {
+      i {
+        color: #FFC107
+      }
+    }
+    strong {
+      font-weight: $font-bold;
+    }
+  }
+  .btn.button {
+    width: 100%;
+    padding: spacing(0.5, 3)
+  }
+}
+
+/* Category Card */
+.category-card {
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  text-transform: none !important;
+  padding: 0 !important;
+  background: $palette-secondary-light !important;
+  text-align: center;
+  display: flex;
+  @include use-theme(box-shadow, 0 1.5px 12px 2px rgba(0, 0, 0, 0.06), (0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)));
+  height: 250px;
+  @include breakpoints-up(sm) {
+    margin-bottom: $spacing3;
+  }
+  @include breakpoints-down(xs) {
+    height: 120px;
+  }
+  .figure {
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+    img {
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  &:hover {
+    @include breakpoints-up(lg) {
+      .property {
+        padding: spacing(4, 6);
+        .title-category {
+          &:after {
+            width: 72%;
+            @include left(0);
+          }
+        }
+        @include breakpoints-up(lg) {
+          height: 80%;
+          bottom: 0px;
+          opacity: 1;
+          .desc {
+            opacity: 1;
+            bottom: 0;
+            height: 70px;
+          }
+        }
+      }
+    }
+  }
+  .property {
+    transition: all 0.3s cubic-bezier(0, .81, 1, .97);
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    padding: spacing(2, 6);
+    bottom: -10px;
+    border-radius: 24px 24px 0 0;
+    @include text-align(left);
+    @include left(0);
+    color: $palette-common-white;
+    backdrop-filter: saturate(100%) blur(10px);
+    background: rgba(0, 0, 0, 0.32);
+    .desc {
+      margin-top: $spacing3;
+      font-size: 18px;
+      font-weight: $font-regular;
+      white-space: normal;
+      height: 0;
+      opacity: 0;
+      display: block;
+      overflow: hidden;
+    }
+    @include breakpoints-down(md) {
+      padding: $spacing2;
+      bottom: 0;
+      .desc {
+        display: none
+      }
+    }
+    @include breakpoints-down(xs) {
+      padding: spacing(0.5, 2);
+      border-radius: 8px 8px 0 0;
+    }
+    .title-category {
+      font-weight: $font-bold;
+      font-size: 24px;
+      white-space: nowrap;
+      position: relative;
+      display: block;
+      text-overflow: ellipsis;
+      @include breakpoints-down(xs) {
+        overflow: hidden;
+        font-size: 14px;
+        text-align: center;
+        line-height: 28px;
+      }
+      &:after {
+        content: "";
+        height: 2px;
+        background: $palette-primary-main;
+        width: 0%;
+        position: absolute;
+        bottom: -10px;
+        z-index: 0;
+        @include left(50%);
+        transition: all 0.2s cubic-bezier(0.42, 0.16, 0.21, 0.93);
+        transition-delay: 0.3s;
+      }
+    }
+  }
+}
+
+@mixin fold {
+  content: "";
+  position: absolute;
+  border-radius: 16px;
+  border: 1px solid;
+  @include palette-divider;
+  @include palette-background-paper;
+  height: 80px;
+  left: 50%;
+  transform: translate(-50%);
+  @include use-theme(box-shadow, 0 1.5px 12px 2px rgba(0, 0, 0, 0.06), (0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)))
+}
+.card-wrap {
+  position: relative;
+  .fold {
+    @include breakpoints-down(xs) {
+      display: none;
+    }
+    &:before {
+      @include fold;
+      width: 80%;
+      bottom: -25px;
+    }
+    &:after {
+      @include fold;
+      width: 90%;
+      bottom: -15px;
+    }
+  }
+}
+
+/* Blog Card */
+.blog-card {
+  display: flex;
+  margin-bottom: $spacing6;
+  align-items: center;
+  position: relative;
+  @include breakpoints-down(xs) {
+    margin-bottom: $spacing3;
+  }
+  &:before {
+    border-radius: 15px;
+    content: '';
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background: $palette-secondary-main;
+    opacity: 0.1;
+    position: absolute;
+    top: -10px;
+    @include left(-25px);
+  }
+  .text {
+    a {
+      padding: 0;
+      position: relative;
+      text-transform: none;
+      z-index: 1;
+    }
+    > a {
+      font-weight: $font-regular;
+      @include palette-text-secondary;
+    }
+    h4 {
+      line-height: normal;
+      &:before {
+        border-radius: 10px;
+        content: '';
+        width: 50px;
+        height: 50px;
+        transform: rotate(45deg);
+        @include use-theme(background, $palette-secondary-light, $palette-secondary-dark);
+        position: absolute;
+        top: -6px;
+        @include left(-25px);
+      }
+      a {
+        display: block;
+        font-size: 22px;
+        font-weight: $font-regular;
+        transition: all 0.3s ease;
+        height: 80px;
+        @include breakpoints-down(xs) {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        &:hover {
+          color: $palette-primary-main
+        }
+      }
+    }
+  }
+  .date {
+    text-align: center;
+    @include margin-left($spacing3);
+    @include palette-text-hint;
+    & > * {
+      display: block;
+      line-height: normal;
+    }
+    h3 {
+      font-size: 28px;
+      text-transform: uppercase;
+      @include breakpoints-down(xs) {
+        font-size: 20px
+      }
+    }
+    h2 {
+      font-size: 46px;
+      @include breakpoints-down(xs) {
+        font-size: 32px
+      }
+    }
+    h4 {
+      font-size: 22px;
+      @include breakpoints-down(xs) {
+        font-size: 16px
+      }
+    }
+  }
+}
+
+/* Testimonial Card */
+.testimonial-card {
+  overflow: visible;
+  height: 260px;
+  @include palette-background-paper;
+  border-radius: $spacing1;
+  border: 3px solid;
+  @include palette-divider;
+  padding: spacing(4, 2);
+  @include breakpoints-up(sm) {
+    padding: $spacing8
+  }
+  position: relative;
+  .icon {
+    border-Radius: 20px;
+    transform: rotate(45deg);
+    background: $palette-primary-main;
+    width: 70px;
+    height: 70px;
+    top: -30px;
+    @include left(32px);
+    position: absolute;
+    text-align: center;
+    line-height: 100px;
+    @include breakpoints-down(xs) {
+      display: none
+    }
+    i {
+      transform: rotate(-45deg);
+      font-size: 70px;
+      vertical-align: top;
+      color: $palette-common-white;
+    }
+  }
+  h6 {
+    font-weight: $font-medium
+  }
+  .text {
+    margin-bottom: $spacing4;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: $spacing9
+  }
+
+  .caption {
+    @include palette-text-secondary
+  }
+}
+  
