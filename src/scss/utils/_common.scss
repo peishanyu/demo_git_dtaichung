@@ -3,6 +3,7 @@
     font-weight: $font-bold;
     font-size: 40px;
     line-height: 72px;
+    color: #424188;
     @include breakpoints-down(md) {
       font-size: 32px;
       line-height: 56px;
@@ -42,6 +43,7 @@
     font-weight: $font-regular;
     font-size: 22px;
     line-height: 32px;
+    color: #239eac;
     @include breakpoints-down(md) {
       font-size: 20px;
       line-height: 32px

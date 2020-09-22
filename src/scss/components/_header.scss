@@ -1,35 +1,3 @@
-$flag: '../images/flag-logo.png';
-
-@mixin flag-icon{
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  display: inline-block;
-  position: relative;
-  @include margin-right(5px);
-  top: 1px;
-  background: url($flag) no-repeat transparent;
-  background-size: 16px auto;
-  &.ar {
-    background-position: 0 3px;
-  }
-  &.zh {
-    background-position: 0 -12px
-  }
-  &.en {
-    background-position: 0 -28px
-  }
-  &.de {
-    background-position: 0 -44px
-  }
-  &.id {
-    background-position: 0 -62px
-  }
-  &.pt {
-    background-position: 0 -79px
-  }
-}
-
 @keyframes slideRight {
   from {
     opacity: 0;
@@ -289,27 +257,31 @@ $flag: '../images/flag-logo.png';
     background-color: #5f6cc0 !important;
   }
   a {
-    color: $palette-common-white;
+    // color: $palette-common-white;
+    color: #239eac !important;
     margin: spacing(0, 1.5);
     font-size: 16px;
     &.white {
-      border: 1px solid $palette-primary-main;
-      padding-top: 4px !important;
-      padding-bottom: 4px !important;
-      color: $palette-primary-dark !important
+      // border: 1px solid $palette-primary-main;
+      // padding-top: 4px !important;
+      // padding-bottom: 4px !important;
+      // color: $palette-primary-dark !important;
+      width: 170px;
+      height: 50px;
+      border-radius: 100rem;
+      background: #fff;
+      border: 2px solid #03BAD4;
+      line-height: 40px;
+      font-size: 20px;
+    }
+    &.with-logo {
+      color: #fff!important;
+      background: linear-gradient(#ffb973 0%, #e02759 100%)!important;
+      border: 2px solid #fba66f;
     }
   }
 }
 
-.lang-menu {
-  .flag {
-    margin: 0;
-    & i {
-      margin-left: $spacing2;
-      @include flag-icon;
-    }
-  }
-}
 
 .collection .collection-item.avatar :not(.circle-clipper) > .circle.flag {
   width: auto;
@@ -392,7 +364,7 @@ $flag: '../images/flag-logo.png';
 .mobile-nav {
   @include palette-background-paper;
   z-index: 1100;
-  min-width: 400px;
+  min-width: 360px;
   @include breakpoints-down(xs) {
     width: 100% !important
   }

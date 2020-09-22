@@ -13,6 +13,7 @@ $icon-four: '../images/mrd/parallax-four.png';
     }
   }
   .hero-content {
+
     @include breakpoints-down(xs) {
       background-size: 50%;
       .theme--light & {
@@ -22,6 +23,7 @@ $icon-four: '../images/mrd/parallax-four.png';
         @include bg-color-darken($palette-primary-dark, 0.7)
       }
     }
+
     position: relative;
     > .container {
       padding-left: 0 !important;
@@ -55,6 +57,18 @@ $icon-four: '../images/mrd/parallax-four.png';
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+    }
+    img.ky {width:75%;}
+
+    .nav-auth > div {
+      display:flex;
+      margin-bottom: 20px;
+      a {
+        height: 45px;
+        margin: 0 5px;
+        padding: 6px 0;
+        font-size:18px;
+      }
     }
   }
 

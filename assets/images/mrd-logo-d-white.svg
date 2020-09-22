@@ -1,0 +1,20 @@
+<svg id="mrd-logo-d-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.594" height="34.476" viewBox="0 0 30.594 34.476">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="路径_1245" data-name="路径 1245" d="M266.886,189.116l1.357-3.111c9.861-.817,15.318-8.395,16.322-15.914q.1-.717.137-1.43c.254-4.356-1.907-12.619-7.411-12.34-2.125.108-4.313,1.711-6.119,4.768,5.863-2.294,9.323,1.165,9.323,1.165a35.915,35.915,0,0,0-12.8,21.016h0q-.041.2-.08.391v0a41.778,41.778,0,0,0-.723,5.455" transform="translate(-266.886 -156.314)" fill="#fff" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="路径_1246" data-name="路径 1246" d="M209.107,146.932H200.07l-4.73,31.439h11.09c-1.815-16.4,4.061-20.33,4.061-20.33a11.924,11.924,0,0,0-6.336,5.681c-.583-11.944,4.952-16.79,4.952-16.79" transform="translate(-195.34 -146.932)" fill="#fff" clip-rule="evenodd"/>
+    </clipPath>
+  </defs>
+  <g id="组_318" data-name="组 318" transform="translate(12.758 1.673)">
+    <g id="组_317" data-name="组 317" transform="translate(0 0)" clip-path="url(#clip-path)">
+      <rect id="矩形_53" data-name="矩形 53" width="18.07" height="33.075" transform="translate(0 -0.272)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="组_320" data-name="组 320" transform="translate(0 0)">
+    <g id="组_319" data-name="组 319" clip-path="url(#clip-path-2)">
+      <rect id="矩形_57" data-name="矩形 57" width="15.151" height="31.439" transform="translate(0 0)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
