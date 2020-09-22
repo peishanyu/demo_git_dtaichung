@@ -1,18 +1,18 @@
 {
-    "name": "education-theme",
+    "name": "mrD.cash 貸先生",
     "version": "1.0.0",
-    "description": "Luxi HTML5 Education Theme",
+    "description": "專為借款人打造的線上借款平台，運用智能AI技術線上試算、自動審查，快速通過撥款！讓貸先生助您一臂之力，解決您的資金問題！",
     "keywords": [
-        "education",
-        "learning",
-        "elearning",
-        "course",
-        "academic",
-        "training",
-        "school"
+        "貸款",
+        "loan",
+        "借貸",
+        "信貸",
+        "車貸",
+        "房貸",
+        "信用貸款"
     ],
-    "author": "Luxi Theme",
-    "license": "Envato",
+    "author": "mrD.cash",
+    "license": "mrD.cash",
     "private": true,
     "dependencies": {
         "@popperjs/core": "^2.4.0",
