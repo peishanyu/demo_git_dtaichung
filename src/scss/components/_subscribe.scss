@@ -12,8 +12,8 @@
     height: 570px;
     overflow: hidden;
     .parallax {
-      background: url() no-repeat;
-      background-size: cover;
+      background: url(../../assets/images/mrd/bg-pattern.png);
+      // background-size: cover;
       height: 220%;
       @include breakpoints-down(xs) {
         background-position: center 0 !important;
