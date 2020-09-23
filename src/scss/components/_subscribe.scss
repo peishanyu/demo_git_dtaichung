@@ -2,7 +2,7 @@
   .root {
     position: relative;
     text-align: center;
-    height: 570px;
+    
   }
   .parallax-form-wrap {
     position: absolute;
@@ -12,7 +12,7 @@
     height: 570px;
     overflow: hidden;
     .parallax {
-      background: url($imgAPI-education18) no-repeat;
+      background: url() no-repeat;
       background-size: cover;
       height: 220%;
       @include breakpoints-down(xs) {
@@ -24,13 +24,14 @@
 
   .form {
     @include palette-background-paper;
-    max-width: 700px;
+    // max-width: 700px;
     border-radius: 20px;
     margin: 0 auto;
     top: 250px;
     z-index: 2;
     width: 100%;
     display: block;
+    overflow: inherit;
     @include palette-text-secondary;
     position: relative;
     bottom: $spacing10 * -1;
@@ -39,8 +40,8 @@
       padding: spacing(5, 10);
     }
     @include breakpoints-down(sm) {
-      padding: spacing(4, 2);
-      top: 300px;
+      padding: spacing(3, 1);
+      top: 100px;
     }
     h4 {
       @include palette-text-primary;
@@ -56,4 +57,43 @@
     margin: 0 auto;
     min-width: 185px
   }
+
+  .separator {
+    margin: 20px auto;
+    max-width: 300px;
+    min-width: 200px;
+    text-align: center;
+    position: relative;
+    p {
+      @include breakpoints-down(xs) {
+        font-size: 12px
+      }
+    }
+    &:before, &:after {
+      content: "";
+      border-top: 1px solid;
+      @include use-theme(border-top-color, $light-text-hint, $dark-text-hint);
+      top: 50%;
+      position: absolute;
+      width: 20%
+    }
+    &:before {
+      left: 0
+    }
+    &:after {
+      right: 0
+    }
+  }
+
+  .select-wrapper input {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .form-control {
+    height: 52px;
+    padding: 0 12px;
+    border-radius: 8px;
+  }
+
 }

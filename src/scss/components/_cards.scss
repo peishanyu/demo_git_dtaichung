@@ -318,12 +318,18 @@
     font-weight: $font-medium
   }
   .text {
-    margin-bottom: $spacing4;
+    margin-bottom: $spacing2;
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
-    height: $spacing9
+    height: $spacing12;
+
+    @include breakpoints-down(sm) {
+      -webkit-line-clamp: 5;
+      height: $spacing15;
+      font-size: 14px;
+    }
   }
 
   .caption {

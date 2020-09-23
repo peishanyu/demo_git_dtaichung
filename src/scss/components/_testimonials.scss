@@ -54,10 +54,10 @@
   }
 
   .prev {
-    @include left(6px);
+    @include left(15px);
   }
 
   .next {
-    @include right(6px)
+    @include right(15px)
   }
 }

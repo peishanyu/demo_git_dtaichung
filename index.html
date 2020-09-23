@@ -67,9 +67,9 @@
                 <!-- <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">contact</a></li> -->
               </ul>
               <hr class="divider-sidebar">
-              <ul class="collection">
-                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">馬上體驗</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">特選方案</a></li>
+              <ul class="collection scrollnav">
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="#subscribe">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="#explore">特選方案</a></li>
               </ul>
             </div>
           </div><!-- ##### HEADER #####-->
@@ -96,13 +96,13 @@
                   </div>
                 </nav>
                 <nav class="nav-menu nav-auth hidden-xs-down">
-                  <div class="hidden-xs-down">
+                  <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
-                    <a class="btn white with-logo button waves-effect" href="">
+                    <a class="btn white with-logo button anchor-link waves-effect" href="#subscribe">
                       <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />
                       馬上體驗
                     </a>
-                    <a class="btn white light button waves-effect" href="">特選方案</a>
+                    <a class="btn white light button anchor-link waves-effect" href="#explore">特選方案</a>
                   </div>
                 </nav>
               </div>
@@ -122,13 +122,13 @@
                           <h3 class="use-text-title">貸先生，您的專屬私人貸款顧問</h3>
                         </div>
                         <div class="nav-auth show-xs-down">
-                          <div class="show-xs-down">
+                          <div class="show-xs-down scrollnav">
                             <!-- <div class="deco"></div> -->
-                            <a class="btn white with-logo button waves-effect" href="">
+                            <a class="btn white with-logo button waves-effect" href="#subscribe">
                               <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />
                               馬上體驗
                             </a>
-                            <a class="btn white light button waves-effect" href="">特選方案</a>
+                            <a class="btn white light button waves-effect" href="#explore">特選方案</a>
                           </div>
                         </div>
                         <h5 class="subtitle">
@@ -174,9 +174,9 @@
                     <p class="desc use-text-subtitle2">貸先生承諾  竭盡所能為您服務</p>
                   </div>
                   <div class="row spacing8 grid">
-                    <div class="col-sm-4 px-4">
+                    <div class="col-sm-4 px-4 wow zoomInShort" data-wow-delay="1s" data-wow-duration="0.6s">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/mrd/hd-video.svg" alt="hd-video"></figure>
+                        <div><img src="./assets/images/mrd/search.svg" alt="search"></div>
                         <div class="text">
                           <h5 class="use-text-title2">自動化</h5>
                           <h6 class="use-text-paragraph">
@@ -185,9 +185,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 px-4">
+                    <div class="col-sm-4 px-4 wow zoomInShort" data-wow-delay="1.5s" data-wow-duration="0.6s">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/mrd/presenter.svg" alt="presenter"></figure>
+                        <div><img src="./assets/images/mrd/fast.svg" alt="fast"></div>
                         <div class="text">
                           <h5 class="use-text-title2">高效率</h5>
                           <h6 class="use-text-paragraph">
@@ -196,9 +196,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-sm-4 px-4">
+                    <div class="col-sm-4 px-4 wow zoomInShort" data-wow-delay="2s" data-wow-duration="0.6s">
                       <div class="counter-item">
-                        <figure><img src="./assets/images/mrd/money.svg" alt="money"></figure>
+                        <div><img src="./assets/images/mrd/service.svg" alt="fast"></div>
                         <div class="text">
                           <h5 class="use-text-title2">客製化</h5>
                           <h6 class="use-text-paragraph">您的需求，我們將竭盡所能為您達成</h6>
@@ -212,7 +212,7 @@
             <!-- ##### END FEATURE #####-->
 
             <!-- ##### EXPLORE #####-->
-            <section id="explore">
+            <section class="pt-xl-12" id="explore">
               <div class="root">
                 <div class="parallax-wrap">
                   <div class="parallax-wrap dots-wrap">
@@ -324,28 +324,123 @@
                 </div>
                 <div class="container fixed-width">
                   <div class="card form">
-                    <h4 class="use-text-title2">Stay in touch</h4>
-                    <p class="use-text-subtitle2">Subscribe to our newsletter and stay updated on the latest developments and special offers!</p>
+                    <h4 class="use-text-title2">馬上體驗</h4>
+                    <p class="use-text-subtitle2">
+                      1分鐘即可完成，馬上開始進行線上顧問媒合
+                    </p>
                     <form>
-                      <div class="field">
-                        <div class="input-field field dark">
-                          <input type="email" name="email" id="email">
-                          <label for="email">Enter your email address</label>
+                      <div class="field row">
+
+                        <div class="col-md-4">
+                          <div class="input-field filled dark mq-md-up me-2">
+                            <input type="tel" name="tel" id="tel">
+                            <label for="tel">輸入您的手機號碼</label>  
+                          </div>
                         </div>
+                        <div class="col-md-4">
+                          <div class="input-field filled dark mq-md-up me-2">
+                            <input type="text" name="name" id="name">
+                            <label for="name">輸入您的姓名</label>  
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="input-field filled dark mq-md-up me-2">
+                            <input type="email" name="email" id="email">
+                            <label for="email">輸入您的 email</label>  
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="input-field mq-md-up me-2">
+                              <select class="form-control" id="ageFormControlSelect">
+                                <option value="0" disabled selected>選擇您的年齡</option>
+                                <option value="1">20歲~24歲</option>
+                                <option value="2">25歲~29歲</option>
+                                <option value="3">30歲~34歲</option>
+                                <option value="4">35歲~39歲</option>
+                                <option value="5">40歲~44歲</option>
+                                <option value="6">45歲~49歲</option>
+                                <option value="7">50歲~54歲</option>
+                                <option value="8">55歲~59歲</option>
+                                <option value="9">60歲~64歲</option>
+                                <option value="10">64歲以上</option>
+                              </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="input-field mq-md-up me-2">
+                              <select class="form-control" id="genderFormControlSelect">
+                                <option value="0" disabled selected>選擇您的生理性別</option>
+                                <option value="1">男</option>
+                                <option value="2">女</option>
+                              </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="input-field mq-md-up me-2">
+                              <select class="form-control" id="educationFormControlSelect">
+                                <option value="0" disabled selected>選擇您的學歷</option>
+                                <option value="1">研究所以上</option>
+                                <option value="2">大學</option>
+                                <option value="3">專科</option>
+                                <option value="4">高中</option>
+                                <option value="5">國中以下</option>
+                              </select>
+                          </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                          <div class="input-field mq-md-up me-2">
+                              <select class="form-control" id="useFormControlSelect">
+                                <option value="0" disabled selected>選擇貸款用途</option>
+                                <option value="1">負債整合</option>
+                                <option value="2">償還貸款、卡費</option>
+                                <option value="3">投資理財</option>
+                                <option value="4">買車</option>
+                                <option value="5">買房、土地</option>
+                                <option value="6">修繕房屋</option>
+                                <option value="7">學習進修</option>
+                                <option value="8">醫療開銷</option>
+                                <option value="9">消費性支出</option>
+                                <option value="10">週轉金</option>
+                                <option value="11">其它</option>
+                              </select>
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group mq-md-up me-2">
+                              <select class="form-control" id="ageFormControlSelect">
+                                <option value="0" disabled selected>預計貸款金額</option>
+                                <option value="1">10萬以內</option>
+                                <option value="2">10-50萬</option>
+                                <option value="3">50-100萬</option>
+                                <option value="4">100-300萬</option>
+                                <option value="5">300萬以上</option>
+                              </select>
+                          </div>
+                        </div>
+
+
                       </div>
-                      <button class="btn btn-large primary button waves-effect">Subscribe</button>
+
+                      <button class="btn btn-large red button waves-effect">立即分析</button>
+
                     </form>
+
                   </div>
                 </div>
               </div>
             </section><!-- ##### END SUBSCRIBE #####-->
 
             <!-- ##### TESTIMONIALS #####-->
-            <section id="testimonials">
-              <div class="root">
+            <section id="testimonials" class="space-top">
+              <div class="root container">
                 <div class="title-main align-center">
-                  <h4 class="primary"><span>Testimonials</span></h4>
-                  <p class="desc use-text-subtitle2">They Are Doing Great Things With Us</p>
+                  <h4 class="primary"><span>成功核貸客戶</span></h4>
+                  <p class="desc use-text-subtitle2">貸先生的服務 專業讓您看見</p>
                 </div>
                 <div class="slider-wrap">
                   <div class="carousel">
@@ -356,49 +451,61 @@
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Vivamus sit amet interdum elit. Proin lacinia erat ac velit tempus auctor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aliquam nec ex aliquet, aliquam neque non.</p>
-                          <h6>John Doe</h6>
-                          <p class="caption">Chief Digital Officer</p>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富。
+                          </p>
+                          <h6>林先生</h6>
+                          <p class="caption">新竹縣寶山鄉</p>
                         </div>
                       </div>
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.</p>
-                          <h6>Jean Doe</h6>
-                          <p class="caption">Chief Digital Officer</p>
+                          <p class="text">
+                            謝謝貸先生
+                          </p>
+                          <h6>張小姐</h6>
+                          <p class="caption">臺中市大里區</p>
                         </div>
                       </div>
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
-                          <h6>Jena Doe</h6>
-                          <p class="caption">Graphic Designer</p>
+                          <p class="text">
+                            謝謝貸先生
+                          </p>
+                          <h6>方先生</h6>
+                          <p class="caption">臺中市大雅區</p>
                         </div>
                       </div>
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Sed imperdiet enim ligula, vitae viverra justo porta vel.</p>
-                          <h6>Jovelin Doe</h6>
-                          <p class="caption">Senior Graphic Designer</p>
+                          <p class="text">
+                            謝謝貸先生
+                          </p>
+                          <h6>林先生</h6>
+                          <p class="caption">彰化田中鎮</p>
                         </div>
                       </div>
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Cras convallis lacus orci, tristique tincidunt magna consequat in. In vel pulvinar est, at euismod libero.</p>
-                          <h6>Jihan Doe</h6>
-                          <p class="caption">CEO Software House</p>
+                          <p class="text">
+                            謝謝貸先生
+                          </p>
+                          <h6>關小姐</h6>
+                          <p class="caption">新北市中和區</p>
                         </div>
                       </div>
                       <div class="item">
                         <div class="testimonial-card">
                           <div class="icon"><i class="material-icons">format_quote</i></div>
-                          <p class="text">Vestibulum sit amet tortor sit amet libero lobortis semper at et odio. In eu tellus tellus. Pellentesque ullamcorper aliquet ultrices. Aenean facilisis vitae purus facilisis semper. Nam vitae scelerisque lorem, quis tempus libero.</p>
-                          <h6>Jovelin Doe</h6>
-                          <p class="caption">Senior Graphic Designer</p>
+                          <p class="text">
+                            謝謝貸先生
+                          </p>
+                          <h6>盧先生</h6>
+                          <p class="caption">臺中市豐原區</p>
                         </div>
                       </div>
                     </div>
@@ -509,18 +616,6 @@
           </div>
           <!-- ##### END PAGE NAVE #####-->
 
-          <!-- ##### NOTIFICATION #####-->
-          <div class="hidden-md-down">
-            <div class="alert full alert-dismissible fade show notification" role="alert">
-              <div class="wrapper">
-                <div class="content">
-                  <div class="action">為提供您更多優質的內容，本網站使用 cookies 分析技術。若繼續閱覽本網站內容，即表示您同意我們使用 cookies。</div>
-                  <button class="btn secondary waves-effect" type="button" data-dismiss="alert" aria-label="Close">我知道了</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ##### END NOTIFICATION #####-->
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@
       background-image: none !important;
     }
     @include breakpoints-down(xs) {
-      padding: spacing(5, 0);
+      padding: spacing(15, 0, 4);
     }
     .theme--light & {
       @include bg-color-fade($light-background-paper, 0.7);
@@ -32,6 +32,11 @@
     }
     > * {
       position: relative
+    }
+    ::before {
+      width: 85%;
+      background-color: #eaf5fd;
+      border-radius: 0 40px 40px 0;
     }
   }
   .massonry {
