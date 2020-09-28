@@ -17,7 +17,12 @@ $icon-four: '../images/mrd/parallax-four.png';
     @include breakpoints-down(xs) {
       background-size: 50%;
       .theme--light & {
-        @include bg-color-lighten($palette-primary-light, 0.7)
+        // @include bg-color-lighten($palette-primary-light, 0.7)
+        background: url(../../assets/images/mrd/banner-bg.png);
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
       }
       .theme--dark & {
         @include bg-color-darken($palette-primary-dark, 0.7)
@@ -124,28 +129,35 @@ $icon-four: '../images/mrd/parallax-four.png';
   .deco-banner {
     .artwork-bg {
       position: absolute !important;
-      top: -420px;
+      top:-50px;
+      left:100px;
       @include left(-100px);
       border-radius: 40px;
-      transform: rotate(-10deg);
+      // transform: rotate(-10deg);
       width: 120%;
       // overflow: hidden;
-      height: 1024px;
+      background: url(../../assets/images/mrd/banner-bg.png);
+      height: 85vh;
+      background-position: top right;
+      background-size: cover;
+      background-repeat: no-repeat;
+
       @include breakpoints-down(sm) {
-        height: 1120px;
+        // height: 1120px;
       }
-      .theme--light & {
-        @include bg-color-lighten($palette-primary-light, 0.7)
-      }
-      .theme--dark & {
-        @include bg-color-darken($palette-primary-dark, 0.7)
-      }
+      // .theme--light & {
+      //   @include bg-color-lighten($palette-primary-light, 0.7)
+      // }
+      // .theme--dark & {
+      //   @include bg-color-darken($palette-primary-dark, 0.7)
+      // }
       .oval {
-        @include use-theme(background, $palette-secondary-light, $palette-secondary-dark)
         width: 250px;
         height: 250px;
         border-radius: 50%;
         position: absolute;
+        top: 40%;
+        background: #a6d8ff;
         @include right(27%);
         bottom: 60px;
       }
@@ -155,7 +167,7 @@ $icon-four: '../images/mrd/parallax-four.png';
         bottom: -60px;
         width: 400px;
         transform: rotate(10deg);
-        @include right(20%);
+        @include right(20%);top:30%;
         @include breakpoints-down(md) {
           @include right(15%);
         }
@@ -170,6 +182,7 @@ $icon-four: '../images/mrd/parallax-four.png';
     transform: rotate(10deg);
     transform-origin: top;
     width: 1200px;
+    top: 10%;
     &.back {
       z-index: 4;
     }
