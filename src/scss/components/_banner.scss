@@ -4,6 +4,9 @@ $icon-three: '../images/mrd/parallax-three.png';
 $icon-four: '../images/mrd/parallax-four.png';
 
 #home {
+  @include breakpoints-down(xs) {
+    padding-bottom:0;
+  }
   .container.fixed {
     @media (min-width: 960px) {
       max-width: 960px;
@@ -19,7 +22,7 @@ $icon-four: '../images/mrd/parallax-four.png';
       .theme--light & {
         // @include bg-color-lighten($palette-primary-light, 0.7)
         background: url(../../assets/images/mrd/banner-bg.png);
-        height: 70vh;
+        
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
