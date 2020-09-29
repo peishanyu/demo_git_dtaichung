@@ -296,15 +296,18 @@ select.select {
         transform: translateY(0px) scale(0.8);
       }
     }
+
     input, textarea {
       border: none !important;
       box-shadow: none !important;
       padding: spacing(2.5, 1.5, 0);
       margin-bottom: 0;
     }
+
     input {
       height: 2rem;
     }
+
     &.light {
       background: rgba(0,0,0,.08);
       color: $palette-common-white;
@@ -317,7 +320,21 @@ select.select {
       }
     }
 
+    &.dark {
+      background: transparent;
+      @include palette-text-primary;
+      border: 1px solid;
+      @include use-theme(border-color, rgba(0,0,0,.2), hsla(0,0%,100%,.25));
+      label {
+        @include palette-text-secondary
+      }
+      input, textarea {
+        @include palette-text-primary
+      }
+    }
+  
   }
+
   .modal {
     border-radius: 12px
   }
@@ -361,4 +378,3 @@ select.select {
     line-height: 28px;
   }
 }
-

@@ -66,6 +66,7 @@ $icon-four: '../images/mrd/parallax-four.png';
 
     .nav-auth > div {
       display:flex;
+      justify-content: center;
       margin-bottom: 20px;
       a {
         height: 45px;
@@ -92,8 +93,8 @@ $icon-four: '../images/mrd/parallax-four.png';
     }
     .use-text-title-span {
       color: #424188;
-      font-size: 36px;
-      line-height: 48px;
+      font-size: 32px;
+      line-height: 40px;
       background: rgb(178,235,242);
       background: linear-gradient(0deg, rgba(178,235,242,1) 0%, rgba(178,235,242,1) 40%, rgba(178,235,242,0) 40%, rgba(178,235,242,0) 100%);
     }
