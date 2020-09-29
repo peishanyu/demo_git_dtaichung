@@ -42,7 +42,7 @@ $cross-deco-dark: '../images/decoration/cross-deco-dark.png';
 
   .parallax-dot {
     @include use-theme(fill, $light-text-hint, $dark-text-hint);
-    @include use-theme(opacity, 0.1, 0.2);
+    // @include use-theme(opacity, 0.1, 0.2);
     width: 1015px;
     height: 1099px;
     top: 90px;

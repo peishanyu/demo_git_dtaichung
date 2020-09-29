@@ -145,7 +145,7 @@
       &:after {
         content: "";
         height: 2px;
-        background: $palette-primary-main;
+        background: var(--v-secondary-base) !important;
         width: 0%;
         position: absolute;
         bottom: -10px;
@@ -293,10 +293,27 @@
     padding: $spacing8
   }
   position: relative;
+
+  .card-avatar {
+    display: flex;
+
+    img {
+      width:40px;
+      margin-right: 10px;
+    }
+
+    .avatar-before {
+      @include breakpoints-down(xl) {
+        display: none
+      }
+    }
+  }
+
   .icon {
     border-Radius: 20px;
     transform: rotate(45deg);
-    background: $palette-primary-main;
+    // background: $palette-primary-main;
+    background: transparent;
     width: 70px;
     height: 70px;
     top: -30px;
@@ -312,6 +329,10 @@
       font-size: 70px;
       vertical-align: top;
       color: $palette-common-white;
+    }
+    img {
+      width: 100%;
+      transform: rotate(-45deg);
     }
   }
   h6 {

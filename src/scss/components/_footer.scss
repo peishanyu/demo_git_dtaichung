@@ -5,6 +5,11 @@
   margin-top: $spacing8;
   padding-top: $spacing5;
   padding-bottom: $spacing5;
+
+  @include breakpoints-down(xs) {
+    margin-top: $spacing5;
+  }
+
   ul {
     margin: 0;
     padding: 0;

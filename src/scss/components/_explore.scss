@@ -1,12 +1,13 @@
 [dir="ltr"] .theme--light #explore .root {
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, $palette-secondary-light 10%);
   background: transparent;
 }
-[dir="ltr"] .theme--light #explore .root::before {
-  // width: 85%;
-  // background-color:#eaf5fd;
-  // opacity: 1;
-  // border-radius: 0 40px 40px 0;
+[dir="ltr"] .theme--light #explore .root {
+  &:before {
+    width: 100%;
+    background: url(../../assets/images/mrd/ad-bg.svg);
+    background-size: cover;
+    opacity: 1;
+  }
 }
 
 [dir="ltr"] .theme--dark #explore .root {
