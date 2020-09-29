@@ -91,11 +91,11 @@
     a.btn {
       padding: 0;
       margin: $spacing1;
-      @include use-theme(background, rgba(0, 0, 0, 0.08) !important, $dark-divider !important);
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      line-height: 36px;
+      // @include use-theme(background, rgba(0, 0, 0, 0.08) !important, $dark-divider !important);
+      border-radius: 8px;
+      width: 34px;
+      height: 34px;
+      line-height: 30px;
       span {
         @include use-theme(color, $palette-primary-dark, $palette-primary-main)
       }

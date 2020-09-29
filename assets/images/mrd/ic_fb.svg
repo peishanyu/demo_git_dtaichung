@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 32 32">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_3527" data-name="矩形 3527" width="32" height="32" rx="16" transform="translate(7711 -4156)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="ic_fb" transform="translate(-7711 4156)" clip-path="url(#clip-path)">
+    <g id="F_icon" transform="translate(7714.431 -4152.69)">
+      <rect id="矩形_3531" data-name="矩形 3531" width="24" height="24" rx="4" transform="translate(0.569 0.69)" fill="#3c5a99"/>
+      <path id="f" d="M20.394,25.88V16.539h3.135L24,12.9h-3.6V10.575c0-1.054.293-1.772,1.8-1.772h1.928V5.546A25.769,25.769,0,0,0,21.317,5.4c-2.779,0-4.682,1.7-4.682,4.812V12.9H13.492v3.64h3.143V25.88Z" transform="translate(-3.182 -1.19)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

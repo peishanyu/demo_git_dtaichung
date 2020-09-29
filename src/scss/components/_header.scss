@@ -44,11 +44,12 @@
       min-height: $spacing3;
     }
     .logo {
+      
       a span{
         display: none
       }
       img {
-        height: 90px;
+        height: 70px;
         margin: 0;
       }
     }
@@ -149,7 +150,7 @@
       // width: 80px;
       height: 120px;
       @include breakpoints-down(xs) {
-        height: 90px;
+        height: 80px;
       }
     }
     a span{
@@ -169,6 +170,10 @@
 }
 
 .nav-menu {
+  @include breakpoints-down(sm) {
+    width: 25%!important;
+  }
+
   &.invert {
     ul li a.btn {
       transition: all 0.3s ease-out;
@@ -191,7 +196,7 @@
       &.current {
         position: relative;
         .btn {
-          @include use-theme(color, $palette-primary-dark, $palette-primary-light)
+          @include use-theme(color, $palette-primary-dark, $palette-primary-light);
           &:after {
             width: 60%;
             @include left(6px);
@@ -345,6 +350,9 @@
   margin: spacing(0, 1);
   height: 36px;
   line-height: 52px;
+  @include breakpoints-down(sm) {
+    width: 25%;
+  }
   .bar {
     @include palette-background-text-secondary;
     &:after, &:before {
