@@ -303,7 +303,7 @@
     }
 
     .avatar-before {
-      @include breakpoints-down(xl) {
+      @include breakpoints-down(xs) {
         display: none
       }
     }
