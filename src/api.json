@@ -1,23 +1,20 @@
 {
   "brand": {
-    "education": {
-      "name": "Education",
-      "desc": "Alexstrap Education - HTML5 Bootstrap Landing Page Template",
-      "prefix": "alexstrap",
-      "footerText": "Alexstrap Education 2020",
-      "logoText": "Alexstrap Theme 2020",
-      "projectName": "Education",
-      "url": "alexstrap.ux-maestro.com/education",
-      "img": "/images/education-logo.png",
+    "mrD.cash": {
+      "name": "mrD.cash 貸先生",
+      "desc": "貸先生 - 專為借款人打造的線上借款平台，運用智能AI技術線上試算、自動審查，快速通過撥款！讓貸先生助您一臂之力，解決您的資金問題！",
+      "prefix": "mrD.cash",
+      "footerText": "mrD.cash 貸先生 2020",
+      "logoText": "mrD.cash 貸先生 2020",
+      "projectName": "mrD.cash 貸先生",
+      "url": "",
+      "img": "/images/mrd-logo.png",
       "notifMsg": "Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula"
     }
   },
   "link": {
-    "education": {
-      "home": "index.html",
-      "contact": "contact.html",
-      "login": "login.html",
-      "register": "register.html"
+    "mrD.cash": {
+      "home": "index.html"
     }
   },
   "imgAPI": {
@@ -73,7 +70,7 @@
     ]
   },
   "menu": {
-    "education": [
+    "mrD.cash": [
       {
         "name": "feature",
         "offset": 0

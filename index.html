@@ -68,8 +68,8 @@
               </ul>
               <hr class="divider-sidebar">
               <ul class="collection scrollnav">
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="#subscribe">馬上體驗</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="#explore">特選方案</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close anchor-link waves-effect" href="#subscribe">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
               </ul>
             </div>
           </div><!-- ##### HEADER #####-->
@@ -99,10 +99,8 @@
                   <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
                     <a class="btn white with-logo button anchor-link waves-effect" href="#subscribe">
-                      <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />
-                      馬上體驗
-                    </a>
-                    <a class="btn white light button anchor-link waves-effect" href="#explore">特選方案</a>
+                      <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />馬上體驗</a>
+                    <a class="btn white light button anchor-link waves-effect" href="explore.html">特選方案</a>
                   </div>
                 </nav>
               </div>
@@ -127,8 +125,7 @@
                           <div class="show-xs-down scrollnav">
                             <!-- <div class="deco"></div> -->
                             <a class="btn white with-logo button waves-effect" href="#subscribe">
-                              <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />
-                              馬上體驗
+                              <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />馬上體驗
                             </a>
                             <a class="btn white light button waves-effect" href="#explore">特選方案</a>
                           </div>
@@ -226,25 +223,25 @@
                       <h4 class="primary"><span>馬上體驗</span></h4>
                       <p class="desc use-text-subtitle2">1分鐘即可完成，馬上開始線上顧問媒合</p>
                     </div>
-                    <form>
-                      <div class="field row">
 
+                    <form action="phone_verification.html">
+                      <div class="field row">
                         <div class="col-md-4">
                           <div class="input-field filled dark mq-md-up me-2">
-                            <input type="tel" name="tel" id="tel">
+                            <input type="tel" name="tel" id="tel" required>
                             <label for="tel">輸入您的手機號碼</label>  
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="input-field filled dark mq-md-up me-2">
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" required>
                             <label for="name">輸入您的姓名</label>  
                           </div>
                         </div>
                         <div class="col-md-4">
                           <div class="input-field filled dark mq-md-up me-2">
-                            <input type="email" name="email" id="email">
-                            <label for="email">輸入您的 email</label>  
+                            <input class="validate" type="email" name="email" id="email" required>
+                            <label for="email">輸入您的 email *</label>  
                           </div>
                         </div>
 
@@ -310,7 +307,7 @@
 
                         <div class="col-md-6">
                           <div class="input-field mq-md-up me-2">
-                              <select class="form-control" id="ageFormControlSelect">
+                              <select class="form-control" id="amountFormControlSelect">
                                 <option value="0" disabled selected>預計貸款金額</option>
                                 <option value="1">10萬以內</option>
                                 <option value="2">10-50萬</option>
@@ -324,7 +321,7 @@
 
                       </div>
 
-                      <button class="btn btn-large red button btn-custom waves-effect">立即分析</button>
+                      <button class="btn btn-large red button btn-custom waves-effect" type="submit">立即分析</button>
 
                     </form>
 

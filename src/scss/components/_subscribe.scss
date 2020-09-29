@@ -46,7 +46,7 @@
     }
     @include breakpoints-down(sm) {
       padding: spacing(3, 1);
-      top: 100px;
+      top: 50px;
     }
     h4 {
       @include palette-text-primary;
