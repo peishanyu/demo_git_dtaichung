@@ -30,7 +30,7 @@
       background-image: none !important;
     }
     @include breakpoints-down(xs) {
-      padding: spacing(15, 0, 4);
+      padding: spacing(6, 0, 6);
     }
     .theme--light & {
       @include bg-color-fade($light-background-paper, 0.7);
