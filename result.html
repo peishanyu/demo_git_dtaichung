@@ -111,48 +111,164 @@
           <!-- ##### END HEADER #####-->
           <main class="container-wrap">
 
-            <!-- ##### PHONE VERIFY #####-->
-            <section class="space-top-short space-bottom-short" id="phone-verify">
-              <div class="root">
-                <div class="parallax-form-wrap">
-                  <div class="parallax" data-enllax-ratio="0.2"></div>
-                </div>
-                <div class="container fixed-width">
-
-                  
-                  <div class="card form">
-                    <div class="title-main align-center">
-                      <h4 class="primary"><span>手機號碼驗證</span></h4>
-                      <p class="desc primary use-text-subtitle2">為確保 mrD.cash貸先生 預測模型的合理使用，請進行手機簡訊認證</p>
-                    </div>
-
-                    <form action="result.html">
-
-                      <p class="desc use-text-paragraph">── 您的手機號碼 ──</p>
-                      <h5 class="primary user-input-phone">+886 912 345678</h5>
-
-                      <div class="field row">
-                        <div class="col-md-6">
-                          <div class="input-field filled dark mq-md-up me-2">
-                            <input type="text" name="sms-code" id="sms-code" required>
-                            <label for="sms-code">輸入收到的簡訊驗證碼</label>
-                          </div>
-                        </div>
+            <!-- ##### SUBSCRIBE #####-->
+            <section class="space-top-short space-bottom-short" id="subscribe">
+                <div class="root">
+                  <div class="parallax-form-wrap">
+                    <div class="parallax" data-enllax-ratio="0.2"></div>
+                  </div>
+                  <div class="container fixed-width">
+  
+                    
+                    <div class="card form">
+                      <div class="col-md-12 title-main align-center">
+                        <h4 class="primary"><span>完成問卷</span></h4>
+                        <p class="desc use-text-subtitle2">完成以下問卷，立即為您篩選適合的方案</p>
                       </div>
                       
-                      <button class="btn btn-large light button button btn-custom-outline waves-effect" onclick="window.location.href='index.html#subscribe';">更改號碼</button>
-                      <button class="btn btn-large red button btn-custom waves-effect" type="submit">送出驗證</button>
-                      <div class="mt-3">
-                        <a class="btn-flat button-link disabled" href="">
-                          重發驗證碼 (30秒)
-                        </a>
+                      <div class="col-md-12">
+                        <div class="progress" style="height:18px;">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90">90%</div>
+                        </div>
                       </div>
-                    </form>
 
+                      <form action="program.html">
+                        <div class="field row">
+                          <div class="col-md-6">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="estateFormControlSelect">
+                                  <option value="0" disabled selected>不動產狀況</option>
+                                  <option value="1">有房</option>
+                                  <option value="2">有土地</option>
+                                  <option value="3">無</option>
+                                </select>
+                            </div>
+                          </div>
+  
+                          <div class="col-md-6">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="propertyFormControlSelect">
+                                  <option value="0" disabled selected>動產狀況</option>
+                                  <option value="1">汽車</option>
+                                  <option value="2">機車</option>
+                                  <option value="3">無</option>
+                                </select>
+                            </div>
+                          </div>
+  
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="professionFormControlSelect">
+                                  <option value="0" disabled selected>行業別</option>
+                                  <option value="1">醫院、診所、教育業</option>
+                                  <option value="2">製造業</option>
+                                  <option value="3">科技業</option>
+                                  <option value="4">票券、證券、保險業</option>
+                                  <option value="5">小型商號 (例如：企業社、工業社、工程行、小吃店)</option>
+                                  <option value="6">零售批發業、交通運輸、物流倉儲業</option>
+                                  <option value="7">銀行、律師事務所、會計師事務所</option>
+                                  <option value="8">公家機關、電信、水電、燃氣、石油供應業</option>
+                                  <option value="9">餐飲業</option>
+                                  <option value="10">旅館飯店業</option>
+                                  <option value="11">自由業</option>
+                                  <option value="12">進出口貿易商、代理商</option>
+                                  <option value="13">典當、現金服務及其他民間融資業</option>
+                                  <option value="14">其他行業</option>
+                                </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="titleFormControlSelect">
+                                  <option value="0" disabled selected>職稱</option>
+                                  <option value="1">醫護人員、執業律師、會計師、精算師</option>
+                                  <option value="2">法官、檢察官、公職人員、教育工作者</option>
+                                  <option value="3">飛行駕駛、空服員</option>
+                                  <option value="4">資本額 &ge; 500萬之企業負責人、高階管理人員</option>
+                                  <option value="5">資本額 &lt; 500萬之企業或商號負責人</option>
+                                  <option value="6">工程師</option>
+                                  <option value="7">銷售人員、營業員</option>
+                                  <option value="8">工讀人員、自由業者、娛樂、旅遊業者</option>
+                                  <option value="9">廚師、麵包師傅</option>
+                                  <option value="10">司機、快遞員</option>
+                                  <option value="11">保全、清潔人員</option>
+                                  <option value="12">一般主管</option>
+                                  <option value="13">一般職員</option>
+                                  <option value="14">其他職稱</option>
+                                </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="incomeFormControlSelect">
+                                  <option value="0" disabled selected>現職年收入</option>
+                                  <option value="1">未滿 35萬元</option>
+                                  <option value="2">35萬~未滿40萬元</option>
+                                  <option value="3">40萬~未滿50萬元</option>
+                                  <option value="4">50萬~未滿60萬元</option>
+                                  <option value="5">60萬~未滿75萬元</option>
+                                  <option value="6">75萬~未滿100萬元</option>
+                                  <option value="7">100萬~未滿150萬元</option>
+                                  <option value="8">150萬元以上</option>
+                                </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="creditcardFormControlSelect">
+                                  <option value="0" disabled selected>是否使用循環信用或預借現金</option>
+                                  <option value="1">無信用卡</option>
+                                  <option value="2">有使用信用卡循環或預借現金</option>
+                                  <option value="3">有信用卡，但無使用信用卡循環及預借現金</option>
+                                </select>
+                            </div>
+                          </div>
+                          
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="cycleFormControlSelect">
+                                  <option value="0" disabled selected>信用卡循環、預借現金總額</option>
+                                  <option value="1">無</option>
+                                  <option value="2">未滿5千元</option>
+                                  <option value="3">5千~未滿1萬元</option>
+                                  <option value="4">1萬~未滿2萬元</option>
+                                  <option value="5">2萬~未滿5萬元</option>
+                                  <option value="6">5萬~未滿10萬元</option>
+                                  <option value="7">10萬~未滿20萬元</option>
+                                  <option value="8">20萬元以上</option>
+                                  <option value="9">不清楚</option>
+                                </select>
+                            </div>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="input-field mq-md-up">
+                                <select class="form-control" id="loanFormControlSelect">
+                                  <option value="0" disabled selected>目前貸款餘額</option>
+                                  <option value="1">無貸款</option>
+                                  <option value="2">未滿30萬元</option>
+                                  <option value="3">30萬~未滿50萬元</option>
+                                  <option value="4">50萬~未滿80萬元</option>
+                                  <option value="5">80萬~未滿100萬元</option>
+                                  <option value="6">100萬~未滿150萬元</option>
+                                  <option value="7">150萬元以上</option>
+                                </select>
+                            </div>
+                          </div>
+
+                        </div>
+  
+                        <button class="btn btn-large red button btn-custom waves-effect" type="submit">看結果</button>
+  
+                      </form>
+  
+                    </div>
                   </div>
                 </div>
-              </div>
-            </section><!-- ##### END PHONE VERIFY #####-->
+              </section><!-- ##### END SUBSCRIBE #####-->
 
             <!-- ##### FOOTER #####-->
             <footer class="footer">

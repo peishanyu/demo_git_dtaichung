@@ -1,4 +1,4 @@
-#subscribe {
+#subscribe, #phone-verify {
   .root {
     position: relative;
     text-align: center;
@@ -67,12 +67,25 @@
   .btn.btn-large.button.btn-custom {
     width: 170px;
     height: 50px;
+    margin: 8px;
     border-radius: 100rem;
     color: #fff !important;
     background: -webkit-gradient(linear, left top, left bottom, from(#ffb973), to(#e02759)) !important;
     background: -o-linear-gradient(#ffb973 0%, #e02759 100%) !important;
     background: linear-gradient(#ffb973 0%, #e02759 100%) !important;
     border: 2px solid #fba66f;
+    line-height: 2!important;
+    font-size: 18px!important;
+  }
+
+  .btn.btn-large.button.btn-custom-outline {
+    width: 170px;
+    height: 50px;
+    margin: 8px;
+    border-radius: 100rem;
+    color: #239eac !important;
+    background: #fff;
+    border: 2px solid #03BAD4;
     line-height: 2!important;
     font-size: 18px!important;
   }
@@ -113,6 +126,27 @@
     height: 52px;
     padding: 0 12px;
     border-radius: 8px;
+  }
+
+}
+
+#phone-verify {
+
+  form {
+
+    .row {justify-content: center;}
+    .use-text-paragraph {margin-bottom: 0;}
+    .user-input-phone {
+      font-weight: var(--font-bold);
+      color: var(--con-1);
+    }
+
+
+
+    .button-link {
+      color: var(--v-primarydark-base);
+    }
+
   }
 
 }

@@ -300,13 +300,9 @@
     img {
       width:40px;
       margin-right: 10px;
+      border-radius: 100rem;
     }
 
-    .avatar-before {
-      @include breakpoints-down(xs) {
-        display: none
-      }
-    }
   }
 
   .icon {
@@ -333,6 +329,7 @@
     img {
       width: 100%;
       transform: rotate(-45deg);
+      border-radius: 100rem;
     }
   }
   h6 {
