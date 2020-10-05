@@ -7,7 +7,7 @@
   padding-bottom: $spacing5;
 
   @include breakpoints-down(xs) {
-    margin-top: $spacing5;
+    margin-top: $spacing2;
   }
 
   ul {

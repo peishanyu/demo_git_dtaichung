@@ -20,7 +20,7 @@ $icon-four: '../images/mrd/parallax-four.png';
       background-size: 50%;
       .theme--light & {
         // @include bg-color-lighten($palette-primary-light, 0.7)
-        background: url(../../assets/images/mrd/banner-bg.png);
+        background: url(../../assets/images/mrd/banner-bg-m.svg);
         
         background-position: center;
         background-size: cover;
@@ -151,7 +151,7 @@ $icon-four: '../images/mrd/parallax-four.png';
       // transform: rotate(-10deg);
       width: 120%;
       // overflow: hidden;
-      background: url(../../assets/images/mrd/banner-bg.png);
+      background: url(../../assets/images/mrd/banner-bg.svg);
       height: 85vh;
       background-position: top right;
       background-size: contain;

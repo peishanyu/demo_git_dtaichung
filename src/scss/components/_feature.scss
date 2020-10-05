@@ -1,9 +1,10 @@
 #feature {
-  background: url(../../assets/images/mrd/bg_hero.svg);
-  background-repeat: no-repeat;
-  background-position: center right;
+  // background: url(../../assets/images/mrd/bg_hero.svg);
+  // background-repeat: no-repeat;
+  // background-position: center right;
   @include breakpoints-down(xs) {
-    padding-bottom: 0
+    padding-top: 20px;
+    padding-bottom: 0;
   }
   
   .root {
@@ -20,6 +21,7 @@
       padding-bottom: 0
     }
   }
+
 }
 
 .counter-item {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="667" viewBox="0 0 375 667">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="矩形_3570" data-name="矩形 3570" width="375" height="667" transform="translate(0 22)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.02" y1="0.972" x2="0.998" y2="0.804" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8bf2ff"/>
+      <stop offset="1" stop-color="#b8c9ff"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.315" y1="0.622" x2="0.143" y2="0.885" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#b8f8ff"/>
+    </linearGradient>
+  </defs>
+  <g id="banner-bg-m" transform="translate(0 -22)" clip-path="url(#clip-path)">
+    <rect id="矩形_3568" data-name="矩形 3568" width="339" height="624" rx="20" transform="matrix(0.995, 0.105, -0.105, 0.995, 79.307, -60.183)" fill="url(#linear-gradient)"/>
+    <rect id="矩形_3569" data-name="矩形 3569" width="483" height="662" rx="20" transform="matrix(0.966, -0.259, 0.259, 0.966, -90.551, -7.064)" fill="url(#linear-gradient-2)"/>
+  </g>
+</svg>

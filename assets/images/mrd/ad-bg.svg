@@ -1,11 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="956" viewBox="0 0 1920 956">
   <defs>
     <clipPath id="clip-path">
-      <rect id="矩形_3526" data-name="矩形 3526" width="1920" height="1080" transform="translate(8273 -5005)" fill="#fff"/>
+      <rect id="矩形_3566" data-name="矩形 3566" width="1920" height="450" transform="translate(11391 -6888.187)" fill="#55dbff"/>
     </clipPath>
+    <linearGradient id="linear-gradient" x1="0.058" y1="0.058" x2="0.99" y2="0.99" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#55dbff"/>
+      <stop offset="1" stop-color="#0c80f4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.058" y1="0.558" x2="0.895" y2="-0.395" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="-0.064" y1="0.564" x2="0.779" y2="-0.279" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.998" stop-color="#0c80f4"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="0.54" y1="0.83" x2="1.493" y2="0.146" xlink:href="#linear-gradient-3"/>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientTransform="translate(0.871 -0.102) rotate(76.667)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#37a1bc"/>
+      <stop offset="0.546" stop-color="#70d7f3"/>
+      <stop offset="0.815" stop-color="#cff3fc"/>
+      <stop offset="1" stop-color="#fff"/>
+    </radialGradient>
+    <linearGradient id="linear-gradient-5" x1="0.134" y1="0.818" x2="0.829" y2="0.322" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b7ccff"/>
+      <stop offset="0.545" stop-color="#dbefff"/>
+      <stop offset="1" stop-color="#d8fbff"/>
+    </linearGradient>
   </defs>
-  <g id="ad-bg" transform="translate(-8273 5005)" clip-path="url(#clip-path)">
-    <rect id="矩形_3525" data-name="矩形 3525" width="172.476" height="567.248" rx="86" transform="matrix(0.819, 0.574, -0.574, 0.819, 8447.937, -4911.541)" fill="#d5ecff"/>
-    <path id="路径_32672" data-name="路径 32672" d="M130.929,0c72.31,0,130.929,64.3,130.929,143.611V806.382c0,79.314-58.619,143.611-130.929,143.611S0,885.7,0,806.382V143.611C0,64.3,58.619,0,130.929,0Z" transform="matrix(0.819, 0.574, -0.574, 0.819, 8823.653, -4946.116)" fill="#d8fbff"/>
+  <g id="ad-bg" transform="translate(-11391 7177.972)">
+    <rect id="矩形_3567" data-name="矩形 3567" width="1920" height="956" transform="translate(11391 -7177.972)" fill="rgba(85,219,255,0)"/>
+    <g id="蒙版组_11" data-name="蒙版组 11" transform="translate(0 27.187)" clip-path="url(#clip-path)">
+      <g id="组_17001" data-name="组 17001" transform="translate(11391 -7279.663)">
+        <rect id="矩形_3565" data-name="矩形 3565" width="1920" height="1016.826" transform="translate(0 0.026)" fill="url(#linear-gradient)"/>
+        <path id="路径_32684" data-name="路径 32684" d="M63.74,1269.517,1983.712,252.665H63.74Z" transform="translate(-63.74 -252.665)" fill="url(#linear-gradient-2)"/>
+        <path id="路径_32685" data-name="路径 32685" d="M604.834,252.67H63.74V762.127Z" transform="translate(-63.74 -252.644)" fill="url(#linear-gradient-3)" style="mix-blend-mode: multiply;isolation: isolate"/>
+        <path id="路径_32686" data-name="路径 32686" d="M662.056,322.443,168.049,787.567,362.017,970.193H662.056Z" transform="translate(1257.944 46.659)" fill="url(#linear-gradient-4)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      </g>
+    </g>
+    <g id="组_17000" data-name="组 17000" transform="translate(11412.779 -6972)">
+      <ellipse id="椭圆_243" data-name="椭圆 243" cx="85.624" cy="85.625" rx="85.624" ry="85.625" transform="translate(53.435 232.707) rotate(-76.667)" opacity="0.7" fill="url(#radial-gradient)" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <ellipse id="椭圆_244" data-name="椭圆 244" cx="100.735" cy="100.736" rx="100.735" ry="100.736" transform="translate(0 198.331) rotate(-79.872)" fill="url(#linear-gradient-5)"/>
+    </g>
   </g>
 </svg>

@@ -2,7 +2,6 @@
   .root {
     position: relative;
     text-align: center;
-    
   }
   .parallax-form-wrap {
     position: absolute;
@@ -126,6 +125,14 @@
     height: 52px;
     padding: 0 12px;
     border-radius: 8px;
+  }
+
+  .progress {
+    background-color: #eff1f3;
+  }
+
+  .progress-bg-custom {
+    background-color: #f89057;
   }
 
 }

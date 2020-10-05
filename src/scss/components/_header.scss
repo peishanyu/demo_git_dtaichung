@@ -264,13 +264,14 @@
   a {
     // color: $palette-common-white;
     color: #239eac !important;
-    margin: spacing(0, 1.5);
+    margin: spacing(0, .75);
     font-size: 16px;
     &.white {
       // border: 1px solid $palette-primary-main;
       // padding-top: 4px !important;
       // padding-bottom: 4px !important;
       // color: $palette-primary-dark !important;
+      position: relative;
       width: 170px;
       height: 50px;
       border-radius: 100rem;
@@ -284,7 +285,20 @@
       background: linear-gradient(#ffb973 0%, #e02759 100%)!important;
       border: 2px solid #fba66f;
 
-      img {margin-right: 5px;}
+      &:hover {
+        .bg-btn-logo-before {
+          background: url(../../assets/images/mrd-logo-d-yellow.svg) no-repeat;
+        }
+      }
+
+      .bg-btn-logo-before {
+        display: inline-block;
+        vertical-align: bottom;
+        width: 24px;
+        height: 24px;
+        background: url(../../assets/images/mrd-logo-d-white.svg) no-repeat;
+      }
+      
     }
   }
 }
