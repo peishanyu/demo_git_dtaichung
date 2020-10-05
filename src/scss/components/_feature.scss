@@ -103,3 +103,18 @@
     justify-content: center;
   }
 }
+
+#program {
+  #feature {
+    @include breakpoints-down(xs) {
+      padding-top: 120px;
+    }
+  }
+
+  .counter-item {
+    @include breakpoints-down(xs) {
+      display: block;
+      margin: spacing(2, 0);
+    }
+  }
+}

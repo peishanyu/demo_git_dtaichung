@@ -99,7 +99,7 @@
                   <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
                     <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
-                      <img src="./assets/images/mrd-logo-d-white.svg" alt="logo" />
+                      <div class="bg-btn-logo-before"></div>
                       馬上體驗
                     </a>
                     <a class="btn white light button anchor-link waves-effect" href="explore.html">特選方案</a>
@@ -109,50 +109,70 @@
             </div>
           </header>
           <!-- ##### END HEADER #####-->
-          <main class="container-wrap">
+          <main class="container-wrap" id="program">
 
-            <!-- ##### PHONE VERIFY #####-->
-            <section class="space-top-short space-bottom-short" id="phone-verify">
-              <div class="root">
-                <div class="parallax-form-wrap">
-                  <div class="parallax" data-enllax-ratio="0.2"></div>
-                </div>
-                <div class="container fixed-width">
-
-                  
-                  <div class="card form">
+            <!-- ##### FEATURE #####-->
+            <section class="space-top space-bottom-short" id="feature">
+                <div class="root">
+                  <div class="container max-md">
                     <div class="title-main align-center">
-                      <h4 class="primary"><span>手機號碼驗證</span></h4>
-                      <p class="desc primary use-text-subtitle2">為確保 mrD.cash貸先生 預測模型的合理使用，請進行手機簡訊認證</p>
+                      <h4 class="primary"><span>信貸推薦專區</span></h4>
                     </div>
 
-                    <form action="result.html">
+                    <div class="row spacing8 grid">
+                      <div class="col-sm-12 px-12 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
+                        <div class="counter-item">
+                          <div class="align center"><img src="./assets/images/mrd/search.svg" alt="search"></div>
+                          <div class="text">
+                            <h5 class="use-text-title2 px-md-3 px-2">凱基 貸你優利</h5>
 
-                      <p class="desc use-text-paragraph">── 您的手機號碼 ──</p>
-                      <h5 class="primary user-input-phone">+886 912 345678</h5>
+                            <div class="row">
+                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                    <div class="caption">總費用年百分率</div>
+                                    <div class="">2.32%起</div>
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                    根據條件需求自動篩選最有利的貸款方案
+                                </div>
+                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                    根據條件需求自動篩選最有利的貸款方案
+                                </div>
+                            </div>
 
-                      <div class="field row">
-                        <div class="col-md-6">
-                          <div class="input-field filled dark mq-md-up me-2">
-                            <input type="text" name="sms-code" id="sms-code" required>
-                            <label for="sms-code">輸入收到的簡訊驗證碼 *</label>
                           </div>
                         </div>
                       </div>
-                      
-                      <button class="btn btn-large light button button btn-custom-outline waves-effect" onclick="window.location.href='index.html#subscribe';">更改號碼</button>
-                      <button class="btn btn-large red button btn-custom waves-effect" type="submit">送出驗證</button>
-                      <div class="mt-3">
-                        <a class="btn-flat button-link disabled" href="">
-                          重發驗證碼 (30秒)
-                        </a>
+                    </div>
+
+                    <div class="row spacing8 grid">
+                        <div class="col-sm-12 px-12 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
+                          <div class="counter-item">
+                            <div class="align center"><img src="./assets/images/mrd/search.svg" alt="search"></div>
+                            <div class="text">
+                              <h5 class="use-text-title2 px-md-3 px-2">凱基 貸你優利</h5>
+  
+                              <div class="row">
+                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                      根據條件需求自動篩選最有利的貸款方案
+                                  </div>
+                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                      根據條件需求自動篩選最有利的貸款方案
+                                  </div>
+                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
+                                      根據條件需求自動篩選最有利的貸款方案
+                                  </div>
+                              </div>
+  
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </form>
 
                   </div>
                 </div>
-              </div>
-            </section><!-- ##### END PHONE VERIFY #####-->
+            </section>
+            <!-- ##### END FEATURE #####-->
+
 
             <!-- ##### FOOTER #####-->
             <footer class="footer">
