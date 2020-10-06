@@ -55,3 +55,9 @@
     position: relative;
   }
 }
+
+.m-application #program {
+  p {
+    color: var(--v-primarydark-base)
+  }
+}

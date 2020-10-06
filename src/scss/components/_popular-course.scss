@@ -122,9 +122,9 @@
   }
 
   .prev {
-    @include left(0)
+    @include left(1.5vw)
   }
   .next {
-    @include right(0)
+    @include right(1.5vw)
   }
 } 

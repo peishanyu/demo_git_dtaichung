@@ -1,7 +1,7 @@
 .general-card {
   position: relative;
-  width: 250px;
-  height: 400px;
+  // width: 250px;
+  // height: 400px;
   padding: 3px;
   figure {
     margin: 0px;
@@ -355,3 +355,15 @@
   }
 }
   
+#program {
+  .general-card {
+    padding: 0;
+
+    figure {
+      border-radius: 6px 6px 0 0;
+      height: 250px;
+    }
+
+  }
+
+}

@@ -48,6 +48,7 @@
   <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
   <link href="./assets/css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -68,7 +69,7 @@
               </ul>
               <hr class="divider-sidebar">
               <ul class="collection scrollnav">
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="index.html#subscribe">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">馬上體驗</a></li>
                 <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
               </ul>
             </div>
@@ -98,7 +99,7 @@
                 <nav class="nav-menu nav-auth hidden-xs-down">
                   <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
-                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
+                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">
                       <div class="bg-btn-logo-before"></div>
                       馬上體驗
                     </a>
@@ -112,68 +113,157 @@
           <main class="container-wrap" id="program">
 
             <!-- ##### FEATURE #####-->
-            <section class="space-top space-bottom-short" id="feature">
+            <section class="space-top" id="feature">
                 <div class="root">
-                  <div class="container max-md">
+                  <div class="container">
                     <div class="title-main align-center">
                       <h4 class="primary"><span>信貸推薦專區</span></h4>
+                      <p class="desc use-text-subtitle2">全台各銀行 精選貸款推薦</p>
                     </div>
 
-                    <div class="row spacing8 grid">
-                      <div class="col-sm-12 px-12 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
+                    <div class="row px-8 spacing8 grid">
+                      <div class="col-sm-6 px-2 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
                         <div class="counter-item">
-                          <div class="align center"><img src="./assets/images/mrd/search.svg" alt="search"></div>
+                          <div class="align center"><img src="https://www.kgibank.com/system/modules/com.thesys.cosmos/resources/images/logo_kgi.png" alt="search"></div>
                           <div class="text">
-                            <h5 class="use-text-title2 px-md-3 px-2">凱基 貸你優利</h5>
-
+                            <div class="mint-var use-text-subtitle3 px-md-2 px-2">凱基銀行 貸你優利</div>
                             <div class="row">
-                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                    <div class="caption">總費用年百分率</div>
-                                    <div class="">2.32%起</div>
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                    <p class="caption">總費用年百分率</p>
+                                    <div class="smart-var use-text-paragraph">2.32%起</div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                    根據條件需求自動篩選最有利的貸款方案
+                                <div class="sep-line"></div>
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                  <p class="caption">手續費</p>
+                                  <div class="smart-var use-text-paragraph">3000起</div>
                                 </div>
-                                <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                    根據條件需求自動篩選最有利的貸款方案
+                                <div class="sep-line"></div>
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                  <p class="caption">最低每月還款額</p>
+                                  <div class="smart-var use-text-paragraph">5,001</div>
                                 </div>
                             </div>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="col-sm-6 px-2 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
+                        <div class="counter-item">
+                          <div class="align center"><img src="https://www.kgibank.com/system/modules/com.thesys.cosmos/resources/images/logo_kgi.png" alt="search"></div>
+                          <div class="text">
+                            <div class="mint-var use-text-subtitle3 px-md-2 px-2">凱基銀行 貸你優利</div>
+                            <div class="row">
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                    <p class="caption">總費用年百分率</p>
+                                    <div class="smart-var use-text-paragraph">2.32%起</div>
+                                </div>
+                                <div class="sep-line"></div>
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                  <p class="caption">手續費</p>
+                                  <div class="smart-var use-text-paragraph">3000起</div>
+                                </div>
+                                <div class="sep-line"></div>
+                                <div class="col-lg-3 col-sm-3 col-4 pa-md-2 pa-2">
+                                  <p class="caption">最低每月還款額</p>
+                                  <div class="smart-var use-text-paragraph">5,001</div>
+                                </div>
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-
-                    <div class="row spacing8 grid">
-                        <div class="col-sm-12 px-12 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.5s">
-                          <div class="counter-item">
-                            <div class="align center"><img src="./assets/images/mrd/search.svg" alt="search"></div>
-                            <div class="text">
-                              <h5 class="use-text-title2 px-md-3 px-2">凱基 貸你優利</h5>
-  
-                              <div class="row">
-                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                      根據條件需求自動篩選最有利的貸款方案
-                                  </div>
-                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                      根據條件需求自動篩選最有利的貸款方案
-                                  </div>
-                                  <div class="col-lg-4 col-sm-12 col-12 pa-md-3 pa-2">
-                                      根據條件需求自動篩選最有利的貸款方案
-                                  </div>
-                              </div>
-  
-                            </div>
-                          </div>
-                        </div>
-                      </div>
 
                   </div>
                 </div>
             </section>
             <!-- ##### END FEATURE #####-->
 
+            <!-- ##### EXPLORE #####-->
+            <section class="" id="explore">
+              <div class="root">
+                <div class="parallax-wrap">
+                  <div class="parallax-wrap dots-wrap">
+                    <div class="inner-parallax">
+                      <div class="figure">
+                        <div data-enllax-ratio="-0.2" data-enllax-type="foreground">
+                          <img class="parallax-vertical parallax-dot" src="./assets/images/mrd/ball-deco.svg" alt="dot" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="container">
+                  <div class="px-6">
+                    <div class="title-main align-center">
+                      <h4 class="primary"><span>更適合您的專屬方案</span></h4>
+                      <p class="desc use-text-subtitle2">貸先生客戶獨享 為您精打細算</p>
+                    </div>
+                  </div>
+                  <div id="testimonials" class="row px-8 spacing8 slider-wrap">
+                    <div class="carousel">
+                      <button class="btn-floating nav prev waves-effect" id="prev_testi">
+                        <i class="ion-ios-arrow-back"></i>
+                      </button>
+                      <div class="slick-carousel" id="testimonial_carousel">
+  
+                        <div class="item">
+                          <div class="card general-card">
+                            <figure>
+                              <img src="https://www.competition102.com.tw/userfiles/images/20200407141605695.jpg" alt="title" />
+                            </figure>
+                            <div class="desc">
+                              <h6 class="title pb-2">房屋貸幸福專案</h6>
+                              <p class="use-text-paragraph">好房再貸一波，線上申貸超快速！小老闆晉升大頭家，需要資金來推轉，讓貸先生祝您一臂之力！
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="item">
+                          <div class="card general-card">
+                            <figure>
+                              <img src="https://bank.sinopac.com/upload/sinopac/picture/15ebd9a0550000002942.png" alt="title" />
+                            </figure>
+                            <div class="desc">
+                              <h6 class="title pb-2">汽車貸幸福專案</h6>
+                              <p class="use-text-paragraph">能幫您將前貸代償結清，並爭取車價最高200%的高額度與降息優惠，讓您有充裕的現金可運用。</p>
+                            </div>
+                          </div>
+                        </div>
+  
+                        <div class="item">
+                          <div class="card general-card">
+                            <figure>
+                              <img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="title" />
+                            </figure>
+                            <div class="desc">
+                              <h6 class="title pb-2">個人信貸~幸福專案</h6>
+                              <p class="use-text-paragraph">憑個人信用狀況即可取得資金，無須提供任何擔保人、抵押品；無須承擔提前清償違約金，
+                                貸你一起迎向美好未來！
+                                </p>
+                            </div>
+                          </div>
+                        </div>
+  
+                      </div>
+  
+                      <button class="btn-floating nav next waves-effect" id="next_testi">
+                        <i class="ion-ios-arrow-forward"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section><!-- ##### END EXPLORE #####-->   
 
+            <section class="pa-md-12 pa-2">
+              <div class="root">
+                <div class="container">
+                  <p class="align center black-var">本公司財務專員會採取對您最有利的方案為您客製化量身訂做，並於3小時內與您連絡，完成後續線上貸款的流程。</p>
+                </div>
+              </div>
+            </section>
+            
             <!-- ##### FOOTER #####-->
             <footer class="footer">
               <div class="container">
@@ -265,7 +355,7 @@
           <div class="">
             <div class="page-nav" id="page_nav">
               <div class="scrollnav">
-                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#main-wrap" data-position="left" data-tooltip="To Top">
                   <div class="icon material-icons">arrow_upward</div>
                 </a>
               </div>

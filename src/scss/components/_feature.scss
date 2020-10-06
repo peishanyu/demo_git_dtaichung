@@ -112,9 +112,52 @@
   }
 
   .counter-item {
+    margin: 16px 8px;
     @include breakpoints-down(xs) {
       display: block;
-      margin: spacing(2, 0);
+      padding:spacing(1.5, 1);
+      margin: spacing(1.5, 0);
+    }
+
+    img {
+      width: 100px;
+      margin-right: 20px;
+      @include breakpoints-down(xs) {
+        margin: 10px 0 20px 0;
+      }
+    }
+
+    .text {
+      width: 100%;
+
+      .col-4 {max-width: 32.5%;}
+
+      >.row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .caption {
+        margin-bottom: 0;
+      }
+
+      .use-text-paragraph {
+        font-weight: $font-bold;
+        color: var(--v-secondarydark-base);
+        @include breakpoints-down(xs) {
+          font-size: 16px;
+        }
+      }
+
+      .sep-line {
+        width: 1px;
+        background: #ddd;
+        height: 40px;
+        @include breakpoints-down(xs) {
+        //  display: none;
+        }
+      }
     }
   }
 }

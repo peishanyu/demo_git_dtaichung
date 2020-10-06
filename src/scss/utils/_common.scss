@@ -54,9 +54,26 @@
       margin-bottom: 10px;
     }
   }
+
+  &-subtitle3 {
+    font-weight: $font-bold;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--v-secondarydark-base);
+    @include breakpoints-down(md) {
+      font-size: 18px;
+      line-height: 24px
+    }
+    @include breakpoints-down(xs) {
+      font-size: 18px;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+  }
+
   &-paragraph {
     font-weight: $font-regular;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px
   }
   &-caption {
