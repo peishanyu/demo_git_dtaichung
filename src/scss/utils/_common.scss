@@ -169,3 +169,45 @@
     }
   }
 }
+
+#program.page-program {
+
+  h1,h6,h4.vampire-var {
+    color: var(--v-primarydark-base);
+  }
+
+  h6 {
+    @include breakpoints-up(sm) {
+    font-size: 20px;
+    }
+  }
+
+  p.use-text-subtitle2 {
+    color: var(--v-secondarydark-base);
+  }
+
+}
+
+
+.page-layout-one {
+
+  #explore {
+
+    p {margin-bottom: 10px;line-height:1.25;}
+
+    .use-text-subtitle {
+      margin-bottom: 10px;
+      font-weight: var(--font-bold);
+      color: var(--v-secondarydark-base);
+    }
+
+    .paragraph {
+      color: var(--v-secondarydark-base);
+    }
+
+    .caption {
+      color: var(--v-primarydark-base);
+    }
+  }
+
+}

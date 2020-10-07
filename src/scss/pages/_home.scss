@@ -42,7 +42,7 @@
     padding-top: section-margin(6px);
   }
   @include breakpoints-down(xs) {
-    padding-top: section-margin(3px);
+    // padding-top: section-margin(3px);
   }
 }
 

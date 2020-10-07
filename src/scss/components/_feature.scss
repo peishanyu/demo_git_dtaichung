@@ -3,8 +3,8 @@
   // background-repeat: no-repeat;
   // background-position: center right;
   @include breakpoints-down(xs) {
-    padding-top: 20px;
-    padding-bottom: 0;
+    // padding-top: 20px;
+    // padding-bottom: 0;
   }
   
   .root {
@@ -30,7 +30,7 @@
   margin: spacing(2);
   padding: spacing(2);
   background: #fff;
-  box-shadow: 0 5px 20px #b3f3fb;
+  box-shadow: 0 4px 15px #b3f3fb;
   border-radius: 10px;
   @include breakpoints-down(xs) {
     margin: spacing(4, 4);
@@ -104,13 +104,7 @@
   }
 }
 
-#program {
-  #feature {
-    @include breakpoints-down(xs) {
-      padding-top: 120px;
-    }
-  }
-
+#program.page-program {
   .counter-item {
     margin: 16px 8px;
     @include breakpoints-down(xs) {
@@ -119,7 +113,7 @@
       margin: spacing(1.5, 0);
     }
 
-    img {
+    img.bank-logo {
       width: 100px;
       margin-right: 20px;
       @include breakpoints-down(xs) {
@@ -157,6 +151,21 @@
         @include breakpoints-down(xs) {
         //  display: none;
         }
+      }
+    }
+  }
+}
+
+.page-layout-one {
+  #testimonials {
+    .counter-item {
+      margin: 5px;
+      -webkit-box-shadow: 0 0 10px #b3f3fb;
+      box-shadow: 0 0 10px #b3f3fb;
+      @include breakpoints-down(xs) {
+        display: block;
+        padding:spacing(1.5, 1);
+        margin: spacing(1.5, 0);
       }
     }
   }
