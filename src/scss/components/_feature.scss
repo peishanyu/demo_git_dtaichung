@@ -170,3 +170,11 @@
     }
   }
 }
+
+.page-program {
+  #feature {
+    @include breakpoints-down(xs) {
+      padding-top: 40px;
+    }
+  }
+}
