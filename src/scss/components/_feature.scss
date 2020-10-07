@@ -104,7 +104,7 @@
   }
 }
 
-#program.page-program {
+.page-program {
   .counter-item {
     margin: 16px 8px;
     @include breakpoints-down(xs) {
@@ -164,8 +164,34 @@
       box-shadow: 0 0 10px #b3f3fb;
       @include breakpoints-down(xs) {
         display: block;
-        padding:spacing(1.5, 1);
+        padding:spacing(2, 1);
         margin: spacing(1.5, 0);
+      }
+    }
+  }
+  #feature {
+    @include breakpoints-down(xs) {
+      padding-top: 0;
+    }
+    .counter-item {
+      background: transparent;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      @include breakpoints-down(xs) {
+        margin: spacing(1.5, 0);
+        padding: 0;
+      }
+    }
+
+    h5 {
+      @include breakpoints-down(xs) {
+        font-size: 16px;
+      }
+    }
+
+    h6 {
+      @include breakpoints-down(xs) {
+        font-size: 14px;
       }
     }
   }

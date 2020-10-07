@@ -170,10 +170,10 @@
   }
 }
 
-#program.page-program {
+.page-program {
 
-  h1,h6,h4.vampire-var {
-    color: var(--v-primarydark-base);
+  h1,h6,.title-main h4 {
+    color: var(--v-primarydark-base)!important;
   }
 
   h6 {
@@ -199,6 +199,9 @@
       margin-bottom: 10px;
       font-weight: var(--font-bold);
       color: var(--v-secondarydark-base);
+      @include breakpoints-down(xs) {
+        font-size: 20px;
+      }
     }
 
     .paragraph {

@@ -61,3 +61,11 @@
     color: var(--v-primarydark-base)
   }
 }
+
+.page-layout-one {
+  .main-wrap {
+    .theme--light & {
+      background: #fff5f9;
+    }
+  }
+}
