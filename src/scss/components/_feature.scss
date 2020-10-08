@@ -156,6 +156,14 @@
   }
 }
 
+.page-index {
+  .counter-item {
+    @include breakpoints-down(xs) {
+      margin: spacing(4, 4, 0);
+    }
+  }
+}
+
 .page-layout-one {
   #testimonials {
     .counter-item {
@@ -194,6 +202,14 @@
         font-size: 14px;
       }
     }
+  }
+
+  #feature2 {
+    background-color: #8a4b64;
+    background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 }
 

@@ -139,6 +139,14 @@
 
 }
 
+.page-index {
+  #subscribe {
+    @include breakpoints-down(xs) {
+      padding-bottom: 40px;
+    }
+  }
+}
+
 #phone-verify {
   form {
     .row {justify-content: center;}
