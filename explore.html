@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   
-  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title><!-- Styles-->
-  <!-- Put the 3rd/plugins css here-->
+  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
+  <!-- Styles-->
   <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
   <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
@@ -48,7 +48,6 @@
   <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
   <link href="./assets/css/styles.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -56,7 +55,7 @@
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
     <div class="m-content smart ocean-blue-var" id="main-wrap">
-      <div class="page-explore">
+      <div class="page-index">
         <div class="main-wrap">
           <div class="sidenav mobile-nav" id="slide-menu">
             <div class="menu">
@@ -69,7 +68,7 @@
               </ul>
               <hr class="divider-sidebar">
               <ul class="collection scrollnav">
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close anchor-link waves-effect" href="#subscribe">馬上體驗</a></li>
                 <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
               </ul>
             </div>
@@ -82,7 +81,7 @@
                 </button>
                 <nav class="nav-logo">
                   <div class="logo scrollnav">
-                    <a href="index.html"><img src="./assets/images/mrd-logo.svg" alt="logo" />
+                    <a href="#home"><img src="./assets/images/mrd-logo.svg" alt="logo" />
                     </a>
                   </div>
                 </nav>
@@ -99,7 +98,7 @@
                 <nav class="nav-menu nav-auth hidden-xs-down">
                   <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
-                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">
+                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
                       <div class="bg-btn-logo-before"></div>
                       馬上體驗
                     </a>
@@ -110,121 +109,116 @@
             </div>
           </header>
           <!-- ##### END HEADER #####-->
-          <main class="container-wrap" id="explore-program">
+          <main class="container-wrap">
 
             <!-- ##### EXPLORE #####-->
             <section class="space-top-short" id="explore">
-                <div class="root">
-                    <div class="parallax-wrap">
-                    <div class="parallax-wrap dots-wrap">
-                        <div class="inner-parallax">
-                        <div class="figure">
-                            <div data-enllax-ratio="-0.2" data-enllax-type="foreground">
-                            <img class="parallax-vertical parallax-dot" src="./assets/images/mrd/ball-deco.svg" alt="dot" />
-                            </div>
+              <div class="root">
+                <div class="parallax-wrap">
+                  <div class="parallax-wrap dots-wrap">
+                    <div class="inner-parallax">
+                      <div class="figure">
+                        <div data-enllax-ratio="-0.2" data-enllax-type="foreground">
+                          <img class="parallax-vertical parallax-dot" src="./assets/images/mrd/ball-deco.svg" alt="dot" />
                         </div>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <div class="container fixed-width-md-up">
-                    <div class="px-6">
+                  </div>
+                </div>
 
-                        
-                        <div class="title-main align-center">
-                        <h4 class="primary"><span>特選方案</span></h4>
-                        <p class="desc use-text-subtitle2">貸先生為您提供多種方案，幫您節省時間，不再為資金問題傷透腦筋！</p>
+                <div class="container fixed-width-md-up">
+                  <div class="px-6">
+                    <div class="title-main align-center">
+                      <h4 class="primary"><span>特選方案</span></h4>
+                      <p class="desc use-text-subtitle2">貸先生為您提供多種方案，幫您節省時間，不再為資金問題傷透腦筋！</p>
+                    </div>
+                  </div>
+                  <div class="massonry">
+                    <div class="row">
+                      
+                      <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="0s" data-wow-duration="0.4s">
+                        <div class="card-wrap">
+                            <span class="fold"></span>
+                            <a class="waves-effect category-card" href="program_id_01.html">
+                              <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
+                              <span class="property"><span class="title-category">房屋貸幸福專案</span>
+                              <span class="desc">貸您圓滿，家倍幸福，立即開始申請吧！</span>
+                              </span>
+                            </a>
+                        </div>
                         </div>
                     </div>
-                    <div class="massonry">
-                        <div class="row">
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="0s" data-wow-duration="0.4s">
-                            <div class="card-wrap">
-                                <span class="fold"></span>
-                                <a class="waves-effect category-card" href="program_id_01.html">
-                                  <span class="figure">
-                                    <img src="https://www.competition102.com.tw/userfiles/images/20200407141605695.jpg" alt="img"/>
-                                  </span>
-                                  <span class="property">
-                                    <span class="title-category">房屋貸幸福專案</span>
-                                    <span class="desc">貸您圓滿，家倍幸福，立即開始申請吧！</span>
-                                  </span>
-                                </a>
-                            </div>
-                            </div>
+                    <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="0.2s" data-wow-duration="0.4s">
+                        <div class="card-wrap">
+                            <span class="fold"></span>
+                            <a class="waves-effect category-card" href="#">
+                            <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
+                            <span class="property"><span class="title-category">汽車貸幸福專案</span>
+                            <span class="desc">貸先生極速借貸，伴您走過人生重要關卡，助您完成更多夢想！</span>
+                            </span>
+                            </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="0.2s" data-wow-duration="0.4s">
-                            <div class="card-wrap">
-                                <span class="fold"></span>
-                                <a class="waves-effect category-card" href="#">
-                                <span class="figure"><img src="https://bank.sinopac.com/upload/sinopac/picture/15ebd9a0550000002942.png" alt="img"/></span>
-                                <span class="property"><span class="title-category">汽車貸幸福專案</span>
-                                <span class="desc">貸先生極速借貸，伴您走過人生重要關卡，助您完成更多夢想！</span>
-                                </span>
-                                </a>
-                            </div>
-                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="0.4s" data-wow-duration="0.4s">
-                            <div class="card-wrap">
-                                <span class="fold"></span>
-                                <a class="waves-effect category-card" href="#">
-                                <span class="figure"><img src="https://bank.sinopac.com/upload/sinopac/picture/15ebd9a0550000002942.png" alt="img"/></span>
-                                <span class="property"><span class="title-category">機車貸幸福～小資幸福專案</span>
-                                <span class="desc">小資族、攤商族、小生意族、自營商、學生族有機車也可申辦</span>
-                                </span>
-                                </a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="0.4s" data-wow-duration="0.4s">
+                        <div class="card-wrap">
+                            <span class="fold"></span>
+                            <a class="waves-effect category-card" href="#">
+                            <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
+                            <span class="property"><span class="title-category">機車貸幸福～小資幸福專案</span>
+                            <span class="desc">小資族、攤商族、小生意族、自營商、學生族有機車也可申辦</span>
+                            </span>
+                            </a>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="0.6000000000000001s" data-wow-duration="0.4s">
-                            <div class="card-wrap">
-                                <span class="fold"></span>
-                                <a class="waves-effect category-card" href="#">
-                                <span class="figure"><img src="https://www.competition102.com.tw/userfiles/images/20200407141605695.jpg" alt="img"/></span>
-                                <span class="property"><span class="title-category">債務整合~輕鬆代償專案</span>
-                                <span class="desc">整合債務您需要最專業的貸先生理財顧問團隊為您量身規劃！</span>
-                                </span>
-                                </a>
-                            </div>
-                            </div>
                         </div>
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="0.8s" data-wow-duration="0.4s">
-                            <div class="card-wrap">
-                                <span class="fold"></span>
-                                <a class="waves-effect category-card" href="#">
-                                <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
-                                <span class="property"><span class="title-category">個人信貸~幸福專案</span>
-                                <span class="desc">最高額度可貸200萬，讓您輕鬆取得計劃週轉資金</span>
-                                </span>
-                                </a>
-                            </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="0.6000000000000001s" data-wow-duration="0.4s">
+                        <div class="card-wrap">
+                            <span class="fold"></span>
+                            <a class="waves-effect category-card" href="#">
+                            <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
+                            <span class="property"><span class="title-category">債務整合~輕鬆代償專案</span>
+                            <span class="desc">整合債務您需要最專業的貸先生理財顧問團隊為您量身規劃！</span>
+                            </span>
+                            </a>
                         </div>
-
-                        <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
-                            <div class="wow fadeInUpShort" data-wow-delay="1s" data-wow-duration="0.4s">
-                              <div class="card-wrap"><span class="fold"></span>
-                                <div class="waves-effect waves-light all-category-card">
-                                  <span class="figure"><img src="https://via.placeholder.com/364x258/189a96/FFFFFF" alt="img"/></span>
-                                  <span class="property"><span class="title-category">更多方案敬請期待</span>
-                                  <!-- <i class="icons material-icons">arrow_forward</i> -->
-                                  </span>
-                                </div>
-                              </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="0.8s" data-wow-duration="0.4s">
+                        <div class="card-wrap">
+                            <span class="fold"></span>
+                            <a class="waves-effect category-card" href="#">
+                            <span class="figure"><img src="https://via.placeholder.com/270x320/189a96/FFFFFF" alt="img"/></span>
+                            <span class="property"><span class="title-category">個人信貸~幸福專案</span>
+                            <span class="desc">最高額度可貸200萬，讓您輕鬆取得計劃週轉資金</span>
+                            </span>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                      
+                      <div class="col-lg-4 col-sm-6 col-6 pa-md-6 pa-2">
+                        <div class="wow fadeInUpShort" data-wow-delay="1s" data-wow-duration="0.4s">
+                          <div class="card-wrap"><span class="fold"></span><div class="waves-effect waves-light all-category-card" href="explore.html">
+                              <span class="figure"><img src="https://via.placeholder.com/364x258/189a96/FFFFFF" alt="img"/></span>
+                              <span class="property"><span class="title-category">更多方案敬請期待</span>
+                              <!-- <i class="icons material-icons">arrow_forward</i> -->
+                              </span>
                             </div>
                           </div>
-
                         </div>
+                      </div>
                     </div>
-                    </div>
+                  </div>
                 </div>
-            </section><!-- ##### END EXPLORE #####-->  
-            
+              </div>
+            </section><!-- ##### END EXPLORE #####-->
+
             <!-- ##### FOOTER #####-->
             <footer class="footer">
               <div class="container">
@@ -254,7 +248,7 @@
                         </div>
                         <div class="collapsible-body">
                           <ul>
-                            <li><a href="">特選方案</a></li>
+                            <li><a href="explore.html">特選方案</a></li>
                             <li><a href="">貸款問與答</a></li>
                           </ul>
                         </div>
@@ -283,7 +277,7 @@
                       <div class="col-sm-3 pa-4 px-md-0 site-map-item">
                         <h6 class="title-nav mb-4">資訊</h6>
                         <ul>
-                          <li><a href="">特選方案</a></li>
+                          <li><a href="explore.html">特選方案</a></li>
                           <li><a href="">貸款問與答</a></li>
                         </ul>
                       </div>
@@ -316,7 +310,7 @@
           <div class="">
             <div class="page-nav" id="page_nav">
               <div class="scrollnav">
-                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#main-wrap" data-position="left" data-tooltip="To Top">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
                   <div class="icon material-icons">arrow_upward</div>
                 </a>
               </div>

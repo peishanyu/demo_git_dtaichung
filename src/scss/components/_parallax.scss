@@ -1,6 +1,3 @@
-$cross-deco-light: '../images/decoration/cross-deco-light.png';
-$cross-deco-dark: '../images/decoration/cross-deco-dark.png';
-
 .parallax-wrap {
   position: absolute;
   width: 100%;
@@ -59,7 +56,6 @@ $cross-deco-dark: '../images/decoration/cross-deco-dark.png';
   }
 
   .parallax-cross {
-    @include use-theme(background-image, url($cross-deco-light), url($cross-deco-dark));
     background-position: 0 -30px;
     background-repeat: repeat;
     width: 445px;
