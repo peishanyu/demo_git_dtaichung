@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   
-  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title><!-- Styles-->
-  <!-- Put the 3rd/plugins css here-->
+  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
+  <!-- Styles-->
   <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
   <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
@@ -48,7 +48,6 @@
   <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
   <link href="./assets/css/styles.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -69,7 +68,7 @@
               </ul>
               <hr class="divider-sidebar">
               <ul class="collection scrollnav">
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">馬上體驗</a></li>
+                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close anchor-link waves-effect" href="#subscribe">馬上體驗</a></li>
                 <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
               </ul>
             </div>
@@ -82,7 +81,7 @@
                 </button>
                 <nav class="nav-logo">
                   <div class="logo scrollnav">
-                    <a href="index.html"><img src="./assets/images/mrd-logo.svg" alt="logo" />
+                    <a href="#home"><img src="./assets/images/mrd-logo.svg" alt="logo" />
                     </a>
                   </div>
                 </nav>
@@ -99,7 +98,7 @@
                 <nav class="nav-menu nav-auth hidden-xs-down">
                   <div class="hidden-xs-down scrollnav">
                     <!-- <div class="deco"></div> -->
-                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe" onclick="window.location.href='index.html#subscribe'">
+                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
                       <div class="bg-btn-logo-before"></div>
                       馬上體驗
                     </a>
@@ -110,7 +109,6 @@
             </div>
           </header>
           <!-- ##### END HEADER #####-->
-
           <main class="container-wrap">
 
             <!-- ##### EXPLORE #####-->
@@ -200,8 +198,8 @@
                       <h4 class="primary"><span>服務特色</span></h4>
                       <p class="desc use-text-subtitle2"></p>
                     </div>
-                    <div class="row">
-                      <div class="col-sm-3 col-6 wow zoomIn" data-wow-delay=".25s" data-wow-duration="0.3s">
+                    <div class="row wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+                      <div class="col-sm-3 col-6">
                         <div class="counter-item">
                           <div class="text align center">
                             <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-1.png" alt="">
@@ -212,7 +210,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-3 col-6 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.2s">
+                      <div class="col-sm-3 col-6 ">
                         <div class="counter-item">
                           <div class="text align center">
                             <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-2.png" alt="">
@@ -223,7 +221,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-3 col-6 px-4 wow zoomIn" data-wow-delay="0.75s" data-wow-duration="0.2s">
+                      <div class="col-sm-3 col-6 px-4">
                         <div class="counter-item">
                           <div class="text align center">
                             <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-3.png" alt="">
@@ -234,7 +232,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-3 col-6 px-4 wow zoomIn" data-wow-delay="1s" data-wow-duration="0.2s">
+                      <div class="col-sm-3 col-6 px-4">
                         <div class="counter-item">
                           <div class="text align center">
                             <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-4.png" alt="">
@@ -251,52 +249,206 @@
             </section>
             <!-- ##### END FEATURE #####-->
 
-            <!-- ##### FEATURE 2 #####-->
-            <section class="burgundy-var space-top-short space-bottom-short" id="feature2">
-              <div class="root">
-                <div class="container">
-                  <div class="title-main align-center">
-                    <h4 class="primary"><span>服務特色</span></h4>
-                    <p class="desc use-text-subtitle2"></p>
-                  </div>
-
-                  <div class="row spacing8 grid">
-                    <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".25s" data-wow-duration="0.5s">
-                      <div class="counter-item">
-                        <div><img src="./assets/images/mrd/search.svg" alt="search"></div>
-                        <div class="text">
-                          <h5 class="use-text-title2">自動化</h5>
-                          <h6 class="use-text-paragraph">
-                            根據條件需求自動篩選最有利的貸款方案
-                          </h6>
+            <!-- ##### FEATURE2 #####-->
+            <section class="burgundy-var" id="feature2">
+                <div class="root space-top-short space-bottom-short">
+                  <div class="container fixed-width">
+                    <div class="align center title-about">
+                      <h4><span>貸先生 助您一臂之力</span></h4>
+                    </div>
+                    <div class="row spacing8 grid">
+                      <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".25s" data-wow-duration="0.5s">
+                        <div class="counter-item">
+                          <div class="align center text">
+                            <img src="./assets/images/mrd/search.svg" alt="">
+                            <h5 class="use-text-title2">24小時線上平台</h5>
+                            <h6 class="use-text-paragraph">
+                              免等待、免出門，線上申請房貸，節省您寶貴時間
+                            </h6>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.25s">
-                      <div class="counter-item">
-                        <div><img src="./assets/images/mrd/fast.svg" alt="fast"></div>
-                        <div class="text">
-                          <h5 class="use-text-title2">高效率</h5>
-                          <h6 class="use-text-paragraph">
-                            極速借貸，即時借貸，即時解決問題
-                          </h6>
+                      <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.25s">
+                        <div class="counter-item">
+                          <div class="align center text">
+                            <img src="./assets/images/mrd/fast.svg" alt="fast">
+                            <h5 class="use-text-title2">免費房貸健診服務</h5>
+                            <h6 class="use-text-paragraph">
+                              專人為您房屋估價，提供全方位且專業的房貸諮詢服務
+                            </h6>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".75s" data-wow-duration="0.25s">
-                      <div class="counter-item">
-                        <div><img src="./assets/images/mrd/service.svg" alt="fast"></div>
-                        <div class="text">
-                          <h5 class="use-text-title2">客製化</h5>
-                          <h6 class="use-text-paragraph">您的需求，我們將竭盡所能為您達成</h6>
+                      <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".75s" data-wow-duration="0.25s">
+                        <div class="counter-item">
+                          <div class="align center text">
+                            <img src="./assets/images/mrd/service.svg" alt="">
+                            <h5 class="use-text-title2">低利整合高利債務</h5>
+                            <h6 class="use-text-paragraph">不限屋齡坪數皆可申請，二胎申辦，房屋免鑑價、免薪資證明</h6>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+              </section><!-- ##### END FEATURE2 #####--> 
+
+            <!-- ##### TESTIMONIALS #####-->
+            <section id="testimonials2">
+              <div class="root container">
+                <div class="title-main align-center">
+                  <h4 class="primary"><span>成功核貸客戶</span></h4>
+                  <p class="desc use-text-subtitle2">貸先生的服務 專業讓您看見</p>
+                </div>
+                <div class="slider-wrap">
+                  <div class="carousel">
+                    <button class="btn-floating nav prev waves-effect" id="prev_testi">
+                      <i class="ion-ios-arrow-back"></i>
+                    </button>
+                    <div class="slick-carousel" id="testimonial_carousel">
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_boy4.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富。
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_boy4.svg" />
+                            </div>
+                            <div>
+                              <h6>林先生</h6>
+                              <p class="caption">新竹縣寶山鄉</p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_girl4.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_girl4.svg" />
+                            </div>
+                            <div>
+                              <h6>張小姐</h6>
+                              <p class="caption">臺中市大里區</p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_boy2.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_boy2.svg" />
+                            </div>
+                            <div>
+                              <h6>方先生</h6>
+                              <p class="caption">臺中市大雅區</p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_boy3.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_boy3.svg" />
+                            </div>
+                            <div>
+                              <h6>林先生</h6>
+                              <p class="caption">彰化田中鎮</p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_girl.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_girl.svg" />
+                            </div>
+                            <div>
+                              <h6>關小姐</h6>
+                              <p class="caption">新北市中和區</p> 
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="item">
+                        <div class="testimonial-card">
+                          <div class="icon">
+                            <!-- <i class="material-icons">format_quote</i> -->
+                            <img src="./assets/images/avatars/pp_boy5.svg" class="hidden-xs-down" />
+                          </div>
+                          <p class="text">
+                            本來在竹科工作有很好的收入，卻沒有妥善的規畫收支，就連買車的頭期款也付不出來...幾經思索之後，找上貸先生幫忙，果然輕鬆貸到84萬，連貸款利率都比一般預期還要低，感謝貸先生讓我可以順利累積財富
+                          </p>
+
+                          <div class="card-avatar">
+                            <div class="show-xs-down avatar-before">
+                              <img src="./assets/images/avatars/pp_boy5.svg" />
+                            </div>
+                            <div>
+                              <h6>盧先生</h6>
+                              <p class="caption">臺中市豐原區</p> 
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <button class="btn-floating nav next waves-effect" id="next_testi">
+                      <i class="ion-ios-arrow-forward"></i>
+                    </button>
+                  </div>
+                </div>
               </div>
-            </section>
-            <!-- ##### END FEATURE 2 #####-->
+            </section><!-- ##### END TESTIMONIALS #####-->
 
             <!-- ##### FOOTER #####-->
             <footer class="footer">
@@ -389,7 +541,7 @@
           <div class="">
             <div class="page-nav" id="page_nav">
               <div class="scrollnav">
-                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#main-wrap" data-position="left" data-tooltip="To Top">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
                   <div class="icon material-icons">arrow_upward</div>
                 </a>
               </div>

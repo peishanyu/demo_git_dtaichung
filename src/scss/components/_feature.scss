@@ -165,18 +165,21 @@
 }
 
 .page-layout-one {
-  #testimonials {
-    .counter-item {
-      margin: 5px;
-      -webkit-box-shadow: 0 0 10px #b3f3fb;
-      box-shadow: 0 0 10px #b3f3fb;
-      @include breakpoints-down(xs) {
-        display: block;
-        padding:spacing(2, 1);
-        margin: spacing(1.5, 0);
+  #explore {
+    #testimonials {
+      .counter-item {
+        margin: 5px;
+        -webkit-box-shadow: 0 0 10px #b3f3fb;
+        box-shadow: 0 0 10px #b3f3fb;
+        @include breakpoints-down(xs) {
+          display: block;
+          padding:spacing(2, 1);
+          margin: spacing(1.5, 0);
+        }
       }
-    }
+    }  
   }
+  
   #feature {
     @include breakpoints-down(xs) {
       padding-top: 0;
@@ -205,13 +208,48 @@
   }
 
   #feature2 {
-    background-color: #8a4b64;
-    background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
+    .root {
+      background-color: #8a4b64;
+      background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    .title-about {
+      margin-bottom: $spacing3;
+      h4 {
+        margin-bottom: $spacing1;
+        position: relative;
+        font-weight: $font-bold;
+        font-size: 36px;
+        display: inline-block;
+        line-height: normal;
+        color:var(--v-primarylight-base);
+        @include breakpoints-down(xs) {
+          font-size: 28px;
+        }
+        span {
+          position: relative;
+        }
+        &:before {
+          content: '';
+          height: 15px;
+          background-color: var(--v-primary-base);
+          width: 90%;
+          position: absolute;
+          bottom: 4px;
+          left: 5%!important;
+          @include left(0);
+          z-index: 0;
+          @include breakpoints-down(xs) {
+            height: 8px;
+          }
+        }
+      }
+    }  
   }
 }
+
 
 .page-program {
   #feature {
