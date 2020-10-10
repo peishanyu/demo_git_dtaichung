@@ -92,17 +92,17 @@ var transition = {
     hide: "slideOutRight",
     delayShow: "delay0s"
   },
-  h4: {
+  h1: {
     show: "fadeInDown",
     hide: "fadeOutUp",
     delayShow: "delay1s"
   },
-  p: {
+  h4: {
     show: "fadeInUp",
     hide: "fadeOutDown",
     delayShow: "delay1s"
   },
-  footer: {
+  p: {
     show: "fadeInUp",
     hide: "fadeOutDown",
     delayShow: "delay2s"
@@ -111,7 +111,7 @@ var transition = {
 
 $(function(){
   // animate slider
-  $(".anim-slider").animateSlider({
+  $(".wow").animateSlider({
     autoplay: true,
     interval: 10000,
     animations: {
@@ -120,6 +120,8 @@ $(function(){
     }
   });
 });
+
+
 /**
  * @name video-iframe
  * @function handle youtube video iframe

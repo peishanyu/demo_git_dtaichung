@@ -38,15 +38,16 @@
   <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
   <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
-  <link href="./assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
   <link href="./assets/css/vendors/animate.css" rel="stylesheet">
   <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
+  <link href="./assets/css/vendors/owl.carousel.min.css" rel="stylesheet">
+  <link href="./assets/css/vendors/owl.theme.default.min.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
   
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
   <link href="./assets/css/styles.css" rel="stylesheet">
   <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
@@ -113,57 +114,60 @@
           <!-- ##### END HEADER #####-->
           
           <main class="container-wrap">
-
-            <section class="burgundy-var space-top" id="intro-slider">
+            <section class="promo-slider burgundy-var space-top" id="promo-id-01">
               <div class="root">
+
                 <div class="title-main align-center">
                   <h4 class="primary"><span>房屋貸幸福專案</span></h4>
                   <p class="desc use-text-subtitle2"></p>
-              </div>
-                <div class="container">
-                  <!-- #### ANIMATE SLIDER ####-->
-                  <div class="hero-content">
-                    <div class="slider-wrapper anim-slider">
-                      
-                      <div class="slide slider-content anim-slide">
-                        <section class="inner" style="background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-topbanner@2x.jpg)">
-                          <div class="title-main">
-                            <h4>二順位房貸</h4>
-                            <p>
-                              好房再貸一波，線上申貸超快速<br>
-                            小老闆晉升大頭家，需要資金來推轉，讓貸先生祝您一臂之力！
-                            </p>
-                            <footer>
-                              <span>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</span>
-                            </footer>
-                          </div>  
-                        </section>
-                      </div>
-
-                      <div class="slide slider-content anim-slide">
-                        <section class="inner" style="background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner@2x.jpg)">
-                          <div class="title-main">
-                            <h4>房屋加值貸款</h3>
-                            <p>
-                              房屋就是你的小金庫！<br>
-                              房屋變現金，資金調度超方便，貸先生貸您圓滿家倍幸福！
-                            </p>
-                            <footer>
-                              <span>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</span>
-                            </footer>
-                          </div>
-                        </section>
-                      </div>
-
-                      
-                      <div class="anim-arrows">
-                        <a class="anim-arrows-prev" href="#">&#x276E;</a>
-                        <a class="anim-arrows-next" href="#">&#x276F;</a>
-                      </div>
-
-                    </div>
-                  </div><!-- #### END ANIMATE SLIDER ####-->
                 </div>
+
+                <div class="container">
+                  <div class="owl-carousel">
+
+                    <section class="item slider1">
+                      <div class="cover">
+                        <div class="text-left text-content">
+                          <h1>
+                            二順位房貸
+                          </h1>
+                          <h4>
+                            好房再貸一波，線上申貸超快速<br>
+                            小老闆晉升大頭家，需要資金來推轉，讓貸先生祝您一臂之力！
+                          </h4>
+                          <p>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</p>
+                          <div class="scrollnav">
+                            <a class="btn button waves-effect red darken-2" href="#feature2">
+                              立即申請
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="item slider2">
+                      <div class="cover">
+                        <div class="text-center text-content">
+                          <h1>
+                            房屋加值貸款
+                          </h1>
+                          <h4>
+                            房屋就是你的小金庫！<br>
+                            房屋變現金，資金調度超方便，貸先生貸您圓滿家倍幸福！
+                          </h4>
+                          <p>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</p>
+                          <div class="scrollnav">
+                            <a class="btn button waves-effect red darken-2" href="#feature2">
+                              立即申請
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                  </div>
+                </div>
+
               </div>
             </section>
 
@@ -237,7 +241,7 @@
                       <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".25s" data-wow-duration="0.5s">
                         <div class="counter-item">
                           <div class="align center text">
-                            <img src="./assets/images/mrd/search.svg" alt="">
+                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/help-1.png" alt="">
                             <h5 class="use-text-title2">24小時線上平台</h5>
                             <h6 class="use-text-paragraph">
                               免等待、免出門，線上申請房貸，節省您寶貴時間
@@ -248,7 +252,7 @@
                       <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".5s" data-wow-duration="0.25s">
                         <div class="counter-item">
                           <div class="align center text">
-                            <img src="./assets/images/mrd/fast.svg" alt="fast">
+                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/help-2.png" alt="fast">
                             <h5 class="use-text-title2">免費房貸健診服務</h5>
                             <h6 class="use-text-paragraph">
                               專人為您房屋估價，提供全方位且專業的房貸諮詢服務
@@ -259,7 +263,7 @@
                       <div class="col-sm-4 px-4 wow zoomIn" data-wow-delay=".75s" data-wow-duration="0.25s">
                         <div class="counter-item">
                           <div class="align center text">
-                            <img src="./assets/images/mrd/service.svg" alt="">
+                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/help-3.png" alt="">
                             <h5 class="use-text-title2">低利整合高利債務</h5>
                             <h6 class="use-text-paragraph">不限屋齡坪數皆可申請，二胎申辦，房屋免鑑價、免薪資證明</h6>
                           </div>
@@ -283,6 +287,7 @@
                     <button class="btn-floating nav prev waves-effect" id="prev_testi">
                       <i class="ion-ios-arrow-back"></i>
                     </button>
+
                     <div class="slick-carousel" id="testimonial_carousel">
 
                       <div class="item">
@@ -534,6 +539,7 @@
   
   <!-- Scripts-->
   <script src="./assets/js/vendors/jquery.min.js"></script>
+  <script src="./assets/js/vendors/owl.carousel.min.js"></script>
   <script src="./assets/js/vendors/bootstrap.min.js"></script>
   <script src="./assets/js/vendors/enquire.min.js"></script>
   <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
@@ -545,8 +551,30 @@
   <script src="./assets/js/vendors/parallax.min.js"></script>
   <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script src="./assets/js/vendors/materialize.js"></script>
-  <script src="./assets/js/vendors/jquery.animateSlider.js"></script>
   <script src="./assets/js/scripts.js"></script>
+  
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    dots:false,
+    nav:false,
+    mouseDrag:true,
+    autoplay:true,
+    animateOut: 'slideOutLeft',
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+  </script>
 
   <script type="text/javascript">
     var ua = navigator.userAgent;
