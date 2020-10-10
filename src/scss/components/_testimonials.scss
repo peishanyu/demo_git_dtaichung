@@ -1,4 +1,4 @@
-#testimonials, #testimonials2{
+#testimonials {
   .root {
     position: relative;
   }
@@ -80,5 +80,11 @@
     .container {
       max-width: 1400px;
     }
+    .title-main {
+      p {
+        color:var(--v-primarydark-base);
+      }
+    }
   }
 }
+

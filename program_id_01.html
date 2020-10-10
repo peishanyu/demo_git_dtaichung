@@ -32,22 +32,24 @@
   <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/favicon-16x16.png">
   <link rel="mrd" href="./assets/favicons/mrd.json">
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   
-  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
   <!-- Styles-->
   <link href="./assets/css/vendors/normalize.css" rel="stylesheet">
   <link href="./assets/css/vendors/bootstrap.css" rel="stylesheet">
   <link href="./assets/css/vendors/materialize.css" rel="stylesheet">
   <link href="./assets/css/vendors/hamburger-menu.css" rel="stylesheet">
+  <link href="./assets/css/vendors/jquery.animateSlider.css" rel="stylesheet">
   <link href="./assets/css/vendors/animate.css" rel="stylesheet">
   <link href="./assets/css/vendors/animate-extends.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick.css" rel="stylesheet">
   <link href="./assets/css/vendors/slick-carousel/slick-theme.css" rel="stylesheet">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
   <link href="./assets/css/styles.css" rel="stylesheet">
+  <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
 </head>
 
 <body>
@@ -57,194 +59,169 @@
     <div class="m-content smart ocean-blue-var" id="main-wrap">
       <div class="page-layout-one">
         <div class="main-wrap">
-          <div class="sidenav mobile-nav" id="slide-menu">
-            <div class="menu">
-              <ul class="collection">
-                <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="">關於我們</a></li>
-                <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="">聯絡我們</a></li>
-                <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="">貸款問與答</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="">取得介紹碼</a></li>
-                <!-- <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">contact</a></li> -->
-              </ul>
-              <hr class="divider-sidebar">
-              <ul class="collection scrollnav">
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close anchor-link waves-effect" href="#subscribe">馬上體驗</a></li>
-                <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
-              </ul>
-            </div>
-          </div><!-- ##### HEADER #####-->
-          <header class="app-bar header" id="header">
-            <div class="container">
-              <div class="header-content">
-                <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button">
-                  <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
-                </button>
-                <nav class="nav-logo">
-                  <div class="logo scrollnav">
-                    <a href="#home"><img src="./assets/images/mrd-logo.svg" alt="logo" />
-                    </a>
+            <div class="sidenav mobile-nav" id="slide-menu">
+                <div class="menu">
+                  <ul class="collection">
+                    <li class="collection-item" style="animation-duration: 0.25s"><a class="sidenav-close waves-effect menu-list" href="">關於我們</a></li>
+                    <li class="collection-item" style="animation-duration: 0.5s"><a class="sidenav-close waves-effect menu-list" href="">聯絡我們</a></li>
+                    <li class="collection-item" style="animation-duration: 0.75s"><a class="sidenav-close waves-effect menu-list" href="">貸款問與答</a></li>
+                    <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect menu-list" href="">取得介紹碼</a></li>
+                    <!-- <li class="collection-item" style="animation-duration: 1s"><a class="waves-effect menu-list" href="">contact</a></li> -->
+                  </ul>
+                  <hr class="divider-sidebar">
+                  <ul class="collection scrollnav">
+                    <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="index.html#subscribe">馬上體驗</a></li>
+                    <li class="collection-item" style="animation-duration: 1s"><a class="sidenav-close waves-effect" href="explore.html">特選方案</a></li>
+                  </ul>
+                </div>
+              </div><!-- ##### HEADER #####-->
+              <header class="app-bar header" id="header">
+                <div class="container">
+                  <div class="header-content">
+                    <button class="mobile-menu btn-icon waves-effect hamburger hamburger--spin show-md-down" id="mobile_menu" type="button">
+                      <span class="hamburger-box"><span class="bar hamburger-inner"></span></span>
+                    </button>
+                    <nav class="nav-logo">
+                      <div class="logo scrollnav">
+                        <a href="index.html"><img src="./assets/images/mrd-logo.svg" alt="logo" />
+                        </a>
+                      </div>
+                    </nav>
+                    <nav class="nav-menu">
+                      <div class="scrollactive-nav show-lg-up scrollnav">
+                        <ul>
+                          <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">關於我們</span></a></li>
+                          <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">聯絡我們</span></a></li>
+                          <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">貸款問與答</span></a></li>
+                          <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">取得介紹碼</span></a></li>
+                        </ul>
+                      </div>
+                    </nav>
+                    <nav class="nav-menu nav-auth hidden-xs-down">
+                      <div class="hidden-xs-down scrollnav">
+                        <!-- <div class="deco"></div> -->
+                        <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
+                          <div class="bg-btn-logo-before"></div>
+                          馬上體驗
+                        </a>
+                        <a class="btn white light button anchor-link waves-effect" href="explore.html">特選方案</a>
+                      </div>
+                    </nav>
                   </div>
-                </nav>
-                <nav class="nav-menu">
-                  <div class="scrollactive-nav show-lg-up scrollnav">
-                    <ul>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">關於我們</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">聯絡我們</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">貸款問與答</span></a></li>
-                      <li><a class="btn btn-flat anchor-link waves-effect" href=""><span class="text">取得介紹碼</span></a></li>
-                    </ul>
-                  </div>
-                </nav>
-                <nav class="nav-menu nav-auth hidden-xs-down">
-                  <div class="hidden-xs-down scrollnav">
-                    <!-- <div class="deco"></div> -->
-                    <a class="btn white with-logo button anchor-link waves-effect" href="index.html#subscribe">
-                      <div class="bg-btn-logo-before"></div>
-                      馬上體驗
-                    </a>
-                    <a class="btn white light button anchor-link waves-effect" href="explore.html">特選方案</a>
-                  </div>
-                </nav>
-              </div>
-            </div>
-          </header>
+                </div>
+              </header>
           <!-- ##### END HEADER #####-->
+          
           <main class="container-wrap">
 
-            <!-- ##### EXPLORE #####-->
-            <section class="burgundy-var space-top-short" id="explore">
-                <div class="root">
+            <section class="burgundy-var space-top" id="intro-slider">
+              <div class="root">
+                <div class="title-main align-center">
+                  <h4 class="primary"><span>房屋貸幸福專案</span></h4>
+                  <p class="desc use-text-subtitle2"></p>
+              </div>
+                <div class="container">
+                  <!-- #### ANIMATE SLIDER ####-->
+                  <div class="hero-content">
+                    <div class="slider-wrapper anim-slider">
+                      
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner" style="background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-topbanner@2x.jpg)">
+                          <div class="title-main">
+                            <h4>二順位房貸</h4>
+                            <p>
+                              好房再貸一波，線上申貸超快速<br>
+                            小老闆晉升大頭家，需要資金來推轉，讓貸先生祝您一臂之力！
+                            </p>
+                            <footer>
+                              <span>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</span>
+                            </footer>
+                          </div>  
+                        </section>
+                      </div>
 
-                    <div class="title-main align-center">
-                        <h4 class="primary"><span>房屋貸幸福專案</span></h4>
-                        <p class="desc use-text-subtitle2"></p>
-                    </div>
-
-                    <div class="parallax-wrap">
-                        <div class="parallax-wrap dots-wrap">
-                            <div class="inner-parallax">
-                                <div class="figure">
-                                    <div data-enllax-ratio="-0.2" data-enllax-type="foreground">
-                                        <img class="parallax-vertical parallax-dot" src="./assets/images/mrd/ball-deco.svg" alt="dot" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="testimonials">
-                      <div class="slider-wrap container">
-                        <div class="carousel">
-
-                          <!-- <button class="btn-floating nav prev waves-effect" id="prev_testi">
-                            <i class="ion-ios-arrow-back"></i>
-                          </button> -->
-
-                          <div class="slick-carousel" id="testimonial_carousel">
-    
-                            <div class="item">
-                              <div class="counter-item">
-                                <div class="mint-var text px-md-2 px-2">
-                                    <div class="use-text-subtitle">二順位房貸</div>
-                                    <div>
-                                        <p class="paragraph black-var">
-                                            好房再貸一波，線上申貸超快速<br>
-                                            小老闆晉升大頭家，需要資金來推轉，讓貸先生祝您一臂之力！
-                                        </p>
-                                        <p class="caption vampire-var">
-                                            適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款<br><br>
-                                        </p>
-                                        <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-topbanner@2x.jpg" style="width:100%;" />
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-      
-                            <div class="item">
-                              <div class="counter-item">
-                                <div class="mint-var text px-md-2 px-2">
-                                    <div class="use-text-subtitle">房屋加值貸款</div>
-                                    <div>
-                                        <p class="paragraph black-var">
-                                            房屋就是你的小金庫！<br>
-                                            房屋變現金，資金調度超方便，貸先生貸您圓滿家倍幸福！
-                                        </p>
-                                        <p class="caption vampire-var">
-                                            適用已有房屋者，因人生不同階段規劃有資金需求，如：投資/創業/子女教育/裝簧/週轉..等等，實現夢想無需等待
-                                        </p>
-                                        <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner@2x.jpg" style="width:100%;" />
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
+                      <div class="slide slider-content anim-slide">
+                        <section class="inner" style="background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner@2x.jpg)">
+                          <div class="title-main">
+                            <h4>房屋加值貸款</h3>
+                            <p>
+                              房屋就是你的小金庫！<br>
+                              房屋變現金，資金調度超方便，貸先生貸您圓滿家倍幸福！
+                            </p>
+                            <footer>
+                              <span>適用在他行已有房貸，急需資金週轉，可運用原房屋進行第二次貸款</span>
+                            </footer>
                           </div>
-      
-                          <!-- <button class="btn-floating nav next waves-effect" id="next_testi">
-                            <i class="ion-ios-arrow-forward"></i>
-                          </button> -->
+                        </section>
+                      </div>
 
-                        </div>
-                      </div>  
+                      
+                      <div class="anim-arrows">
+                        <a class="anim-arrows-prev" href="#">&#x276E;</a>
+                        <a class="anim-arrows-next" href="#">&#x276F;</a>
+                      </div>
+
                     </div>
-
+                  </div><!-- #### END ANIMATE SLIDER ####-->
                 </div>
-            </section><!-- ##### END EXPLORE #####-->
+              </div>
+            </section>
 
             <!-- ##### FEATURE #####-->
             <section class="burgundy-var space-top-short space-bottom-short" id="feature">
                 <div class="root">
-                  <div class="container">
-                    <div class="title-main align-center">
-                      <h4 class="primary"><span>服務特色</span></h4>
-                      <p class="desc use-text-subtitle2"></p>
+                    <div class="container">
+                      <div class="title-main align-center">
+                        <h4 class="primary"><span>服務特色</span></h4>
+                        <p class="desc use-text-subtitle2"></p>
+                      </div>
+                      <div class="row wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
+                        <div class="col-sm-3 col-6">
+                          <div class="counter-item">
+                            <div class="text align center">
+                              <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-1.png" alt="">
+                              <h5 class="use-text-title2">利率低 額度高</h5>
+                              <h6 class="use-text-paragraph">
+                                最高貸款金額500萬元，滿足資金需求
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-6 ">
+                          <div class="counter-item">
+                            <div class="text align center">
+                              <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-2.png" alt="">
+                              <h5 class="use-text-title2">增貸輕鬆 活化資產</h5>
+                              <h6 class="use-text-paragraph">
+                                不需要轉換原貸銀行貸過還可再貸
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-6 px-4">
+                          <div class="counter-item">
+                            <div class="text align center">
+                              <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-3.png" alt="">
+                              <h5 class="use-text-title2">申請簡便 審核快速</h5>
+                              <h6 class="use-text-paragraph">
+                                善用房屋增值空間增轉貸實現全家人的夢想
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3 col-6 px-4">
+                          <div class="counter-item">
+                            <div class="text align center">
+                              <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-4.png" alt="">
+                              <h5 class="use-text-title2">還款輕鬆</h5>
+                              <h6 class="use-text-paragraph">
+                                貸款期限20 - 40年，節省每月還款金額
+                              </h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="row wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.6s">
-                      <div class="col-sm-3 col-6">
-                        <div class="counter-item">
-                          <div class="text align center">
-                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-1.png" alt="">
-                            <h5 class="use-text-title2">利率低 額度高</h5>
-                            <h6 class="use-text-paragraph">
-                              最高貸款金額500萬元，滿足資金需求
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-6 ">
-                        <div class="counter-item">
-                          <div class="text align center">
-                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-2.png" alt="">
-                            <h5 class="use-text-title2">增貸輕鬆 活化資產</h5>
-                            <h6 class="use-text-paragraph">
-                              不需要轉換原貸銀行貸過還可再貸
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-6 px-4">
-                        <div class="counter-item">
-                          <div class="text align center">
-                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-3.png" alt="">
-                            <h5 class="use-text-title2">申請簡便 審核快速</h5>
-                            <h6 class="use-text-paragraph">
-                              善用房屋增值空間增轉貸實現全家人的夢想
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-sm-3 col-6 px-4">
-                        <div class="counter-item">
-                          <div class="text align center">
-                            <img src="https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/second-feature-4.png" alt="">
-                            <h5 class="use-text-title2">還款輕鬆</h5>
-                            <h6 class="use-text-paragraph">
-                              貸款期限20 - 40年，節省每月還款金額
-                            </h6>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
             </section>
             <!-- ##### END FEATURE #####-->
@@ -291,14 +268,15 @@
                     </div>
                   </div>
                 </div>
-              </section><!-- ##### END FEATURE2 #####--> 
-
+            </section>
+            <!-- ##### END FEATURE2 #####--> 
+            
             <!-- ##### TESTIMONIALS #####-->
-            <section id="testimonials2">
+            <section id="testimonials">
               <div class="root container">
-                <div class="title-main align-center">
-                  <h4 class="primary"><span>成功核貸客戶</span></h4>
-                  <p class="desc use-text-subtitle2">貸先生的服務 專業讓您看見</p>
+                <div class="burgundy-var space-top-short title-main align-center">
+                    <h4 class="primary"><span>成功核貸客戶</span></h4>
+                    <p class="desc use-text-subtitle2">貸先生的服務 專業讓您看見</p>
                 </div>
                 <div class="slider-wrap">
                   <div class="carousel">
@@ -541,7 +519,7 @@
           <div class="">
             <div class="page-nav" id="page_nav">
               <div class="scrollnav">
-                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#home" data-position="left" data-tooltip="To Top">
+                <a class="btn-floating btn-large primary tooltipped waves-effect waves-light" href="#app" data-position="left" data-tooltip="To Top">
                   <div class="icon material-icons">arrow_upward</div>
                 </a>
               </div>
@@ -559,12 +537,15 @@
   <script src="./assets/js/vendors/bootstrap.min.js"></script>
   <script src="./assets/js/vendors/enquire.min.js"></script>
   <script src="./assets/js/vendors/jquery.enllax.min.js"></script>
-  <script src="./assets/js/vendors/jquery.form-validator.min.js"></script>
+  <script src="./assets/js/vendors/jquery.touchSwipe.min.js"></script>
+  <script src="./assets/js/vendors/pace.min.js"></script>
   <script src="./assets/js/vendors/slick.min.js"></script>
   <script src="./assets/js/vendors/wow.min.js"></script>
   <script src="./assets/js/vendors/jquery.navScroll.min.js"></script>
   <script src="./assets/js/vendors/parallax.min.js"></script>
+  <script src="./assets/js/vendors/modernizr-2.8.3-respond-1.4.2.min.js"></script>
   <script src="./assets/js/vendors/materialize.js"></script>
+  <script src="./assets/js/vendors/jquery.animateSlider.js"></script>
   <script src="./assets/js/scripts.js"></script>
 
   <script type="text/javascript">
