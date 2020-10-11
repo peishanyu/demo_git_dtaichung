@@ -99,3 +99,36 @@
     }
   }
 }
+
+
+.page-layout-one {
+  #feature2 {
+    .container {
+      p {
+        margin-bottom: 0;
+        color:var(--v-primarylight-base);
+      }
+    }
+  }
+  #slogan {
+    .title-main {
+      margin-bottom: 0;
+      p {
+        font-weight: 500;
+        margin-bottom: 0;
+        line-height:1.8;
+        color:var(--v-primarydark-base);
+      }
+    }
+  }
+  #subscribe {
+    .title-main {
+      p {
+        color:var(--v-primarydark-base);
+      }
+    }
+    p.caption {
+      color:var(--v-primarydark-base);
+    }
+  }
+}

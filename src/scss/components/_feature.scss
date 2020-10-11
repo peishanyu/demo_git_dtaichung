@@ -199,6 +199,12 @@
       background-position: center;
       background-size: contain;
     }
+
+    .counter-item {
+      -webkit-box-shadow: 0 4px 15px rgba(66,66,66,.5);
+      box-shadow: 0 4px 15px rgba(66,66,66,.5);
+    }
+
     .title-about {
       margin-bottom: $spacing3;
       h4 {
