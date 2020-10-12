@@ -161,3 +161,17 @@
     }
   }
 }
+
+.page-layout-one {
+  #subscribe {
+    .parallax-form-wrap {
+      .parallax {
+        background: url(../../assets/images/promo/bg_form_pink.svg) no-repeat;
+        @include breakpoints-down(xs) {
+          background: url(../../assets/images/promo/bg_form_pink_h5.svg) no-repeat;
+        }
+      }
+    }  
+  }
+}
+

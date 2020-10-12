@@ -189,9 +189,29 @@
         font-size: 14px;
       }
     }
+
+    .ic-f1 {
+      height: 143px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      
+      &.f1-a {
+        background-image: url(../../assets/images/promo/f1_a.png);
+      }
+      &.f1-b {
+        background-image: url(../../assets/images/promo/f1_b.png);
+      }
+      &.f1-c {
+        background-image: url(../../assets/images/promo/f1_c.png);
+      }
+      &.f1-d {
+        background-image: url(../../assets/images/promo/f1_d.png);
+      }
+    }
   }
 
-  #feature2 {
+  #mrd-feature2 {
     .root {
       background-color: #8a4b64;
       background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
@@ -236,7 +256,24 @@
           }
         }
       }
-    }  
+    }
+
+    .ic-f2 {
+      height: 72px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      
+      &.f2-a {
+        background-image: url(../../assets/images/promo/f2_a.png);
+      }
+      &.f2-b {
+        background-image: url(../../assets/images/promo/f2_b.png);
+      }
+      &.f2-c {
+        background-image: url(../../assets/images/promo/f2_c.png);
+      }
+    }
   }
 }
 

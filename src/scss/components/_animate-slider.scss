@@ -11,7 +11,7 @@
       background-size: cover;
       background-position: center;
       @include breakpoints-down(xs) {
-        height: 66vh;
+        height: 60vh;
       }
 
       &.slider1 {
@@ -26,10 +26,16 @@
           background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner-m@2x.jpg);
         }
       }
+      &.slider3 {
+        background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner-2@2x.jpg);
+        @include breakpoints-down(xs) {
+          background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/value-save-detail-topbanner-m-2@2x.jpg);
+        }
+      }
 
       .cover {
         display: flex;
-        padding: 30px;
+        padding: 8%;
         position: absolute;
         width: 100%;
         height: 100%;
