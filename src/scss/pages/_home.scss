@@ -56,16 +56,14 @@
   }
 }
 
-.m-application #program {
+.page-program #program {
   p.caption {
     color: var(--v-primarydark-base)
   }
 }
 
 .page-layout-one {
-  .main-wrap {
-    .theme--light & {
-      background: #fff5f9;
-    }
+  .container-wrap {
+    background: var(--v-promo-light);
   }
 }

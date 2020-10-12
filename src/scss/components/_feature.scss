@@ -26,6 +26,7 @@
 
 .counter-item {
   align-items: center;
+  justify-content: center;
   display: flex;
   margin: spacing(2);
   padding: spacing(2);
@@ -83,7 +84,7 @@
     }
   }
   h5 {
-    color: #424188;
+    color:var(--v-primarydark-base);
     font-size: 24px;
     @include breakpoints-down(sm) {
       // margin-top: $spacing3
@@ -223,6 +224,9 @@
     .counter-item {
       -webkit-box-shadow: 0 4px 15px rgba(66,66,66,.5);
       box-shadow: 0 4px 15px rgba(66,66,66,.5);
+      h6 {
+        min-height: 48px;
+      }
     }
 
     .title-about {

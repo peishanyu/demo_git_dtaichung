@@ -91,7 +91,7 @@
   }
 
   .separator {
-    margin: 20px auto;
+    margin: auto;
     max-width: 300px;
     min-width: 200px;
     text-align: center;
@@ -147,7 +147,20 @@
   }
 }
 
+
+#subscribe {
+  .separator {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
 #phone-verify {
+  .separator {
+    margin: 20px auto;
+  }
   form {
     .row {justify-content: center;}
     .use-text-paragraph {margin-bottom: 0;}
@@ -163,15 +176,16 @@
 }
 
 .page-layout-one {
-  #subscribe {
-    .parallax-form-wrap {
-      .parallax {
-        background: url(../../assets/images/promo/01_pink/bg_form_pink.svg) no-repeat;
-        @include breakpoints-down(xs) {
-          background: url(../../assets/images/promo/01_pink/bg_form_pink_h5.svg) no-repeat;
+  .burgundy-var {
+    #subscribe {
+      .parallax-form-wrap {
+        .parallax {
+          background: url(../../assets/images/promo/01_pink/bg_form_pink.svg) no-repeat;
+          @include breakpoints-down(xs) {
+            background: url(../../assets/images/promo/01_pink/bg_form_pink_h5.svg) no-repeat;
+          }
         }
-      }
+      }  
     }  
   }
 }
-

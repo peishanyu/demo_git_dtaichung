@@ -101,7 +101,42 @@
 }
 
 
+.page-program {
+  h1,h6,.title-main h4 {
+    color: var(--v-primarydark-base);
+  }
+
+  h6 {
+    @include breakpoints-up(sm) {
+    font-size: 20px;
+    }
+  }
+
+  p.use-text-subtitle2 {
+    color: var(--v-secondarydark-base);
+  }
+}
+
 .page-layout-one {
+
+  #explore {
+    p {margin-bottom: 10px;line-height:1.25;}
+    .use-text-subtitle {
+      margin-bottom: 10px;
+      font-weight: var(--font-bold);
+      color: var(--v-secondarydark-base);
+      @include breakpoints-down(xs) {
+        font-size: 20px;
+      }
+    }
+    .paragraph {
+      color: var(--v-secondarydark-base);
+    }
+    .caption {
+      color: var(--v-primarydark-base);
+    }
+  }
+
   #mrd-feature2 {
     .container {
       p {
@@ -110,6 +145,7 @@
       }
     }
   }
+
   #slogan {
     .title-main {
       margin-bottom: 0;
@@ -121,6 +157,7 @@
       }
     }
   }
+
   #subscribe {
     .title-main {
       p {
@@ -131,4 +168,45 @@
       color:var(--v-primarydark-base);
     }
   }
+
+  #testimonials {
+    .container {
+      max-width: 1400px;
+    }
+    .title-main {
+      p {
+        color:var(--v-primarydark-base);
+      }
+    }
+  }
+
+  #quota {
+    background-color: var(--v-secondarydark-base);
+    .title-main {
+      h4 {
+        color: var(--v-promo-light);
+      }
+      p {
+        color: var(--v-primarylight-base);
+        font-weight: 300;
+      }
+    }
+  }
+
+  .gold-var {
+    #quota {
+      background-color: var(--v-primary-base);
+      .title-main {
+        h4 {
+          color: var(--v-promo-light);
+        }
+        p {
+          color: var(--v-primarylight-base);
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
 }
+

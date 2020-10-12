@@ -50,7 +50,7 @@
 /* Text color palette */
 @mixin palette-text-primary {
   .theme--light & {
-    color: $light-text-primary
+    // color: $light-text-primary
   }
   .theme--dark & {
     color: $dark-text-primary
@@ -59,7 +59,7 @@
 
 @mixin palette-text-secondary {
   .theme--light & {
-    color: $light-text-secondary
+    // color: $light-text-secondary
   }
   .theme--dark & {
     color: $dark-text-secondary

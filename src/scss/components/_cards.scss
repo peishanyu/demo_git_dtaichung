@@ -106,8 +106,8 @@
     @include text-align(left);
     @include left(0);
     color: $palette-common-white;
-    backdrop-filter: saturate(100%) blur(10px);
-    background: rgba(0, 0, 0, 0.32);
+    // backdrop-filter: saturate(100%) blur(10px);
+    background: rgba(0, 0, 0, 0.35);
     .desc {
       margin-top: $spacing3;
       font-size: 18px;

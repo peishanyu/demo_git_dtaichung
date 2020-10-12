@@ -47,6 +47,7 @@
       font-size: 24px;
       @include palette-text-primary;
       line-height: 36px;
+      color: var(--v-primarydark-base);
     }
     @include breakpoints-down(sm) {
       display: none;
@@ -67,24 +68,22 @@
     .general-card {
       cursor: pointer;
     }
-  }
-}
 
-.page-layout-one {
-  .title-main {
-    h4 {
-      color: var(--v-primarydark-base)!important;
-    }
-  }
-  #testimonials {
-    .container {
-      max-width: 1400px;
-    }
-    .title-main {
-      p {
-        color:var(--v-primarydark-base);
+    .program-cover {
+      height: 250px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      &.id01 {
+        background-image: url(https://dirosalawyers.com.au/wp-content/uploads/2015/01/house_hand_blog.jpg);
+      }
+      &.id02 {
+        background-image: url(https://c.moneyduck.com/old/contents/images/X6FhBbfqE6BEb4qg1THPZWfxSZcsxuA0oW5GIGF1.jpeg);
       }
     }
   }
 }
+
+
 
