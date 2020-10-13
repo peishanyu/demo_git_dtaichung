@@ -119,6 +119,12 @@
 
 .page-layout-one {
 
+  .title-main {
+    h4 {
+      color: var(--v-anchor-base);
+    }
+  }
+
   #explore {
     p {margin-bottom: 10px;line-height:1.25;}
     .use-text-subtitle {
@@ -191,6 +197,40 @@
         color: var(--v-primarylight-base);
         font-weight: 300;
       }
+    }
+  }
+
+  #about {
+
+    .title-about {
+      text-align: left;
+    }
+
+    ol {
+      list-style-type:disc;
+      li {
+        line-height:1.5;
+        margin-bottom: 10px;
+      }
+      margin-left: 1.2rem;
+      @include breakpoints-down(sm) {
+        margin-left: 1rem;
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+
+    h5 {
+      color: var(--v-secondary-base);
+      @include breakpoints-down(sm) {
+        font-size: 20px;
+      }
+    }
+
+    .use-text-subtitle3 {
+      font-weight: var(--font-regular);
+      line-height: 1.8;
+      color: var(--v-primarylight-base);
     }
   }
 
