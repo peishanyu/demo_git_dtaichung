@@ -34,7 +34,7 @@
   box-shadow: 0 4px 15px #b3f3fb;
   border-radius: 10px;
   @include breakpoints-down(xs) {
-    margin: spacing(4, 4);
+    margin: spacing(2, 4);
   }
   figure {
     @include margin-right($spacing5);
