@@ -123,7 +123,7 @@
                 </div>
 
                 <div>
-                  <div class="owl-carousel">
+                  <div class="owl-carousel owl-theme">
 
                     <section class="item slider1">
                       <div class="cover">
@@ -185,6 +185,7 @@
                       </div>
                     </section> -->
 
+                    
                   </div>
                 </div>
 
@@ -306,7 +307,7 @@
                         </div>
                       </div>
                     </div>
-                    <p class="roseGold-var mt-5 align center">
+                    <p class="mt-5 align center">
                       本專案最適合：公司戶、自營商、上班族、換車族<br>
                       適用車種：新車、中古車、重型機車、計程車、公司車、3.5噸以下汽車，不限年份，皆可辦理
                     </p>
@@ -699,25 +700,31 @@
   
   <script type="text/javascript">
     $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    dots:false,
-    nav:false,
-    mouseDrag:false,
-    autoplay:false,
-    animateOut: 'slideOutLeft',
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:1
-        },
-        1000:{
-            items:2
-        }
-    }
-});
+      loop:false,
+      margin:0,
+      nav:false,
+      dot:false,
+      stagePadding:0,
+      mouseDrag:false,
+      autoplay:true,
+      autoplayHoverPause:false,
+      responsive:{
+          0:{
+              items:1,
+              nav:true,
+              dot:true
+          },
+          600:{
+              items:1,
+              nav:true,
+              dot:true
+          },
+          1000:{
+              items:2,
+              autoplay:false
+          }
+      }
+    })
   </script>
 
   <script type="text/javascript">

@@ -219,7 +219,7 @@
       background-position: center;
       background-size:cover;
       &.dark-mask {
-        &:before {
+        &::before {
           content: '';
           display: block;
           width: 100%;
@@ -233,6 +233,7 @@
           background-position: center;
           background-size:cover;
           opacity: .45;
+          clear: both;
         }
       }
     }
