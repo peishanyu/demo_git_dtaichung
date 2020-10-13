@@ -5,7 +5,7 @@
         padding: 0 !important;
       }
       .item {
-        height: 80vh;
+        height: 78vh;
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
@@ -120,11 +120,21 @@
           }
         }
         &.slider2 {
-          background-image: url(https://headtopics.com/images/2019/1/12/usatoday/5-reasons-to-line-up-a-car-loan-financing-before-you-go-to-the-dealership-1084046077953753088.webp);
+          background-image: url(https://www.carfax.ca/resource-centre/articles/how-to-complete-a-used-car-sale-by-owner-in-canada/shake.jpg);
           @include breakpoints-down(xs) {
             // background-image: url();
           }
         }     
+      }
+    }
+  }
+
+  &.motorcycle {
+    .promo-slider {
+      .item {
+        &.slider1 {
+          background-image: url(https://motor168.net/wp-content/uploads/2019/11/vespa-1504248_1920.jpg);
+        }
       }
     }
   }

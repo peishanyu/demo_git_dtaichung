@@ -215,10 +215,26 @@
   #mrd-feature2 {
     .root {
       background-color: var(--v-secondarydark-base);
-      background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
       background-repeat: no-repeat;
       background-position: center;
       background-size:cover;
+      &.dark-mask {
+        &:before {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top:0;
+          right:0;
+          left:0;
+          bottom:0;
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size:cover;
+          opacity: .45;
+        }
+      }
     }
 
     .counter-item {
@@ -276,6 +292,36 @@
       }
       &.f2-c {
         background-image: url(../../assets/images/promo/01_pink/f2_c.png);
+      }
+    }
+  }
+
+  &.house {
+    #mrd-feature2 {
+      .root {
+        background-image: url(https://mkp.taishinbank.com.tw/TsCms/marketing/expose/WM_20190325132043672/img/houseloan-detail/section-2-bg@2x.png);
+      }
+    }
+  }
+  &.car {
+    #mrd-feature2 {
+      .root {
+        &.dark-mask {
+          &:before {
+            background-image: url(https://www.yummytabs.com/assets/supersportscars/backgrounds/default.jpg);
+          }
+        }
+      }
+    }  
+  }
+  &.motorcycle {
+    #mrd-feature2 {
+      .root {
+        &.dark-mask {
+          &:before {
+            background-image: url(https://www.linkou520.com.tw/userfiles/images/20200619070946182.jpg);
+          }
+        }
       }
     }
   }
