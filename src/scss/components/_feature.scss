@@ -167,6 +167,13 @@
 
 .page-layout-one {
 
+  &.personal {
+    .counter-item {
+      background: #fff;
+      box-shadow: 0 4px 15px rgba(66, 66, 66, 0.25);
+    }
+  }
+
   #feature {
     
     .counter-item {
@@ -326,6 +333,8 @@
       }
     }
   }
+
+
 }
 
 

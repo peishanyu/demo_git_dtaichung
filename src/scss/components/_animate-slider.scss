@@ -201,4 +201,14 @@
       }
     }
   }
+
+  &.personal {
+    .promo-slider {
+      .item {
+        &.slider1 {
+          background-image: url(https://www.consumerspipe.com/wp-content/uploads/13.1.jpg);
+        }
+      }
+    }
+  }
 }
