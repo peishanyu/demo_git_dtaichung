@@ -1,14 +1,8 @@
-$pattern: '../images/education/bg-pattern.png';
-$plane: '../images/education/plane.png';
-
 .form-page {
   .page-wrap {
     text-align: center;
     min-height: 100%;
     position: relative;
-    @include use-theme(background-color, $palette-secondary-light, $dark-background-default);
-    background-image: url($pattern);
-    background-repeat: repeat;
     width: 100%;
     align-items: center;
     padding: spacing(11, 5);
@@ -26,24 +20,35 @@ $plane: '../images/education/plane.png';
       }
     }
     a {
-      @include use-theme(color, $palette-secondary-dark, $palette-secondary-light);
+      color: #0077ff;
       text-transform: none;
       font-size: 16px;
       text-decoration: none;
       font-weight: $font-regular;
+      background: #edf5ff;
+      &.btn-forgot {
+        color:var(--v-secondary-base);
+        background: transparent;
+      }
     }
   }
 
   .inner-wrap {
     position: relative;
+    margin-top: 72px;
+    @include breakpoints-down(md) {
+      margin-top: 120px;
+    }
+    @include breakpoints-down(xs) {
+      margin-top: 72px;
+    }
     @include text-align(left);
     &:before {
       @include breakpoints-up(md) {
         content: "";
-        box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
         width: 100%;
         height: 100%;
-        background: $palette-primary-main;
+        background: #B3EBF2;
         transform: scale(0.95) rotate(-10deg);
         position: absolute;
         border-radius: 40px;
@@ -61,7 +66,6 @@ $plane: '../images/education/plane.png';
   .card.form-box {
     border-radius: 40px;
     box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
-    background: url($plane) no-repeat 90% bottom $palette-primary-dark;
     @include breakpoints-up(md) {
       overflow: visible;
     }
@@ -98,7 +102,6 @@ $plane: '../images/education/plane.png';
     justify-content: space-between;
     align-items: flex-start;
     @include breakpoints-down(xs) {
-      flex-direction: column;
       align-items: center;
     }
   }
@@ -148,8 +151,12 @@ $plane: '../images/education/plane.png';
   .auth-frame {
     display: block;
     position: relative;
-    .row > div {
-      padding: 0
+    .row {
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .row > div.col-md-7 {
+      padding: 0;
     }
   }
 
@@ -158,8 +165,20 @@ $plane: '../images/education/plane.png';
     height: 100%;
     text-align: center;
     color: $palette-common-white;
+    
     h6 {
       font-weight: $font-regular
+    }
+    h5 {
+      color: var(--v-secondarylight-base);
+    }
+
+    a.custom1 {
+      color: var(--v-primary-base);
+      background-color: #fff;
+    }
+    @include breakpoints-down(sm) {
+      padding: spacing(2,2,4);
     }
   }
   
@@ -238,9 +257,6 @@ $plane: '../images/education/plane.png';
         }
       }
     }
-    @include breakpoints-up(md) {
-      margin-bottom: $spacing5;
-    }
     @include breakpoints-down(sm) {
       margin-top: $spacing2;
       justify-content: center;
@@ -254,14 +270,25 @@ $plane: '../images/education/plane.png';
     @include palette-background-paper;
     position: relative;
     padding: $spacing2;
-    padding-bottom: $spacing10;
+    padding-bottom: $spacing6;
     min-height: 760px;
     overflow: hidden;
+
+    a.custom2 {
+      box-shadow: none;
+    }
+
     [dir="ltr"] & {
-      border-radius: 0 40px 40px 0;
+      border-radius: 0 38px 38px 0;
+      @include breakpoints-down(sm) {
+        border-radius: 30px;
+      }
     }
     [dir="rtl"] & {
       border-radius: 40px 0 0 40px;
+      @include breakpoints-down(sm) {
+        border-radius: 30px;
+      }
     }
     .frm-deco {
       @include left(58.333333%);
@@ -324,7 +351,7 @@ $plane: '../images/education/plane.png';
     }
   }
   .separator {
-    margin: 40px auto;
+    margin: 40px auto 20px;
     max-width: 300px;
     min-width: 200px;
     text-align: center;
