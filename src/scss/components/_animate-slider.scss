@@ -41,14 +41,6 @@
 
     span {
       padding-bottom: 10px;
-      @include breakpoints-down(xs) {
-        padding-bottom: 7px;
-      }
-    }
-    @include breakpoints-down(xs) {
-      width: 24px;
-      height: 24px;
-      font-size: 24px;
     }
   }
 
