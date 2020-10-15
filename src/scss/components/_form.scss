@@ -5,7 +5,7 @@
     position: relative;
     width: 100%;
     align-items: center;
-    padding: spacing(11, 5);
+    padding: spacing(5);
     background-size: 15%;
     @include breakpoints-up(md) {
       background-size: 8%;
@@ -36,11 +36,9 @@
   .inner-wrap {
     position: relative;
     margin-top: 72px;
-    @include breakpoints-down(md) {
-      margin-top: 120px;
-    }
+
     @include breakpoints-down(xs) {
-      margin-top: 72px;
+      margin-top: 48px;
     }
     @include text-align(left);
     &:before {
@@ -52,7 +50,7 @@
         transform: scale(0.95) rotate(-10deg);
         position: absolute;
         border-radius: 40px;
-        top: 0;
+        top: 25px;
         left: 0;
       }
     }
