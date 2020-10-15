@@ -1,7 +1,9 @@
-[dir="ltr"] .theme--light #explore .root {
+[dir="ltr"] .theme--light #explore .root,
+[dir="ltr"] .theme--light #intro-code .root {
   background: transparent;
 }
-[dir="ltr"] .theme--light #explore .root {
+[dir="ltr"] .theme--light #explore .root,
+[dir="ltr"] .theme--light #intro-code .root {
   &:before {
     width: 100%;
     background: url(../../assets/images/mrd/ad-bg.svg);
@@ -10,19 +12,22 @@
   }
 }
 
-[dir="ltr"] .theme--dark #explore .root {
+[dir="ltr"] .theme--dark #explore .root,
+[dir="ltr"] .theme--dark #intro-code .root {
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 20%, $palette-secondary-dark 10%);
 }
 
-[dir="rtl"] .theme--light #explore .root {
+[dir="rtl"] .theme--light #explore .root,
+[dir="rtl"] .theme--light #intro-code .root {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, $palette-secondary-light 10%);
 }
 
-[dir="rtl"] .theme--dark #explore .root {
+[dir="rtl"] .theme--dark #explore .root,
+[dir="rtl"] .theme--dark #intro-code .root {
   background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 20%, $palette-secondary-dark 10%);
 }
 
-#explore {
+#explore, #intro-code {
   .root {
     padding: spacing(10, 0);
     position: relative;
