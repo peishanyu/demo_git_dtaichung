@@ -91,7 +91,7 @@
       padding: spacing(0, 6, 10)
     }
     @include breakpoints-down(xs) {
-      padding: spacing(0, 2, 10);
+      padding: spacing(0, 0, 10);
     }
   }
 
