@@ -29,13 +29,13 @@
 
 #explore, #intro-code {
   .root {
-    padding: spacing(10, 0);
+    padding: spacing(10, 0, 4);
     position: relative;
     @include breakpoints-down(sm) {
       background-image: none !important;
     }
     @include breakpoints-down(xs) {
-      padding: spacing(6, 0, 6);
+      padding: spacing(6, 0, 0);
     }
     .theme--light & {
       @include bg-color-fade($light-background-paper, 0.7);
