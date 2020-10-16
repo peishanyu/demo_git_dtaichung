@@ -131,3 +131,11 @@
     padding: 0
   }
 }
+
+.page-intro-code {
+  .footer {
+    @include breakpoints-down(xs) {
+      margin-top:0;
+    }
+  }
+}

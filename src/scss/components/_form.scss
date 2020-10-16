@@ -5,13 +5,13 @@
     position: relative;
     width: 100%;
     align-items: center;
-    padding: spacing(5);
+    padding: spacing(5,5,0);
     background-size: 15%;
     @include breakpoints-up(md) {
       background-size: 8%;
     }
     @include breakpoints-down(sm) {
-      padding: spacing(4, 0)
+      padding: spacing(4,0,0)
     }
     .title-contact {
       font-weight: $font-bold;
@@ -153,13 +153,13 @@
       align-items: center;
       justify-content: flex-end;
     }
-    .row > div.col-md-7 {
+    .row > div[data-pd='0'] {
       padding: 0;
     }
   }
 
   .greeting {
-    padding: spacing(30, 6);
+    padding: spacing(3);
     height: 100%;
     text-align: center;
     color: $palette-common-white;
@@ -176,7 +176,7 @@
       background-color: #fff;
     }
     @include breakpoints-down(sm) {
-      padding: spacing(2,2,4);
+      padding: spacing(4,2,2);
     }
   }
   
@@ -450,8 +450,17 @@
 
 .page-verification-2 {
   
-    [dir="ltr"] .form-page .form-wrap {
-      border-radius: 38px;
-    }
+  [dir="ltr"] .form-page .form-wrap {
+    border-radius: 38px;
+  }
+  
+  .form-page {
+    .form {
+        padding-bottom:$spacing5;
+        a.button-link {
+        background: transparent;
+      }
+    }   
+  }
 
 }

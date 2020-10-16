@@ -168,9 +168,8 @@
       font-weight: var(--font-bold);
       color: var(--con-1);
     }
-
-    .button-link {
-      color: var(--v-primarydark-base);
+    a.btn-flat {
+      color: var(--v-anchor-base);
     }
   }
 }

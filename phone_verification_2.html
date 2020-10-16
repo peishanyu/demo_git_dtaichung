@@ -132,18 +132,32 @@
                                     <div class="auth-frame">
                                         <div class="container fixed-width">
 
-                                            <div class="pa-10 align center" id="phone-verify-2">
+                                            <div class="form" id="phone-verify-2">
                                                 <div class="title-main align-center">
                                                   <h4 class="primary"><span>手機號碼驗證</span></h4>
-                                                  <p class="desc primary use-text-subtitle2">為確保 mrD.cash貸先生 預測模型的合理使用，請進行手機簡訊認證</p>
+                                                  <p class="desc primary use-text-subtitle2">會員初次申請介紹碼，請進行手機簡訊認證</p>
                                                 </div>
                             
-                                                <form action="">
-                            
-                                                  <p class="desc use-text-paragraph">── 您的手機號碼 ──</p>
-                                                  <h5 class="primary user-input-phone">+886 912 345678</h5>
-                            
+                                                <form action="" class="text-align center">
+                          
                                                   <div class="field row">
+                                                    <div class="col-md-6">
+                                                      <div class="input-field filled dark mq-md-up">
+                                                        <input type="tel" name="tel" id="tel" value="0912345678">
+                                                        <label for="tel">輸入您的手機號碼 *</label>
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="col-md-12">
+                                                      <button class="btn btn-small cyan button btn-custom waves-effect disabled" type="button">
+                                                        重發驗證碼 (30秒)
+                                                      </button>
+                                                    </div>
+                                                  </div>
+                                                  
+                                                  <p class="desc use-text-paragraph">── 簡訊驗證碼 ──</p>
+
+                                                  <div class="field row mt-0">
                                                     <div class="col-md-6">
                                                       <div class="input-field filled dark mq-md-up me-2">
                                                         <input type="text" name="sms-code" id="sms-code">
@@ -153,11 +167,7 @@
                                                   </div>
                                                   
                                                   <button class="btn btn-large red button btn-custom waves-effect" type="submit" onclick="window.location.href='';">送出驗證</button>
-                                                  <div class="mt-3">
-                                                    <a class="btn-flat button-link disabled" href="">
-                                                      重發驗證碼 (30秒)
-                                                    </a>
-                                                  </div>
+                                                  
                                                 </form>
 
                                             </div>
