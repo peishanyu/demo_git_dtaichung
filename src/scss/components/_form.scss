@@ -502,6 +502,18 @@
         }
       }
       
+      .table-outer {
+        @include breakpoints-down(sm) {
+          overflow-x: scroll;
+        }
+      }
+
+      table {
+        @include breakpoints-down(sm) {
+          width: max-content;
+        }
+      }
+
       tr:nth-child(odd) {
         background-color: #f7f7f7;
       }
@@ -513,6 +525,7 @@
 
       td, th {
         border-radius: 0;
+        text-align: center;
       }
     }
 
