@@ -133,18 +133,19 @@
 }
 
 // Modal
-.modal {
-  background-color: $bg-1;
-  .modal-footer {
-    background-color: $sd-1;
-  }
-}
+// .modal {
+//   height: 100%;
+//   background-color: $bg-1;
+//   .modal-footer {
+//     background-color: $sd-1;
+//   }
+// }
 
-.modal.modal-fixed-footer {
-  .modal-footer {
-    border-top: 1px solid $con-4;
-  }
-}
+// .modal.modal-fixed-footer {
+//   .modal-footer {
+//     border-top: 1px solid $con-4;
+//   }
+// }
 
 // Navbar
 nav {
