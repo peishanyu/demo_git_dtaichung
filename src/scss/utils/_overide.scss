@@ -323,10 +323,16 @@ select.select {
       }
     }
 
-    input, textarea {
+    input {
       border: none !important;
       box-shadow: none !important;
       padding: spacing(2.5, 1.5, 0);
+      margin-bottom: 0;
+    }
+
+    textarea {
+      border: 1px solid #ced4da;
+      padding: spacing(2.5, 1.5, 0)!important;
       margin-bottom: 0;
     }
 
