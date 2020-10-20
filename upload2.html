@@ -57,7 +57,7 @@
   <div class="m-application theme--light transition-page" id="app">
     <div class="loading"></div>
     <div class="m-content smart ocean-blue-var" id="main-wrap">
-      <div class="page-verification-2">
+      <div class="page-upload">
         <div class="main-wrap">
           <div class="sidenav mobile-nav" id="slide-menu">
             <div class="menu">
@@ -135,39 +135,103 @@
 
                                           <div class="form" id="phone-verify-2">
                                               <div class="title-main align-center">
-                                                <h4 class="primary"><span>手機號碼驗證</span></h4>
-                                                <p class="desc primary use-text-subtitle2">會員初次申請介紹碼，請進行手機簡訊認證</p>
+                                                <h4 class="primary"><span>資料上傳區</span></h4>
+                                                <!-- <p class="desc primary use-text-subtitle2"></p> -->
                                               </div>
                           
-                                              <form action="setting_password.html" class="text-align center">
+                                              <form action="" class="text-align center">
                         
-                                                <div class="field row">
-                                                  <div class="col-md-6">
-                                                    <div class="input-field filled dark mq-md-up">
-                                                      <input type="tel" name="tel" id="tel" value="0912345678">
-                                                      <label for="tel">輸入您的手機號碼 *</label>
-                                                    </div>
-                                                  </div>
-
-                                                  <div class="col-md-12">
-                                                    <button class="btn btn-small cyan button btn-custom waves-effect disabled" type="button">
-                                                      重發驗證碼 (30秒)
-                                                    </button>
-                                                  </div>
-                                                </div>
-                                                
-                                                <p class="desc use-text-paragraph">── 簡訊驗證碼 ──</p>
-
                                                 <div class="field row mt-0">
                                                   <div class="col-md-6">
-                                                    <div class="input-field filled dark mq-md-up me-2">
-                                                      <input type="text" name="sms-code" id="sms-code">
-                                                      <label for="sms-code">輸入收到的簡訊驗證碼 *</label>
+                                                    <div class="input-field filled dark">
+                                                      <input type="tel" name="tel" id="tel" value="0912345678" readonly>
+                                                      <label for="tel">您的手機號碼</label>
+                                                    </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <div class="input-field filled dark">
+                                                      <input type="text" name="doc-num" id="doc-num" value="xxxxxxxx" readonly>
+                                                      <label for="doc-num">委託單編號</label>
                                                     </div>
                                                   </div>
                                                 </div>
+
+
+                                                <p class="desc use-text-paragraph">── 身份證上傳 ──</p>
+
+                                                <div class="field row">
+                                                    <div class="col-md-6">
+                                                        <div class="counter-item">
+                                                            <div class="text">
+                                                              <h5 class="use-text-title2">身分證 正面</h5>
+                                                                <!-- <a class="waves-effect button-link custom2" disabled>
+                                                                    <i class="ion-ios-trash"></i>
+                                                                    重新上傳
+                                                                </a> -->
+                                                                <a class="waves-effect button-link custom2">
+                                                                    <i class="ion-ios-plus"></i>
+                                                                    選擇檔案
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="counter-item">
+                                                            <div class="text">
+                                                              <h5 class="use-text-title2">身分證 反面</h5>
+                                                              <!-- <a class="waves-effect button-link custom2" disabled>
+                                                                    <i class="ion-ios-trash"></i>
+                                                                    重新上傳
+                                                                </a> -->
+                                                              <a class="waves-effect button-link custom2">
+                                                                <i class="ion-ios-plus"></i>
+                                                                    選擇檔案
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+
                                                 
-                                                <button class="btn btn-large red button btn-custom waves-effect" type="submit" onClick="location.href='setting_password.html'">送出驗證</button>
+
+                                                <p class="desc use-text-paragraph">── 第二證件 ──</p>
+
+                                                <div class="field row">
+                                                    <div class="col-md-6">
+                                                        <div class="counter-item">
+                                                            <div class="text">
+                                                              <h5 class="use-text-title2">第二證件 正面</h5>
+                                                              <!-- <a class="waves-effect button-link custom2" disabled>
+                                                                    <i class="ion-ios-trash"></i>
+                                                                    重新上傳
+                                                                </a> -->
+                                                              <a class="waves-effect button-link custom2">
+                                                                <i class="ion-ios-plus"></i>
+                                                                    選擇檔案
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="counter-item">
+                                                            <div class="text">
+                                                              <h5 class="use-text-title2">第二證件 背面</h5>
+                                                              <!-- <a class="waves-effect button-link custom2" disabled>
+                                                                    <i class="ion-ios-trash"></i>
+                                                                    重新上傳
+                                                                </a> -->
+                                                              <a class="waves-effect button-link custom2">
+                                                                <i class="ion-ios-plus"></i>
+                                                                    選擇檔案
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                  </div>
+
+
+                                                
+                                                <button class="mt-6 btn btn-large red button btn-custom waves-effect" type="submit" onClick="location.href='/'">送出</button>
                                                 
                                               </form>
                                               

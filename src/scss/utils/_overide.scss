@@ -59,7 +59,6 @@ h1, h2, h3, h4, h5, h6 {
   .modal-content {
     border: none;
     background-color: var(--bg-1);
-    box-shadow: ;
     padding: 0;
     h4 {
       font-size: 1.25rem;
@@ -76,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
   .modal-footer {
     background: none;
     height: 70px;
+    background: #f3f3f3;
     .btn {
       margin: 0 6px;
       padding: 6px 25px!important;

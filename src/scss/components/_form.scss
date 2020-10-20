@@ -151,10 +151,14 @@
     position: relative;
     .row {
       align-items: center;
-      justify-content: flex-end;
+      // justify-content: flex-end;
+      justify-content: center;
     }
     .row > div[data-pd='0'] {
       padding: 0;
+    }
+    .img-captcha {
+      max-width: 120px;
     }
   }
 

@@ -57,6 +57,28 @@
     <div class="loading"></div>
     <div class="m-content smart ocean-blue-var" id="main-wrap">
       <div class="page-member">
+
+      <!-- Modal -->
+      <div class="modal fade" id="ComfirmLogoutModalCenter" tabindex="-1" role="dialog" aria-labelledby="ComfirmLogoutModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content z-depth-3">
+                <div class="modal-header">
+                <h5 class="modal-title" id="ComfirmLogoutModalCenterTitle">提示訊息</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                <p>您確定要登出嗎？</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-custom-outline waves-effect" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-custom waves-effect" onclick="window.location.href='/intro_code.html'">確定</button>
+                </div>
+            </div>
+        </div>
+      </div>
+
         <div class="main-wrap">
           <div class="sidenav mobile-nav" id="slide-menu">
             <div class="menu">
@@ -143,7 +165,7 @@
                                                             <a href="member_orderlist.html">
                                                                 <li class="item active">訂單列表</li>
                                                             </a>
-                                                            <a href="intro_code.html">
+                                                            <a href="intro_code.html" data-toggle="modal" data-target="#ComfirmLogoutModalCenter">
                                                                 <li class="item">登出</li>
                                                             </a>
                                                         </ol>
