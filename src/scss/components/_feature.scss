@@ -345,3 +345,11 @@
     }
   }
 }
+
+.page-upload {
+  .counter-item {
+    @include breakpoints-down(xs) {
+      margin: spacing(0, 0, 2);
+    }
+  }
+}
