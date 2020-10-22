@@ -146,6 +146,9 @@
                                                     <div class="input-field filled dark">
                                                       <input type="tel" name="tel" id="tel">
                                                       <label for="tel">您的手機號碼 *</label>
+                                                      <div>
+                                                        <small class="mt-1 text-align left text-danger">*錯誤訊息提示</small>
+                                                      </div>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -155,26 +158,34 @@
                                                       <div class="input-field filled dark">
                                                         <input type="text" name="doc-num" id="doc-num">
                                                         <label for="doc-num">請輸入委託單編號 *</label>
+                                                        <small class="mt-1 text-align left text-danger">*錯誤訊息提示</small>
                                                       </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="field row mt-0">
+                                                <div class="field row mt-0 mb-0">
                                                     <div class="col-md-6">
                                                       <div class="input-field filled dark">
                                                         <input type="text" name="captcha" id="captcha">
                                                         <label for="captcha">請輸入圖形驗證碼 *</label>
-                                                      </div>
-
-                                                      <div class="align left">
-                                                        <img class="img-captcha" src="https://marketplace-res-cbc-cn.obs.myhwclouds.com/app/logo/20181009/98dea972-8855-4348-9ef4-92bafb247ea4/1810091217084675.jpg" />
-                                                        <a class="pr-0 btn-flat button-link btn-forgot">
-                                                            <i class="ion-ios-refresh"></i>
-                                                            換一張
-                                                        </a>
+                                                        <small class="mt-1 text-align left text-danger">*錯誤訊息提示</small>
                                                       </div>
                                                     </div>
                                                 </div>
+
+                                                <div class="field row mt-0 mb-0">
+                                                  <div class="col-md-6">
+                                                    <div class="align left">
+                                                      <img class="img-captcha" src="https://marketplace-res-cbc-cn.obs.myhwclouds.com/app/logo/20181009/98dea972-8855-4348-9ef4-92bafb247ea4/1810091217084675.jpg" />
+                                                      <a class="pr-0 btn-flat button-link btn-forgot">
+                                                          <i class="ion-ios-refresh"></i>
+                                                          換一張
+                                                      </a>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                
                                                 
                                                 <button class="mt-6 btn btn-large red button btn-custom waves-effect" type="submit" onClick="location.href='upload2.html'">送出</button>
                                                 
