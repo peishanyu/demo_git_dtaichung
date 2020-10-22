@@ -103,3 +103,22 @@ $pattern: '../images/education/bg-pattern.png';
     }
   }
 }
+
+.page-about {
+  #about {
+    .root {
+      background: url(../../assets/images/mrd/bg_about.jpg) no-repeat;
+      background-size: cover;
+      .title-about {
+        color: #424188;
+
+        span {
+          background: #b2ebf2;
+          background: -webkit-gradient(linear, left bottom, left top, from(#b2ebf2), color-stop(40%, #b2ebf2), color-stop(40%, rgba(178, 235, 242, 0)), to(rgba(178, 235, 242, 0)));
+          background: -o-linear-gradient(bottom, #b2ebf2 0%, #b2ebf2 40%, rgba(178, 235, 242, 0) 40%, rgba(178, 235, 242, 0) 100%);
+          background: linear-gradient(0deg, #b2ebf2 0%, #b2ebf2 40%, rgba(178, 235, 242, 0) 40%, rgba(178, 235, 242, 0) 100%);
+        }
+      }
+    }
+  }
+}

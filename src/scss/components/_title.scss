@@ -254,3 +254,21 @@
 
 }
 
+.page-about {
+  .title-main {
+    h4.primary {
+      margin-bottom: $spacing2;
+      &:before {
+        background: none;
+      }
+
+      span {
+        background: #b2ebf2;
+        background: -webkit-gradient(linear, left bottom, left top, from(#b2ebf2), color-stop(30%, #b2ebf2), color-stop(30%, rgba(178, 235, 242, 0)), to(rgba(178, 235, 242, 0)));
+        background: -o-linear-gradient(bottom, #b2ebf2 0%, #b2ebf2 30%, rgba(178, 235, 242, 0) 30%, rgba(178, 235, 242, 0) 100%);
+        background: linear-gradient(0deg, #b2ebf2 0%, #b2ebf2 30%, rgba(178, 235, 242, 0) 30%, rgba(178, 235, 242, 0) 100%);
+      }
+    }
+  }
+}
+
