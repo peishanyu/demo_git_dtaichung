@@ -410,3 +410,31 @@ select.select {
     line-height: 28px;
   }
 }
+
+.page-help {
+  .accordion {
+    .card {
+      box-shadow: none;
+      background: none;
+      > div {
+        // background-color: #fff;
+        border-bottom: 0;
+      }
+    }
+
+    .card-header {
+      margin-bottom: 16px;
+      border-radius: 8px;
+      background-color: var(--v-anchor-base);
+      .question {
+        margin-bottom: 0;
+        color:#fff;
+      }
+    }
+
+    .card-body {
+      background: #fff;
+      border-radius: 8px;
+    }
+  }
+}
