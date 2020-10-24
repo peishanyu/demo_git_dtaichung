@@ -272,3 +272,29 @@
   }
 }
 
+.page-privacy {
+  .inner-text {
+    p:not(.use-text-subtitle2) {
+      font-size: 14px;
+    }
+    .use-text-subtitle2 {
+      font-weight:500;
+      margin-bottom: 5px;
+    }
+    ul {
+      margin-left:1rem;
+      li {
+        margin-bottom: 10px;
+        list-style-type:disc;
+        font-size: 14px;
+      }
+    }
+    ol {
+      margin-left:1rem;
+      li {
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+    }
+  }
+}
