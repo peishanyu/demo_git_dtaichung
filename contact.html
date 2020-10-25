@@ -58,6 +58,28 @@
     <div class="loading"></div>
     <div class="m-content smart ocean-blue-var" id="main-wrap">
       <div class="page-contact">
+
+        <!-- Modal -->
+        <div class="modal fade" id="PromotModalCenter" tabindex="-1" role="dialog" aria-labelledby="ComfirmLogoutModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content z-depth-3">
+                  <div class="modal-header">
+                  <h5 class="modal-title" id="ComfirmLogoutModalCenterTitle">提示訊息</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">×</span>
+                  </button>
+                  </div>
+                  <div class="modal-body">
+                  <p>您的訊息發送成功！</p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-custom waves-effect" type="button" data-dismiss="modal">知道了</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Modal end -->
+
         <div class="main-wrap">
           <div class="sidenav mobile-nav" id="slide-menu">
             <div class="menu">
@@ -139,7 +161,7 @@
                                                 <!-- <p class="desc primary use-text-subtitle2"></p> -->
                                               </div>
                           
-                                              <form action="" class="text-align center">
+                                              <form class="text-align center">
                         
                                                 <div class="field row mt-0 mb-0">
 
@@ -190,7 +212,7 @@
                                                     </div>
                                                 </div>
 
-                                                <button class="mt-6 btn btn-large red button btn-custom waves-effect" type="submit" onClick="location.href=''">送出</button>
+                                                <button class="mt-6 btn btn-large red button btn-custom waves-effect" type="button" data-toggle="modal" data-target="#PromotModalCenter">送出</button>
                                                 
                                               </form>
                                               

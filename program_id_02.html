@@ -321,8 +321,8 @@
                       <p class="desc use-text-subtitle2">開創未來，立即開始申請吧！</p>
                     </div>
                     <form class="" action="">
-                      <div class="field row">
-
+                      
+                      <div class="row">
                         <div class="col-md-4">
                           <div class="input-field filled dark mq-md-up">
                             <input type="text" name="name" id="name">
@@ -345,45 +345,54 @@
                           </div>
                         </div>
 
-                        <div class="mt-5 col-md-12">
+                        <div class="col-12 mt-10">
                           <div class="separator">
                             <p>車牌號碼</p>
                           </div>
                           <p class="mt-2 mb-0 col-md-12 caption roseGold-var">
                             （如有多部車，點 "新增車牌" 可輸入多台車牌）
                           </p>
-                        </dvi>
-
-                        <div class="col-md-12">
-                          <div class="input-field filled dark mq-md-up">
-                            <input type="text" name="car1" id="car1">
-                            <label for="car1">輸入您的車牌號碼</label>
-                            <small class="mt-1 text-align left text-danger">*錯誤訊息提示</small>
-                          </div>
                         </div>
 
-                        <div class="mb-5 col-md-12">
+                        <div class="row col-9">
+                            <div class="input-field filled dark mq-md-up">
+                              <input type="text" name="car1" id="car1">
+                              <label for="car1">輸入您的車牌號碼</label>
+                              <small class="mt-1 text-align left text-danger">*錯誤訊息提示</small>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                          <button class="btn btn-small cyan button btn-custom waves-effect" type="button">
+                            <i class="ion-ios-trash"></i>
+                          </button>  
+                        </div> 
+
+                          
+
+                        
+
+                        <div class="col-12 mt-5">
                           <button class="btn btn-small cyan button btn-custom waves-effect" type="button">新增車牌</button>
                         </div>
 
-                        <div class="mt-5 col-md-12">
+                        <div class="col-12 mt-10">
                           <div class="separator">
                             <p class="mb-4">方便聯絡時段 (可複選)</p>
                           </div>
-                          <div class="form-control-label">
-                            <label class="me-8 mb-5 mb-sm-0">
+                          <div class="form-control-label row ">
+                            <label class="col-md-3 col-12 mb-5 mb-sm-0">
                               <input class="filled-in secondary" type="checkbox">
                               <span>早上 09:00-12:00</span>
                             </label>
-                            <label class="me-8 mb-5 mb-sm-0">
+                            <label class="col-md-3 col-12 mb-5 mb-sm-0">
                               <input class="filled-in secondary" type="checkbox">
                               <span>中午 12:00-13:30</span>
                             </label>
-                            <label class="me-8 mb-5 mb-sm-0">
+                            <label class="col-md-3 col-12 mb-5 mb-sm-0">
                               <input class="filled-in secondary" type="checkbox">
                               <span>下午 13:30-18:00</span>
                             </label>
-                            <label class="me-8 mb-5 mb-sm-0">
+                            <label class="col-md-3 col-12 mb-5 mb-sm-0">
                               <input class="filled-in secondary" type="checkbox">
                               <span>晚上 18:00-21:00 </span>
                             </label>
@@ -392,10 +401,9 @@
                             （申請人限年滿20~65歲本國籍國民，企業戶/公司戶及自營商亦可辦理）
                           </p>
                         </div>
-
                       </div>
 
-                      <button class="btn btn-large red button btn-custom waves-effect" type="submit">送出申請</button>
+                      <button class="mt-6 btn btn-large red button btn-custom waves-effect" type="submit">送出申請</button>
 
                     </form>
 
