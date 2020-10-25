@@ -107,7 +107,8 @@ $pattern: '../images/education/bg-pattern.png';
 .page-about {
   #about {
     .root {
-      background: url(../../assets/images/mrd/bg_about.jpg) no-repeat;
+      background-image: url(../../assets/images/mrd/bg_about.jpg);
+      background-repeat: no-repeat;
       background-size: cover;
       .title-about {
         color: #424188;
@@ -118,6 +119,22 @@ $pattern: '../images/education/bg-pattern.png';
           background: -o-linear-gradient(bottom, #b2ebf2 0%, #b2ebf2 40%, rgba(178, 235, 242, 0) 40%, rgba(178, 235, 242, 0) 100%);
           background: linear-gradient(0deg, #b2ebf2 0%, #b2ebf2 40%, rgba(178, 235, 242, 0) 40%, rgba(178, 235, 242, 0) 100%);
         }
+      }
+    }
+  }
+}
+
+.page-help {
+  #about {
+    .root {
+      background: url(../../assets/images/mrd/bg_help.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      @include breakpoints-down(xs) {
+        background-image: url(../../assets/images/mrd/bg_help_m.png);
+      }
+      .title-about {
+        color: #424188;
       }
     }
   }
