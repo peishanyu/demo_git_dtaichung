@@ -146,13 +146,13 @@
         &.slider1 {
           background-image: url(../../assets/images/promo/second-topbanner@2x.jpg);
           @include breakpoints-down(xs) {
-            background-image: url(../../assets/images/promo/second-topbanner-m@2x.jpg);
+            background-image: url(../../assets/images/promo/second-topbanner@2x.jpg);
           }
         }
         &.slider2 {
-          background-image: url(../../assets/images/promo//value-save-detail-topbanner@2x.jpg);
+          background-image: url(../../assets/images/promo/value-save-detail-topbanner@2x.jpg);
           @include breakpoints-down(xs) {
-            background-image: url(../../assets/images/promo/value-save-detail-topbanner-m@2x.jpg);
+            background-image: url(../../assets/images/promo/value-save-detail-topbanner@2x.jpg);
           }
         }
         &.slider3 {
