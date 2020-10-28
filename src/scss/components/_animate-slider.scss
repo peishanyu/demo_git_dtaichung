@@ -3,12 +3,12 @@
   .owl-theme .owl-nav {
     width: 100%;
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(50% - 36px);
     display: flex;
     justify-content: space-between;
     margin-top: 0;
     @include breakpoints-down(xs) {
-      top: calc(50% - 12px);
+      // top: calc(50% - 12px);
     }
   }
 
@@ -29,18 +29,18 @@
 
   .owl-carousel .owl-nav button.owl-next, 
   .owl-carousel .owl-nav button.owl-prev {
-    background: var(--v-anchor-base);
-    width: 40px;
-    height: 40px;
+    // background: var(--v-anchor-base);
+    width: 5vw;
+    // height: 30px;
     border-radius: 100rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 40px;
+    font-size: 3rem;
     color: #fff;
 
     span {
-      padding-bottom: 10px;
+      // padding-bottom: 10px;
     }
   }
 
