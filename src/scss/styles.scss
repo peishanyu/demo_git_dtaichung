@@ -26,9 +26,6 @@
 // Page transition
 @import './utils/transition';
 
-// Image API variable
-@import './utils/url-img';
-
 // Materialize and Bootstrap overide
 @import './utils/overide';
 
@@ -47,18 +44,14 @@
 
 @import './components/about';
 @import './components/banner';
-@import './components/blog';
 @import './components/cards';
-@import './components/error';
 @import './components/explore';
 @import './components/feature';
 @import './components/footer';
 @import './components/form';
 @import './components/header';
-@import './components/notification';
 @import './components/page-nav';
 @import './components/parallax';
-@import './components/popular-course';
 @import './components/subscribe';
 @import './components/testimonials';
 @import './components/title';

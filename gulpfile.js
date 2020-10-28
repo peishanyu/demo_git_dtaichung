@@ -46,7 +46,7 @@ function styles() {
       overrideBrowserslist: ['last 3 versions'],
       cascade: false
     }))
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(gulp.dest('assets/css'))
     .pipe(browserSync.stream({match: '**/*.css'}))
   );
