@@ -5,6 +5,7 @@
 
   .carousel {
     position: relative;
+    overflow: unset;
     @include breakpoints-up(sm) {
       padding: spacing(0, 8)
     }
@@ -33,10 +34,11 @@
     @include use-theme(background, $palette-common-white, $dark-background-paper);
     @include shadow3;
     [dir="rtl"] & {
-      transform: scale(-1.6)
+      transform: scale(-1.6);
     }
     [dir="ltr"] & {
-      transform: scale(1.6)
+      transform: scale(1.6);
+      
     }
     border: none;
     box-shadow: none;
@@ -49,17 +51,22 @@
       line-height: 36px;
       color: var(--v-primarydark-base);
     }
-    @include breakpoints-down(sm) {
-      display: none;
-    }
   }
 
   .prev {
     @include left(15px);
+    @include breakpoints-down(sm) {
+      left:-12px!important;
+      transform: scale(1)!important;
+    }
   }
 
   .next {
-    @include right(15px)
+    @include right(15px);
+    @include breakpoints-down(sm) {
+      right:-12px!important;
+      transform: scale(1)!important;
+    }
   }
 }
 
