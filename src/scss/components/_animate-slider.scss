@@ -12,7 +12,6 @@
     }
   }
 
-
   .owl-theme .owl-dots {
     display: none;
     @include breakpoints-down(xs) {
@@ -50,24 +49,24 @@
         padding: 0 !important;
       }
       .item {
-        height: 78vh;
+        height: 100vh;
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        @include breakpoints-down(xs) {
-          height: 60vh;
-        }
+        // @include breakpoints-down(xs) {
+        //   height: 60vh;
+        // }
       }
       .cover {
         display: flex;
-        padding: 11%;
+        padding: 5%;
         position: absolute;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
-        background: rgba(0, 0, 0, 0.2);
+        // background: rgba(0, 0, 0, 0.2);
         display: flex;
         align-items: center;
         @include breakpoints-down(xs) {
@@ -76,6 +75,15 @@
         
         &.dark-mask {
           background: rgba(0, 0, 0, 0.5);
+        }
+
+        &.light-mask {
+          background: rgba(255, 255, 255, 0.5);
+        }
+        &.m-light-mask {
+          @include breakpoints-down(xs) {
+            background: rgba(255, 255, 255, 0.5);
+          }
         }
 
         .text-content {
@@ -135,6 +143,12 @@
           }
   
         }
+
+        &.text-dark {
+          h1 {color: var(--v-anchor-base);}
+          h4 {color:#333;}
+          p {color:var(--v-primarydark-base);}
+        }
   
       }
     }
@@ -144,21 +158,15 @@
     .promo-slider {
       .item {
         &.slider1 {
-          background-image: url(../../assets/images/promo/second-topbanner@2x.jpg);
+          background-image: url(../../assets/images/promo/01_pink/images/id01_01.jpg);
           @include breakpoints-down(xs) {
-            background-image: url(../../assets/images/promo/second-topbanner@2x.jpg);
+            background-image: url(../../assets/images/promo/01_pink/images/id01_01.jpg);
           }
         }
         &.slider2 {
-          background-image: url(../../assets/images/promo/value-save-detail-topbanner@2x.jpg);
+          background-image: url(../../assets/images/promo/01_pink/images/id01_02.jpg);
           @include breakpoints-down(xs) {
-            background-image: url(../../assets/images/promo/value-save-detail-topbanner@2x.jpg);
-          }
-        }
-        &.slider3 {
-          background-image: url(../../assets/images/promo/value-save-detail-topbanner-2@2x.jpg);
-          @include breakpoints-down(xs) {
-            background-image: url(../../assets/images/promo/value-save-detail-topbanner-m-2@2x.jpg);
+            background-image: url(../../assets/images/promo/01_pink/images/id01_02.jpg);
           }
         }        
       }
