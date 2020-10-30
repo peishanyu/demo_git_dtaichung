@@ -8,17 +8,17 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 660px;
+    height:700px;
     overflow: hidden;
     @include breakpoints-down(xs) {
       height: 100vh;
     }
     .parallax {
-      background: url(../../assets/images/mrd/bg_form.svg) no-repeat;
-      // background-size: cover;
+      background-image: url(../../assets/images/mrd/bg_form.svg);
+      background-repeat: no-repeat;
       height: 220%;
       @include breakpoints-down(xs) {
-        background: url(../../assets/images/mrd/bg_form_h5.svg) no-repeat;
+        background-image:url(../../assets/images/mrd/bg_form_h5.svg);
         background-size: cover;
         background-position: center 0 !important;
         height: 100vh;
@@ -176,11 +176,15 @@
 .page-layout-one {
   .burgundy-var {
     #subscribe {
+      .form {
+        top:50px;
+        background-color: rgba($color: #ffffff, $alpha: 0.9);
+      }
       .parallax-form-wrap {
         .parallax {
-          background: url(../../assets/images/promo/01_pink/bg_form_pink.svg) no-repeat;
+          background-image: url(../../assets/images/promo/01_pink/bg_form_pink.jpg);
           @include breakpoints-down(xs) {
-            background: url(../../assets/images/promo/01_pink/bg_form_pink_h5.svg) no-repeat;
+            background-size: contain;
           }
         }
       }  

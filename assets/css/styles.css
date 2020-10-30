@@ -11840,26 +11840,26 @@ body {
 }
 
 .page-layout-one #feature .ic-f1 {
-  height: 143px;
+  height: 136px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
 
 .page-layout-one #feature .ic-f1.f1-a {
-  background-image: url(../../assets/images/promo/01_pink/f1_a.png);
+  background-image: url(../../assets/images/promo/01_pink/f1_a.svg);
 }
 
 .page-layout-one #feature .ic-f1.f1-b {
-  background-image: url(../../assets/images/promo/01_pink/f1_b.png);
+  background-image: url(../../assets/images/promo/01_pink/f1_b.svg);
 }
 
 .page-layout-one #feature .ic-f1.f1-c {
-  background-image: url(../../assets/images/promo/01_pink/f1_c.png);
+  background-image: url(../../assets/images/promo/01_pink/f1_c.svg);
 }
 
 .page-layout-one #feature .ic-f1.f1-d {
-  background-image: url(../../assets/images/promo/01_pink/f1_d.png);
+  background-image: url(../../assets/images/promo/01_pink/f1_d.svg);
 }
 
 .page-layout-one #mrd-feature2 .root {
@@ -11906,7 +11906,7 @@ body {
   font-size: 36px;
   display: inline-block;
   line-height: normal;
-  color: var(--v-primarylight-base);
+  color: var(--v-promo-light);
 }
 
 @media (max-width: 599px) {
@@ -11952,19 +11952,19 @@ body {
 }
 
 .page-layout-one #mrd-feature2 .ic-f2.f2-a {
-  background-image: url(../../assets/images/promo/01_pink/f2_a.png);
+  background-image: url(../../assets/images/promo/01_pink/f2_a.svg);
 }
 
 .page-layout-one #mrd-feature2 .ic-f2.f2-b {
-  background-image: url(../../assets/images/promo/01_pink/f2_b.png);
+  background-image: url(../../assets/images/promo/01_pink/f2_b.svg);
 }
 
 .page-layout-one #mrd-feature2 .ic-f2.f2-c {
-  background-image: url(../../assets/images/promo/01_pink/f2_c.png);
+  background-image: url(../../assets/images/promo/01_pink/f2_c.svg);
 }
 
 .page-layout-one.house #mrd-feature2 .root {
-  background-image: url(../../assets/images/promo/section-2-bg@2x.png);
+  background-image: url(../../assets/images/promo/01_pink/section-2-bg.jpg);
 }
 
 .page-layout-one.car #mrd-feature2 .root.dark-mask:before {
@@ -14002,7 +14002,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 660px;
+  height: 700px;
   overflow: hidden;
 }
 
@@ -14013,13 +14013,14 @@ body {
 }
 
 #subscribe .parallax-form-wrap .parallax, #phone-verify .parallax-form-wrap .parallax, #phone-verify-2 .parallax-form-wrap .parallax {
-  background: url(../../assets/images/mrd/bg_form.svg) no-repeat;
+  background-image: url(../../assets/images/mrd/bg_form.svg);
+  background-repeat: no-repeat;
   height: 220%;
 }
 
 @media (max-width: 599px) {
   #subscribe .parallax-form-wrap .parallax, #phone-verify .parallax-form-wrap .parallax, #phone-verify-2 .parallax-form-wrap .parallax {
-    background: url(../../assets/images/mrd/bg_form_h5.svg) no-repeat;
+    background-image: url(../../assets/images/mrd/bg_form_h5.svg);
     background-size: cover;
     background-position: center 0 !important;
     height: 100vh;
@@ -14204,13 +14205,18 @@ body {
   color: var(--v-anchor-base);
 }
 
+.page-layout-one .burgundy-var #subscribe .form {
+  top: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
 .page-layout-one .burgundy-var #subscribe .parallax-form-wrap .parallax {
-  background: url(../../assets/images/promo/01_pink/bg_form_pink.svg) no-repeat;
+  background-image: url(../../assets/images/promo/01_pink/bg_form_pink.jpg);
 }
 
 @media (max-width: 599px) {
   .page-layout-one .burgundy-var #subscribe .parallax-form-wrap .parallax {
-    background: url(../../assets/images/promo/01_pink/bg_form_pink_h5.svg) no-repeat;
+    background-size: contain;
   }
 }
 
@@ -14904,7 +14910,7 @@ body {
 
 @media (max-width: 599px) {
   .page-layout-one.house .promo-slider .item.slider1 {
-    background-image: url(../../assets/images/promo/01_pink/images/id01_01.jpg);
+    background-image: url(../../assets/images/promo/01_pink/images/id01_m_01.jpg);
   }
 }
 
@@ -14914,7 +14920,7 @@ body {
 
 @media (max-width: 599px) {
   .page-layout-one.house .promo-slider .item.slider2 {
-    background-image: url(../../assets/images/promo/01_pink/images/id01_02.jpg);
+    background-image: url(../../assets/images/promo/01_pink/images/id01_m_02.jpg);
   }
 }
 
