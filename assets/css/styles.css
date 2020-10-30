@@ -14904,6 +14904,12 @@ body {
   color: var(--v-primarydark-base);
 }
 
+@media (max-width: 599px) {
+  .page-layout-one.house .promo-slider .cover {
+    top: -5vh;
+  }
+}
+
 .page-layout-one.house .promo-slider .item.slider1 {
   background-image: url(../../assets/images/promo/01_pink/images/id01_01.jpg);
 }
