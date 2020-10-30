@@ -174,12 +174,16 @@
 }
 
 .page-layout-one {
+
+  #subscribe {
+    .form {
+      top:50px;
+      background-color: rgba($color: #ffffff, $alpha: 0.9);
+    }
+  }
+
   .burgundy-var {
     #subscribe {
-      .form {
-        top:50px;
-        background-color: rgba($color: #ffffff, $alpha: 0.9);
-      }
       .parallax-form-wrap {
         .parallax {
           background-image: url(../../assets/images/promo/01_pink/bg_form_pink.jpg);
@@ -190,6 +194,7 @@
       }  
     }  
   }
+  
 }
 
 .img-captcha {

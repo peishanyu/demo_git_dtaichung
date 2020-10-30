@@ -180,9 +180,14 @@
 
   &.car {
     .promo-slider {
+      .cover {
+        @include breakpoints-down(xs) {
+          top: -5vh;
+        }
+      }
       .item {
         &.slider1 {
-          background-image: url(../../assets/images/promo/img02.jpg);
+          background-image: url(../../assets/images/promo/02_blue/images/id02_01.jpg);
           @include breakpoints-down(xs) {
             // background-image: url();
           }
