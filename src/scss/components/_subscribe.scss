@@ -182,7 +182,7 @@
     }
   }
 
-  .burgundy-var {
+  &.house {
     #subscribe {
       .parallax-form-wrap {
         .parallax {
@@ -194,6 +194,20 @@
       }  
     }  
   }
+
+  &.car {
+    #subscribe {
+      .parallax-form-wrap {
+        .parallax {
+          background-image: url(../../assets/images/promo/02_blue/bg_form_blue.jpg);
+          @include breakpoints-down(xs) {
+            background-size: contain;
+          }
+        }
+      }  
+    }
+  }
+
   
 }
 

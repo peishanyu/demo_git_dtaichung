@@ -51,6 +51,7 @@
 
   <link href="./assets/css/styles.css" rel="stylesheet">
   <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
+
 </head>
 
 <body>
@@ -128,7 +129,7 @@
                             汽車借款
                           </h1>
                           <h4>
-                            有緊急且大額的資金需要，<br>長期、中短期規劃資金需求，絕對是您最佳的融資管道。
+                            有緊急且大額的資金需要，<br>長期、中短期規劃資金需求，<br>絕對是您最佳的融資管道。
                           </h4>
                           <p>適用於自有汽車，未辦理汽車貸款或分期付款者</p>
                           <div class="scrollnav">
@@ -142,12 +143,12 @@
 
                     <section class="item slider2">
                       <div class="cover text-dark">
-                        <div class="text-center text-content">
+                        <div class="text-left text-content">
                           <h1>
                             原額度增貸
                           </h1>
                           <h4>
-                            能幫您將前貸代償結清，並爭取車價最高200%的高額度與降息優惠，<br>讓您有充裕的現金可運用。
+                            能幫您將前貸代償結清，並爭取車價<br>最高200%的高額度與降息優惠，<br>讓您有充裕的現金可運用。
                           </h4>
                           <p>適用於自有汽車，已辦理汽車貸款或分期付款者</p>
                           <div class="scrollnav">
@@ -168,7 +169,7 @@
             <section class="pt-8 pb-8" id="quota">
               <div class="root">
                 <div class="container fixed-width">
-                  <div class="mt-8 mb-8 wow fadeInLeft title-main align-center" data-wow-offset="-100" data-wow-delay=".3s" data-wow-duration="0.6s">
+                  <div class="mt-8 mb-8 wow bounceIn title-main align-center" data-wow-delay=".3s" data-wow-duration="0.6s">
                     <h4 class="use-text-title2"><span>最高額度可貸350萬</span></h4>
                     <p class="desc use-text-subtitle2">
                       手續簡便 24小時快速撥款<br>
@@ -206,7 +207,7 @@
                               <div class="ic-f1 f1-b"></div>
                               <h5 class="use-text-title2">還款輕鬆</h5>
                               <h6 class="use-text-paragraph">
-                                最長可至72期，讓您輕鬆繳款。 
+                                最長可至72期 
                               </h6>
                             </div>
                           </div>
@@ -279,7 +280,7 @@
                         </div>
                       </div>
                     </div>
-                    <p class="mt-5 align center">
+                    <p class="mt-5 align center text-white">
                       本專案最適合：公司戶、自營商、上班族、換車族<br>
                       適用車種：新車、中古車、重型機車、計程車、公司車、3.5噸以下汽車，不限年份，皆可辦理
                     </p>
@@ -716,6 +717,13 @@
     if(_isIE){
         alert("此網頁無法在IE正常顯示，請使用Google Chrome瀏覽器。");
     }
+  </script>
+
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   </script>
 
 </body>

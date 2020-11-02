@@ -212,3 +212,11 @@
     
   }
 }
+
+.page-index {
+  #explore {
+    @include breakpoints-down(xs) {
+      padding-top:40px;
+    }
+  }
+}

@@ -194,9 +194,9 @@
           }
         }
         &.slider2 {
-          background-image: url(../../assets/images/promo/shake.jpg);
+          background-image: url(../../assets/images/promo/02_blue/images/id02_02.jpg);
           @include breakpoints-down(xs) {
-            // background-image: url();
+            background-image: url(../../assets/images/promo/02_blue/images/id02_02_m.jpg);
           }
         }     
       }

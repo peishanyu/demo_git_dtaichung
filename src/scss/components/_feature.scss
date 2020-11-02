@@ -199,23 +199,11 @@
     }
 
     .ic-f1 {
+      min-width: 136px;
       height: 136px;
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      
-      &.f1-a {
-        background-image: url(../../assets/images/promo/01_pink/f1_a.svg);
-      }
-      &.f1-b {
-        background-image: url(../../assets/images/promo/01_pink/f1_b.svg);
-      }
-      &.f1-c {
-        background-image: url(../../assets/images/promo/01_pink/f1_c.svg);
-      }
-      &.f1-d {
-        background-image: url(../../assets/images/promo/01_pink/f1_d.svg);
-      }
     }
   }
 
@@ -291,37 +279,79 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain;
-      
-      &.f2-a {
+    }
+  }
+
+  &.house {
+    #feature {
+      .f1-a {
+        background-image: url(../../assets/images/promo/01_pink/f1_a.svg);
+      }
+      .f1-b {
+        background-image: url(../../assets/images/promo/01_pink/f1_b.svg);
+      }
+      .f1-c {
+        background-image: url(../../assets/images/promo/01_pink/f1_c.svg);
+      }
+      .f1-d {
+        background-image: url(../../assets/images/promo/01_pink/f1_d.svg);
+      }
+    }
+    #mrd-feature2 {
+      .root {
+        background-image: url(../../assets/images/promo/01_pink/section-2-bg.jpg);
+      }
+
+      .f2-a {
         background-image: url(../../assets/images/promo/01_pink/f2_a.svg);
       }
-      &.f2-b {
+      .f2-b {
         background-image: url(../../assets/images/promo/01_pink/f2_b.svg);
       }
-      &.f2-c {
+      .f2-c {
         background-image: url(../../assets/images/promo/01_pink/f2_c.svg);
       }
     }
   }
 
-  &.house {
-    #mrd-feature2 {
-      .root {
-        background-image: url(../../assets/images/promo/01_pink/section-2-bg.jpg);
-      }
+  &.car {
+
+  #feature {
+    .f1-a {
+      background-image: url(../../assets/images/promo/02_blue/f1_a.svg);
+    }
+    .f1-b {
+      background-image: url(../../assets/images/promo/02_blue/f1_b.svg);
+    }
+    .f1-c {
+      background-image: url(../../assets/images/promo/02_blue/f1_c.svg);
+    }
+    .f1-d {
+      background-image: url(../../assets/images/promo/02_blue/f1_d.svg);
     }
   }
-  &.car {
+
     #mrd-feature2 {
       .root {
         &.dark-mask {
           &:before {
-            background-image: url(../../assets/images/promo/default.jpg);
+            background-image: url(../../assets/images/promo/02_blue/bg.jpg);
           }
         }
       }
+
+      .f2-a {
+        background-image: url(../../assets/images/promo/02_blue/f2_a.svg);
+      }
+      .f2-b {
+        background-image: url(../../assets/images/promo/02_blue/f2_b.svg);
+      }
+      .f2-c {
+        background-image: url(../../assets/images/promo/02_blue/f2_c.svg);
+      }
     }  
   }
+
   &.motorcycle {
     #mrd-feature2 {
       .root {
