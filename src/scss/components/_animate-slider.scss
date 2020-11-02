@@ -49,8 +49,7 @@
         padding: 0 !important;
       }
       .item {
-        height: 100vh;
-        height: calc(var(--vh, 1vh) * 100);
+        height: fill-available;
         position: relative;
         background-repeat: no-repeat;
         background-size: cover;
