@@ -51,6 +51,13 @@
 
   <link href="./assets/css/styles.css" rel="stylesheet">
   <title>貸先生 - 極速借貸 讓AI助您一臂之力</title>
+
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
 </head>
 
 <body>
@@ -677,6 +684,7 @@
         alert("此網頁無法在IE正常顯示，請使用Google Chrome瀏覽器。");
     }
   </script>
+
 
 </body>
 

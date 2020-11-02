@@ -14777,9 +14777,8 @@ body {
 }
 
 .page-layout-one .container-wrap .promo-slider .item {
-  height: -webkit-fill-available;
-  height: -moz-available;
-  height: fill-available;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
