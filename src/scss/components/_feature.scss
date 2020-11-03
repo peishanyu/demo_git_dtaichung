@@ -315,22 +315,20 @@
   }
 
   &.car {
-
-  #feature {
-    .f1-a {
-      background-image: url(../../assets/images/promo/02_blue/f1_a.svg);
+    #feature {
+      .f1-a {
+        background-image: url(../../assets/images/promo/02_blue/f1_a.svg);
+      }
+      .f1-b {
+        background-image: url(../../assets/images/promo/02_blue/f1_b.svg);
+      }
+      .f1-c {
+        background-image: url(../../assets/images/promo/02_blue/f1_c.svg);
+      }
+      .f1-d {
+        background-image: url(../../assets/images/promo/02_blue/f1_d.svg);
+      }
     }
-    .f1-b {
-      background-image: url(../../assets/images/promo/02_blue/f1_b.svg);
-    }
-    .f1-c {
-      background-image: url(../../assets/images/promo/02_blue/f1_c.svg);
-    }
-    .f1-d {
-      background-image: url(../../assets/images/promo/02_blue/f1_d.svg);
-    }
-  }
-
     #mrd-feature2 {
       .root {
         &.dark-mask {
@@ -353,17 +351,37 @@
   }
 
   &.motorcycle {
+
+    #feature {
+      .f1-a {
+        background-image: url(../../assets/images/promo/03_orange/f1_a.svg);
+      }
+      .f1-b {
+        background-image: url(../../assets/images/promo/03_orange/f1_b.svg);
+      }
+      .f1-c {
+        background-image: url(../../assets/images/promo/03_orange/f1_c.svg);
+      }
+      .f1-d {
+        background-image: url(../../assets/images/promo/03_orange/f1_d.svg);
+      }
+    }
     #mrd-feature2 {
       .root {
-        &.dark-mask {
-          &:before {
-            background-image: url(../../assets/images/promo/20200619070946182.jpg);
-          }
+        background-image: url(../../assets/images/promo/03_orange/section-2-bg.jpg);
+
+        .f2-a {
+          background-image: url(../../assets/images/promo/03_orange/f2_a.svg);
+        }
+        .f2-b {
+          background-image: url(../../assets/images/promo/03_orange/f2_b.svg);
+        }
+        .f2-c {
+          background-image: url(../../assets/images/promo/03_orange/f2_c.svg);
         }
       }
     }
   }
-
 
 }
 

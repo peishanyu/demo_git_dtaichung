@@ -68,7 +68,6 @@
         top: 0;
         left: 0;
         // background: rgba(0, 0, 0, 0.2);
-        display: flex;
         align-items: center;
         @include breakpoints-down(xs) {
           padding: 15px;
@@ -207,7 +206,10 @@
     .promo-slider {
       .item {
         &.slider1 {
-          background-image: url(../../assets/images/promo/img03.jpg);
+          background-image: url(../../assets/images/promo/03_orange/id03.jpg);
+          @include breakpoints-down(xs) {
+            background-image: url(../../assets/images/promo/03_orange/id03_m.jpg);
+          }
         }
       }
     }

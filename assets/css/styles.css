@@ -12006,8 +12006,36 @@ body {
   background-image: url(../../assets/images/promo/02_blue/f2_c.svg);
 }
 
-.page-layout-one.motorcycle #mrd-feature2 .root.dark-mask:before {
-  background-image: url(../../assets/images/promo/20200619070946182.jpg);
+.page-layout-one.motorcycle #feature .f1-a {
+  background-image: url(../../assets/images/promo/03_orange/f1_a.svg);
+}
+
+.page-layout-one.motorcycle #feature .f1-b {
+  background-image: url(../../assets/images/promo/03_orange/f1_b.svg);
+}
+
+.page-layout-one.motorcycle #feature .f1-c {
+  background-image: url(../../assets/images/promo/03_orange/f1_c.svg);
+}
+
+.page-layout-one.motorcycle #feature .f1-d {
+  background-image: url(../../assets/images/promo/03_orange/f1_d.svg);
+}
+
+.page-layout-one.motorcycle #mrd-feature2 .root {
+  background-image: url(../../assets/images/promo/03_orange/section-2-bg.jpg);
+}
+
+.page-layout-one.motorcycle #mrd-feature2 .root .f2-a {
+  background-image: url(../../assets/images/promo/03_orange/f2_a.svg);
+}
+
+.page-layout-one.motorcycle #mrd-feature2 .root .f2-b {
+  background-image: url(../../assets/images/promo/03_orange/f2_b.svg);
+}
+
+.page-layout-one.motorcycle #mrd-feature2 .root .f2-c {
+  background-image: url(../../assets/images/promo/03_orange/f2_c.svg);
 }
 
 @media (max-width: 599px) {
@@ -14265,6 +14293,16 @@ body {
   }
 }
 
+.page-layout-one.motorcycle #subscribe .parallax-form-wrap .parallax {
+  background-image: url(../../assets/images/promo/03_orange/bg_form_orange.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.motorcycle #subscribe .parallax-form-wrap .parallax {
+    background-size: contain;
+  }
+}
+
 .img-captcha {
   max-width: 120px;
 }
@@ -14840,7 +14878,6 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -14997,7 +15034,13 @@ body {
 }
 
 .page-layout-one.motorcycle .promo-slider .item.slider1 {
-  background-image: url(../../assets/images/promo/img03.jpg);
+  background-image: url(../../assets/images/promo/03_orange/id03.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.motorcycle .promo-slider .item.slider1 {
+    background-image: url(../../assets/images/promo/03_orange/id03_m.jpg);
+  }
 }
 
 .page-layout-one.personal .promo-slider .item.slider1 {

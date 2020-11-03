@@ -208,6 +208,19 @@
     }
   }
 
+  &.motorcycle {
+    #subscribe {
+      .parallax-form-wrap {
+        .parallax {
+          background-image: url(../../assets/images/promo/03_orange/bg_form_orange.jpg);
+          @include breakpoints-down(xs) {
+            background-size: contain;
+          }
+        }
+      }  
+    }
+  }
+
   
 }
 

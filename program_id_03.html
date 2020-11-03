@@ -115,19 +115,19 @@
           <!-- ##### END HEADER #####-->
           
           <main class="container-wrap gold-var">
-            <section class="promo-slider space-top" id="promo-id-03">
+            <section class="promo-slider" id="promo-id-03">
               <div class="root">
 
-                <div class="title-main align-center">
+                <!-- <div class="title-main align-center">
                   <h4 class="primary"><span>機車貸幸福～小資幸福專案</span></h4>
                   <p class="desc use-text-subtitle2"></p>
-                </div>
+                </div> -->
 
                 <div>
                   <div class="owl-carousel">
 
                     <section class="item slider1">
-                      <div class="cover dark-mask">
+                      <div class="cover text-dark">
                         <div class="text-center text-content">
                           <h1>
                             小資族、機車族的最佳首選～享受幸福就是這麼輕鬆快速！
@@ -155,7 +155,7 @@
             <section class="pt-8 pb-8" id="quota">
               <div class="root">
                 <div class="container fixed-width">
-                  <div class="mt-8 mb-8 wow fadeInLeft title-main align-center" data-wow-offset="-100" data-wow-delay=".3s" data-wow-duration="0.6s">
+                  <div class="mt-8 mb-8 wow bounceIn title-main align-center" data-wow-delay=".3s" data-wow-duration="0.6s">
                     <h4 class="use-text-title2"><span>最高額度可貸25萬</span></h4>
                     <p class="desc use-text-subtitle2">
                       手續最簡便 當日快速撥款
@@ -192,7 +192,7 @@
                               <div class="ic-f1 f1-b"></div>
                               <h5 class="use-text-title2">還款輕鬆</h5>
                               <h6 class="use-text-paragraph">
-                                最長可至42期，讓您輕鬆繳款。 
+                                最長可至42期
                               </h6>
                             </div>
                           </div>
@@ -227,7 +227,7 @@
 
             <!-- ##### FEATURE2 #####-->
             <section id="mrd-feature2">
-                <div class="root dark-mask space-top-short space-bottom-short">
+                <div class="root space-top-short space-bottom-short">
                   <div class="container fixed-width">
                     <div class="align center title-about">
                       <h4><span>貸先生 助您一臂之力</span></h4>
@@ -250,7 +250,7 @@
                             <div class="ic-f2 f2-b"></div>
                             <h5 class="use-text-title2">條件最寬鬆</h5>
                             <h6 class="use-text-paragraph">
-                              不限職業，不需財力證明、負債比高、信用低、卡循、罰單未繳皆可辦理
+                              不限職業，不需財力證明、負債比高、信用低、卡循、原貸款遲繳皆可辦理
                             </h6>
                           </div>
                         </div>
@@ -265,7 +265,7 @@
                         </div>
                       </div>
                     </div>
-                    <p class="mt-5 align center">
+                    <p class="mt-5 align center text-white">
                       本專案最適合：小資族、攤商族、小生意族、自營商、學生族有機車也可申辦<br>
                       適用車種：新機車、舊機車、GOGORO電動機車，仍有原貸款者，不限年份，皆可辦理
                     </p>
@@ -278,7 +278,7 @@
             <section id="slogan">
               <div class="root">
                 <div class="container fixed-width">
-                  <div class="mt-8 mb-8 wow fadeInRight title-main align-center" data-wow-offset="-100" data-wow-delay="0.2s" data-wow-duration="0.6s">
+                  <div class="mt-8 mb-8 wow fadeInDown title-main align-center" data-wow-delay="0.2s" data-wow-duration="1s">
                     <!-- <h4 class="primary"><span></span></h4> -->
                     <p class="desc use-text-subtitle2">
                       貸先生極速借貸，伴您走過人生重要關卡，助您完成更多夢想！<br>
@@ -545,7 +545,7 @@
             </section><!-- ##### END TESTIMONIALS #####-->
 
             <!-- ##### FOOTER #####-->
-            <footer class="footer">
+            <footer class="ocean-blue-var footer">
               <div class="container">
                 <hr>
                 <div class="row">
@@ -675,6 +675,7 @@
       nav:false,
       dot:false,
       stagePadding:0,
+      touchDrag:false,
       mouseDrag:false,
       autoplay:false,
       autoplayHoverPause:false,
@@ -698,6 +699,13 @@
     if(_isIE){
         alert("此網頁無法在IE正常顯示，請使用Google Chrome瀏覽器。");
     }
+  </script>
+
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   </script>
 
 </body>
