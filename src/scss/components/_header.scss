@@ -273,7 +273,7 @@
       // padding-bottom: 4px !important;
       // color: $palette-primary-dark !important;
       position: relative;
-      width: 170px;
+      width: 150px;
       height: 50px;
       border-radius: 100rem;
       background: #fff;
@@ -390,6 +390,9 @@
   @include palette-background-paper;
   z-index: 1100;
   min-width: 360px;
+  @include breakpoints-down(sm) {
+    width: 100% !important
+  }
   @include breakpoints-down(xs) {
     width: 100% !important
   }
@@ -400,6 +403,12 @@
     width: 100%;
     position: absolute;
     height: calc(100% - 120px);
+    @include breakpoints-down(sm) {
+      top: spacing(20);
+    }
+    @include breakpoints-down(xs) {
+      top: spacing(10);
+    }
     ul.collection {
       border: none;
       margin: 0;
@@ -410,14 +419,14 @@
         padding: spacing(0, 2);
         overflow: auto;
         top: spacing(15);
-        margin: spacing(2, 3);
+        margin: spacing(1, 3);
         a {
           text-transform: capitalize;
-          font-size: 24px;
+          font-size: 20px;
           margin-top: 4px;
           margin-bottom: 4px;
           font-weight: $font-regular;
-          padding: spacing(1, 2);
+          padding: spacing(1, 2, 1, 0);
           height: auto;
           line-height: normal;
         }

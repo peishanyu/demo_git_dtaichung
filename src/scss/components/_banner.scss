@@ -114,7 +114,7 @@ $icon-four: '../images/mrd/parallax-four.png';
     //   }
     // }
     @include breakpoints-down(md) {
-      margin-top: $spacing15;
+      margin-top: $spacing8;
     }
     @include breakpoints-down(xs) {
       margin-top: $spacing3;
@@ -158,7 +158,9 @@ $icon-four: '../images/mrd/parallax-four.png';
       background-repeat: no-repeat;
 
       @include breakpoints-down(sm) {
-        // height: 1120px;
+        top: 5vh;
+        left: -5vw!important;
+        transform: scale(.85);
       }
       // .theme--light & {
       //   @include bg-color-lighten($palette-primary-light, 0.7)

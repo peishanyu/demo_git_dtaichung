@@ -10269,7 +10269,7 @@ body {
 
 @media (max-width: 1279px) {
   #home .title {
-    margin-top: 120px;
+    margin-top: 64px;
   }
 }
 
@@ -10328,6 +10328,16 @@ body {
 
 [dir="rtl"] #home .deco-banner .artwork-bg {
   right: -100px;
+}
+
+@media (max-width: 959px) {
+  #home .deco-banner .artwork-bg {
+    top: 5vh;
+    left: -5vw !important;
+    -webkit-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    transform: scale(0.85);
+  }
 }
 
 #home .deco-banner .artwork-bg .oval {
@@ -13556,7 +13566,7 @@ body {
 
 .nav-auth a.white {
   position: relative;
-  width: 170px;
+  width: 150px;
   height: 50px;
   border-radius: 100rem;
   background: #fff;
@@ -13721,6 +13731,12 @@ body {
   background-color: #424242;
 }
 
+@media (max-width: 959px) {
+  .mobile-nav {
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 599px) {
   .mobile-nav {
     width: 100% !important;
@@ -13736,6 +13752,18 @@ body {
   height: calc(100% - 120px);
 }
 
+@media (max-width: 959px) {
+  .mobile-nav .menu {
+    top: 160px;
+  }
+}
+
+@media (max-width: 599px) {
+  .mobile-nav .menu {
+    top: 80px;
+  }
+}
+
 .mobile-nav .menu ul.collection {
   border: none;
   margin: 0;
@@ -13748,16 +13776,16 @@ body {
   padding: 0px 16px 0px 16px;
   overflow: auto;
   top: 120px;
-  margin: 16px 24px 16px 24px;
+  margin: 8px 24px 8px 24px;
 }
 
 .mobile-nav .menu ul.collection li.collection-item a {
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 20px;
   margin-top: 4px;
   margin-bottom: 4px;
   font-weight: var(--font-regular);
-  padding: 8px 16px 8px 16px;
+  padding: 8px 16px 8px 0px;
   height: auto;
   line-height: normal;
 }
