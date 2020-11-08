@@ -10100,6 +10100,14 @@ body {
   background-size: cover;
 }
 
+@media (max-width: 1919px) {
+  .page-about #about .root {
+    background-size: contain;
+    background-position: bottom;
+    background-color: #fff;
+  }
+}
+
 @media (max-width: 599px) {
   .page-about #about .root {
     background-image: url(../../assets/images/mrd/bg_about_m.png);
@@ -10118,9 +10126,11 @@ body {
 }
 
 .page-help #about .root {
-  background: url(../../assets/images/mrd/bg_help.svg);
+  background-image: url(../../assets/images/mrd/bg_help.svg);
   background-repeat: no-repeat;
+  background-position: 35% bottom;
   background-size: cover;
+  background-color: #fff;
 }
 
 @media (max-width: 599px) {
@@ -11587,8 +11597,12 @@ body {
   background-image: url(../../assets/images/promo/img03.jpg);
 }
 
-#explore .cover.id05, #intro-code .cover.id05 {
+#explore .cover.id04, #intro-code .cover.id04 {
   background-image: url(../../assets/images/promo/img04.jpg);
+}
+
+#explore .cover.id05, #intro-code .cover.id05 {
+  background-image: url(../../assets/images/promo/img05.jpg);
 }
 
 @media (max-width: 599px) {
@@ -15065,9 +15079,49 @@ body {
   background-image: url(../../assets/images/promo/03_orange/id03.jpg);
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1279px) {
   .page-layout-one.motorcycle .promo-slider .item.slider1 {
     background-image: url(../../assets/images/promo/03_orange/id03_m.jpg);
+  }
+}
+
+.page-layout-one.integration .promo-slider .item.slider1 {
+  background-image: url(../../assets/images/promo/04_green/01.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.integration .promo-slider .item.slider1 {
+    background-image: url(../../assets/images/promo/04_green/01.jpg);
+  }
+}
+
+.page-layout-one.integration .promo-slider .item.slider2 {
+  background-image: url(../../assets/images/promo/04_green/02.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.integration .promo-slider .item.slider2 {
+    background-image: url(../../assets/images/promo/04_green/02.jpg);
+  }
+}
+
+.page-layout-one.integration .promo-slider .item.slider3 {
+  background-image: url(../../assets/images/promo/04_green/03.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.integration .promo-slider .item.slider3 {
+    background-image: url(../../assets/images/promo/04_green/03.jpg);
+  }
+}
+
+.page-layout-one.integration .promo-slider .item.slider4 {
+  background-image: url(../../assets/images/promo/04_green/04.jpg);
+}
+
+@media (max-width: 599px) {
+  .page-layout-one.integration .promo-slider .item.slider4 {
+    background-image: url(../../assets/images/promo/04_green/04.jpg);
   }
 }
 

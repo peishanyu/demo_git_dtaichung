@@ -110,6 +110,11 @@ $pattern: '../images/education/bg-pattern.png';
       background-image: url(../../assets/images/mrd/bg_about.jpg);
       background-repeat: no-repeat;
       background-size: cover;
+      @include breakpoints-down(lg) {
+        background-size: contain;
+        background-position: bottom;
+        background-color: #fff;
+      }
       @include breakpoints-down(xs) {
         background-image: url(../../assets/images/mrd/bg_about_m.png);
       }
@@ -130,9 +135,12 @@ $pattern: '../images/education/bg-pattern.png';
 .page-help {
   #about {
     .root {
-      background: url(../../assets/images/mrd/bg_help.svg);
+      background-image: url(../../assets/images/mrd/bg_help.svg);
       background-repeat: no-repeat;
+      background-position: 35% bottom;
       background-size: cover;
+      background-color: #fff;
+    
       @include breakpoints-down(xs) {
         background-image: url(../../assets/images/mrd/bg_help_m.svg);
       }

@@ -207,8 +207,39 @@
       .item {
         &.slider1 {
           background-image: url(../../assets/images/promo/03_orange/id03.jpg);
-          @include breakpoints-down(xs) {
+          @include breakpoints-down(md) {
             background-image: url(../../assets/images/promo/03_orange/id03_m.jpg);
+          }
+        }
+      }
+    }
+  }
+
+  &.integration {
+    .promo-slider {
+      .item {
+        &.slider1 {
+          background-image: url(../../assets/images/promo/04_green/01.jpg);
+          @include breakpoints-down(xs) {
+            background-image: url(../../assets/images/promo/04_green/01.jpg);
+          }
+        }
+        &.slider2 {
+          background-image: url(../../assets/images/promo/04_green/02.jpg);
+          @include breakpoints-down(xs) {
+            background-image: url(../../assets/images/promo/04_green/02.jpg);
+          }
+        }
+        &.slider3 {
+          background-image: url(../../assets/images/promo/04_green/03.jpg);
+          @include breakpoints-down(xs) {
+            background-image: url(../../assets/images/promo/04_green/03.jpg);
+          }
+        }
+        &.slider4 {
+          background-image: url(../../assets/images/promo/04_green/04.jpg);
+          @include breakpoints-down(xs) {
+            background-image: url(../../assets/images/promo/04_green/04.jpg);
           }
         }
       }
