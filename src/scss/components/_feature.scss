@@ -383,6 +383,86 @@
     }
   }
 
+  &.integration {
+    #quota {
+      .item-ic {
+        margin:auto;
+        width:108px;
+        height:108px;
+        background-size:cover;
+        background-repeat:no-repeat;
+        &.ic-1 {
+          background-image: url(../../assets/images/promo/04_green/ic-1.svg);
+        }
+        &.ic-2 {
+          background-image: url(../../assets/images/promo/04_green/ic-2.svg);
+        }
+        &.ic-3 {
+          background-image: url(../../assets/images/promo/04_green/ic-3.svg);
+        }
+        &.ic-4 {
+          background-image: url(../../assets/images/promo/04_green/ic-4.svg);
+        }
+      }
+    }
+    #feature {
+      .f1-a {
+        background-image: url(../../assets/images/promo/04_green/f1_a.svg);
+      }
+      .f1-b {
+        background-image: url(../../assets/images/promo/04_green/f1_b.svg);
+      }
+      .f1-c {
+        background-image: url(../../assets/images/promo/04_green/f1_c.svg);
+      }
+    }
+    #mrd-feature2 {
+      .root {
+        background-image: url(../../assets/images/promo/04_green/bg.jpg);
+
+        .f2-a {
+          background-image: url(../../assets/images/promo/04_green/f2_a.svg);
+        }
+        .f2-b {
+          background-image: url(../../assets/images/promo/04_green/f2_b.svg);
+        }
+        .f2-c {
+          background-image: url(../../assets/images/promo/04_green/f2_c.svg);
+        }
+      }
+    }
+  }
+
+  &.personal {
+    #feature {
+      .f1-a {
+        background-image: url(../../assets/images/promo/05/f1_a.svg);
+      }
+      .f1-b {
+        background-image: url(../../assets/images/promo/05/f1_b.svg);
+      }
+      .f1-c {
+        background-image: url(../../assets/images/promo/05/f1_c.svg);
+      }
+    }
+    #mrd-feature2 {
+      .root {
+        background-image: url(../../assets/images/promo/01_pink/section-2-bg.jpg);
+      }
+
+      .f2-a {
+        background-image: url(../../assets/images/promo/05/f2_a.svg);
+      }
+      .f2-b {
+        background-image: url(../../assets/images/promo/05/f2_b.svg);
+      }
+      .f2-c {
+        background-image: url(../../assets/images/promo/05/f2_c.svg);
+      }
+    }
+  }
+
+
 }
 
 

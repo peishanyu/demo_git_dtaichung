@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff637b"/>
+      <stop offset="1" stop-color="#ab124b"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffdce2"/>
+      <stop offset="0.503" stop-color="#fff5f6"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+  </defs>
+  <g id="f2_c" transform="translate(-7553 5711)">
+    <rect id="f2_b" width="74" height="74" transform="translate(7553 -5711)" fill="rgba(255,255,255,0)"/>
+    <g id="insurance" transform="translate(7507 -5704)">
+      <path id="路径_32995" data-name="路径 32995" d="M102.371,9C93.211,9,83.719.514,83.625.429a1.655,1.655,0,0,0-2.223,0C81.307.515,71.839,9,62.655,9A1.655,1.655,0,0,0,61,10.66V30.478c0,16.055,11.941,22.47,20.923,25.9a1.656,1.656,0,0,0,1.18,0c12.594-4.808,20.923-12.308,20.923-25.9V10.66A1.655,1.655,0,0,0,102.371,9Z" fill="url(#linear-gradient)"/>
+      <path id="路径_32996" data-name="路径 32996" d="M162.584,151a11.584,11.584,0,1,0,11.584,11.584A11.6,11.6,0,0,0,162.584,151Zm4.48,11.1-4.965,4.965a1.655,1.655,0,0,1-2.34,0l-1.655-1.655a1.655,1.655,0,1,1,2.34-2.34l.485.485,3.794-3.794a1.655,1.655,0,1,1,2.34,2.34Z" transform="translate(-80.071 -134.341)" fill="url(#linear-gradient-2)"/>
+    </g>
+  </g>
+</svg>

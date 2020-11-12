@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="136" height="136" viewBox="0 0 136 136">
+  <g id="f1_c" transform="translate(-7439 5482)">
+    <g id="椭圆_281" data-name="椭圆 281" transform="translate(7439 -5482)" fill="none" stroke="#f9bed1" stroke-width="5">
+      <circle cx="68" cy="68" r="68" stroke="none"/>
+      <circle cx="68" cy="68" r="65.5" fill="none"/>
+    </g>
+    <g id="graduation" transform="translate(7465 -5456.145)">
+      <path id="路径_32985" data-name="路径 32985" d="M102.167,301.044a258.632,258.632,0,0,1-29.61,2.3l-7.362,5-7.362-5a258.66,258.66,0,0,1-29.61-2.3l-.347,4.884V320.7l.347,4.884A287.273,287.273,0,0,1,65.2,323.141a287.294,287.294,0,0,1,36.972,2.442l.347-4.884V305.928Z" transform="translate(-23.316 -251.759)" fill="#e6f7ff"/>
+      <path id="路径_32986" data-name="路径 32986" d="M293.319,320.7V305.928l-.347-4.884a258.633,258.633,0,0,1-29.61,2.3l-7.362,5v14.8a287.3,287.3,0,0,1,36.972,2.442Z" transform="translate(-214.121 -251.759)" fill="#cce6ff"/>
+      <path id="路径_32987" data-name="路径 32987" d="M41.879.044,0,19.839l19.794,8.083h44.17l19.794-8.083Z" transform="translate(0 0)" fill="#333e73"/>
+      <path id="路径_32988" data-name="路径 32988" d="M297.879,19.838,256,.044V27.922h22.085Z" transform="translate(-214.121)" fill="#1f2859"/>
+      <ellipse id="椭圆_294" data-name="椭圆 294" cx="5" cy="12.5" rx="5" ry="12.5" transform="translate(0 49.145)" fill="#cce6ff"/>
+      <ellipse id="椭圆_295" data-name="椭圆 295" cx="5" cy="12.5" rx="5" ry="12.5" transform="translate(74 49.145)" fill="#b3ccff"/>
+      <path id="路径_32989" data-name="路径 32989" d="M143.085,99.892,121,111.435v16.455h44.17V111.435Z" transform="translate(-101.205 -83.514)" fill="#4d578c"/>
+      <path id="路径_32990" data-name="路径 32990" d="M278.085,111.435,256,99.892v28h22.085Z" transform="translate(-214.121 -83.514)" fill="#333e73"/>
+      <path id="路径_32991" data-name="路径 32991" d="M218.362,315.119c-2.456,0-4.912.06-7.362,0v32.2l7.362-7.362,7.362,7.362v-32.2C223.274,315.179,220.818,315.119,218.362,315.119Z" transform="translate(-176.482 -263.532)" fill="#ff6680"/>
+      <path id="路径_32992" data-name="路径 32992" d="M263.362,315.119c-2.449.06-4.906,0-7.362,0v24.839l7.362,7.362Z" transform="translate(-214.121 -263.532)" fill="#e64560"/>
+    </g>
+  </g>
+</svg>
