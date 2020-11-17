@@ -13580,37 +13580,37 @@ body {
   right: 50%;
 }
 
-.nav-menu .scrollactive-nav .btn:hover {
+.nav-menu .scrollactive-nav .btn:hover, .nav-menu .scrollactive-nav .btn.active {
   -webkit-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-.theme--dark .nav-menu .scrollactive-nav .btn:hover {
+.theme--dark .nav-menu .scrollactive-nav .btn:hover, .theme--dark .nav-menu .scrollactive-nav .btn.active {
   color: #fff;
 }
 
-.nav-menu .scrollactive-nav .btn:hover:before {
+.nav-menu .scrollactive-nav .btn:hover:before, .nav-menu .scrollactive-nav .btn.active:before {
   opacity: 0;
 }
 
-.nav-menu .scrollactive-nav .btn:hover:after {
+.nav-menu .scrollactive-nav .btn:hover:after, .nav-menu .scrollactive-nav .btn.active:after {
   width: 80%;
 }
 
-[dir="ltr"] .nav-menu .scrollactive-nav .btn:hover:after {
+[dir="ltr"] .nav-menu .scrollactive-nav .btn:hover:after, [dir="ltr"] .nav-menu .scrollactive-nav .btn.active:after {
   left: 4px;
 }
 
-[dir="rtl"] .nav-menu .scrollactive-nav .btn:hover:after {
+[dir="rtl"] .nav-menu .scrollactive-nav .btn:hover:after, [dir="rtl"] .nav-menu .scrollactive-nav .btn.active:after {
   right: 4px;
 }
 
-.theme--light .nav-menu .scrollactive-nav .btn:hover:after {
+.theme--light .nav-menu .scrollactive-nav .btn:hover:after, .theme--light .nav-menu .scrollactive-nav .btn.active:after {
   border-bottom-color: var(--v-primary-base);
 }
 
-.theme--dark .nav-menu .scrollactive-nav .btn:hover:after {
+.theme--dark .nav-menu .scrollactive-nav .btn:hover:after, .theme--dark .nav-menu .scrollactive-nav .btn.active:after {
   border-bottom-color: var(--v-primarylight-base);
 }
 

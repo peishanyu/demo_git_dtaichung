@@ -231,7 +231,7 @@
         @include left(50%);
         transition: all 0.2s cubic-bezier(0.42, 0.16, 0.21, 0.93);
       }
-      &:hover {
+      &:hover, &.active {
         transition: all 0.3s ease-out;
         @include palette-text-primary;
         &:before {
