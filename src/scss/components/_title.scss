@@ -203,6 +203,49 @@
     }
   }
 
+  #promo-name {
+    background-color: var(--v-primary-base);
+    .use-text-title2 {
+      color:var(--v-primarylight-base);
+    }
+  }
+
+  &.car {
+    #promo-name {
+      background-color: var(--v-primarylight-base);
+      .use-text-title2 {
+        color:var(--v-primarydark-base);
+      }
+    }
+  }
+
+  &.motorcycle {
+    #promo-name {
+      background-color: var(--v-primarydark-base);
+      .use-text-title2 {
+        color:var(--v-primarylight-base);
+      }
+    }
+  }
+
+  &.integration {
+    #promo-name {
+      background-color: var(--v-primarylight-base);
+      .use-text-title2 {
+        color:var(--v-primarydark-base);
+      }
+    }
+  }
+
+  &.personal {
+    #promo-name {
+      background-color: var(--v-primarylight-base);
+      .use-text-title2 {
+        color:var(--v-primary-base);
+      }
+    }
+  }
+
   #about {
 
     .title-about {
